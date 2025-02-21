@@ -42,7 +42,8 @@ def delete_non_uk_artists(df):
                     'Red Hot Chili Peppers', 'Nirvana', 'Between the Buried and Me', 'Something Corporate', 'blink-182', 'Pantera', 'Deafheaven', 'My Chemical Romance', 'Slipknot', 'Soundgarden',
                     "Guns N' Roses", 'Converge', 'Pixies', 'Protest the Hero', 'Poison the Well', 'Death Cab for Cutie', 'Ephel Duath', 'Blind Melon', 'Behemoth', 'Insomnium', 'Ben Harper', 'The Replacements',
                     'Caribou', 'Samiam', 'Satyricon', 'Sponge', 'Midlake', 'Frank Zappa', 'M. Ward', 'The Brian Jonestown Massacre', 'Cinderella', 'Ulver', 'Further Seems Forever', 'Babylon A.D.',
-                    'Severed Savior', 'Threshold', 'Soul Asylum', 'Red Krayola', 'Art Garfunkel'
+                    'Severed Savior', 'Threshold', 'Soul Asylum', 'Red Krayola', 'Art Garfunkel', 'Toad', 'Indian Summer', 'Santana', 'Eagles', 'New York Dolls', 'Bruce Springsteen', 'Emperor',
+                    'Chicago'
                   ]
     
     print(f"Initial artists: {df['artist'].nunique()}")
@@ -63,6 +64,8 @@ def columns_hide_ratings(df):
                        'album_length', 'tracks', 'release_type', 'genres', 'styles', 'artist_profile']
     df = df[list_of_columns]
     return df
+
+
 
     
 
