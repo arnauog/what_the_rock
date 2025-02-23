@@ -1,12 +1,24 @@
-def check_duplicates_coordinates(df):
-    if df['latitude'].duplicated().sum() == 0:
+def check_duplicates_origins(df):
+    if df['origin'].duplicated().sum() == 0:
         print('No duplicates')
     else: 
-        duplicates = df['latitude'].duplicated().sum()
+        duplicates = df['origin'].duplicated().sum()
         print(f'Found {duplicates} duplicates:')
-        print(f'{df[df['latitude'].duplicated()][['city', 'country']]}\n')
+        print(f'{df[df['origin'].duplicated()][['city', 'country']]}\n')
 
-        df.drop_duplicates(subset='latitude', inplace=True)
+        df.drop_duplicates(subset=['origin'], inplace=True)
+        df.reset_index(drop=True, inplace=True)
+        print(f'Resulting dataset: {df.shape}')
+
+def check_duplicates_artists(df):
+    if df['artist'].duplicated().sum() == 0:
+        print('No duplicates')
+    else: 
+        duplicates = df['artist'].duplicated().sum()
+        print(f'Found {duplicates} duplicates:')
+        print(f'{df[df['artist'].duplicated()]['artist']}\n')
+
+        df.drop_duplicates(subset=['artist'], inplace=True)
         df.reset_index(drop=True, inplace=True)
         print(f'Resulting dataset: {df.shape}')
 
