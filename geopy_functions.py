@@ -5,6 +5,7 @@ from pandas import json_normalize
 from bs4 import BeautifulSoup
 import requests 
 import time
+import re
 
 # pip install geopy
 from geopy.geocoders import Nominatim
@@ -43,7 +44,6 @@ def get_origins_wikipedia(df, start_index, final_index):
             table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
 
             location = table[0].text.split('Origin')[1].split('Genres')[0]
-            city = location.split(', ')[0]
             count+=1
             
         # save info in lists
@@ -61,7 +61,6 @@ def get_origins_wikipedia(df, start_index, final_index):
 
                 try:
                     location = table[0].text.split('Origin')[1].split('Genres')[0]
-                    city = location.split(', ')[0]
                     count+=1 
     
                 # save info in lists
@@ -71,8 +70,35 @@ def get_origins_wikipedia(df, start_index, final_index):
                     print(f'{scraped}/{count} - {name_changed}: {location}')
 
                 except:
-                    location = table[0].text.split(')')[2].split('Genres')[0]
-                    city = location.split(', ')[0]
+                    text = table[0].text
+
+                    # Step 1: Extract the part after 'Born'
+                    after_born = text.split("Born", 1)[1]
+
+                    text_age = re.search("aged", after_born)
+
+                    if text_age:
+                        # This means the artist is dead
+                        location = re.split(r'(19\d{2})', after_born)[4].split('Died')[0].strip()
+                    else:
+                        try:
+                            text = re.split(r'(19\d{2})', after_born)[4].split(')')[1]
+
+                            if "Other\xa0names" in text:
+                                location = text.split('Other\xa0names')[0]
+                            else:
+                                if "Citizenship" in text:
+                                    location = text.split('Citizenship')[0]
+                                else:
+                                    if "Occupations" in text:
+                                        location = text.split('Occupations')[0]
+                                    else:
+                                        if "Genres" in text:
+                                            location = text.split('Genres')[0]
+                                        else:
+                                            location = np.nan
+                        except:  
+                            location = np.nan
                     count+=1
 
                 # save info in lists
@@ -89,7 +115,6 @@ def get_origins_wikipedia(df, start_index, final_index):
 
                     table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
                     location = table[0].text.split('Origen\n')[1].split(' Información')[0]
-                    city = location.split(', ')[0]
                     count+=1    
     
                 # save info in lists
@@ -99,7 +124,7 @@ def get_origins_wikipedia(df, start_index, final_index):
                     print(f'{scraped}/{count} - {name_changed} (español): {location}')
 
                 except:
-                    scraped+=1
+                    count+=1
                     print(f'{scraped}/{count} - {index}: error')
                     artists_list.append(index) 
                     origin_list.append(np.nan)
@@ -165,7 +190,6 @@ def get_coordinates_geopy(df_new_artists):
     latitude_list = []
     longitude_list = []
     address_list = []
-    lists = [country_list, city_list, latitude_list, longitude_list, address_list]
     count = 0
 
     for origin in unique_origins_clean:
@@ -181,11 +205,6 @@ def get_coordinates_geopy(df_new_artists):
         latitude_list.append(location.latitude)
         longitude_list.append(location.longitude)
         address_list.append(location.address)
-
-        # # Check lengths
-        # print(f"{count}/{len(unique_origins_clean)} - {origin}")
-        # print(f"Current list lengths -> country: {len(country_list)}, city: {len(city_list)}, "
-        #     f"lat: {len(latitude_list)}, lon: {len(longitude_list)}, address: {len(address_list)}")
 
     df_coordinates = pd.DataFrame({'country': country_list
                                 , 'city': city_list
