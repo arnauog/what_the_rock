@@ -35,6 +35,7 @@ def get_origins_wikipedia(df, start_index, final_index):
 
         name_changed = index.replace(' ', '_')
         name_changed_band = name_changed + ('_(band)')
+        name_changed_musician = name_changed + ('_(musician)')
 
         try:
             url = f"https://en.wikipedia.org/wiki/{name_changed_band}"
@@ -90,11 +91,11 @@ def get_origins_wikipedia(df, start_index, final_index):
                                 if "Citizenship" in text:
                                     location = text.split('Citizenship')[0]
                                 else:
-                                    if "Occupations" in text:
-                                        location = text.split('Occupations')[0]
+                                    if "Genres" in text:
+                                        location = text.split('Genres')[0]
                                     else:
-                                        if "Genres" in text:
-                                            location = text.split('Genres')[0]
+                                        if "Occupations" in text:
+                                            location = text.split('Occupations')[0]
                                         else:
                                             location = np.nan
                         except:  
@@ -109,25 +110,80 @@ def get_origins_wikipedia(df, start_index, final_index):
 
             except:
                 try:
-                    url = f"https://es.wikipedia.org/wiki/{name_changed}"
+                    url = f"https://en.wikipedia.org/wiki/{name_changed_musician}"
                     response = requests.get(url).content
                     soup = BeautifulSoup(response, "html.parser")
-
                     table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
-                    location = table[0].text.split('Origen\n')[1].split(' Información')[0]
-                    count+=1    
-    
-                # save info in lists
-                    artists_list.append(index)  
-                    origin_list.append(location)
-                    scraped+=1
-                    print(f'{scraped}/{count} - {name_changed} (español): {location}')
+
+                    try:
+                        location = table[0].text.split('Origin')[1].split('Genres')[0]
+                        count+=1 
+        
+                    # save info in lists
+                        artists_list.append(index)  
+                        origin_list.append(location)
+                        scraped+=1
+                        print(f'{scraped}/{count} - {name_changed}: {location}')
+
+                    except:
+                        text = table[0].text
+
+                        # Step 1: Extract the part after 'Born'
+                        after_born = text.split("Born", 1)[1]
+
+                        text_age = re.search("aged", after_born)
+
+                        if text_age:
+                            # This means the musician is dead
+                            location = re.split(r'(19\d{2})', after_born)[4].split('Died')[0].strip()
+                        else:
+                            try:
+                                text = re.split(r'(19\d{2})', after_born)[4].split(')')[1]
+
+                                if "Other\xa0names" in text:
+                                    location = text.split('Other\xa0names')[0]
+                                else:
+                                    if "Citizenship" in text:
+                                        location = text.split('Citizenship')[0]
+                                    else:
+                                        if "Genres" in text:
+                                            location = text.split('Genres')[0]
+                                        else:
+                                            if "Occupations" in text:
+                                                location = text.split('Occupations')[0]
+                                            else:
+                                                location = np.nan
+                            except:  
+                                location = np.nan
+                        count+=1
+
+                    # save info in lists
+                        artists_list.append(index)  
+                        origin_list.append(location)
+                        scraped+=1
+                        print(f'{scraped}/{count} - {name_changed} (musician): {location}')
 
                 except:
-                    count+=1
-                    print(f'{scraped}/{count} - {index}: error')
-                    artists_list.append(index) 
-                    origin_list.append(np.nan)
+                    try:
+                        url = f"https://es.wikipedia.org/wiki/{name_changed}"
+                        response = requests.get(url).content
+                        soup = BeautifulSoup(response, "html.parser")
+
+                        table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
+                        location = table[0].text.split('Origen\n')[1].split(' Información')[0]
+                        count+=1    
+        
+                    # save info in lists
+                        artists_list.append(index)  
+                        origin_list.append(location)
+                        scraped+=1
+                        print(f'{scraped}/{count} - {name_changed} (español): {location}')
+
+                    except:
+                        count+=1
+                        print(f'{scraped}/{count} - {index}: error')
+                        artists_list.append(index) 
+                        origin_list.append(np.nan)
 
         if len(artists_list) != len(origin_list):
             print('different lengths')
