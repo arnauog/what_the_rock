@@ -89,16 +89,19 @@ def get_origins_wikipedia(df, start_index, final_index):
                             if "Other\xa0names" in text:
                                 location = text.split('Other\xa0names')[0]
                             else:
-                                if "Citizenship" in text:
-                                    location = text.split('Citizenship')[0]
+                                if "Other names" in text:
+                                    location = text.split('Other names')[0]
                                 else:
-                                    if "Genres" in text:
-                                        location = text.split('Genres')[0]
+                                    if "Citizenship" in text:
+                                        location = text.split('Citizenship')[0]
                                     else:
-                                        if "Occupation" in text:
-                                            location = text.split('Occupation')[0]
+                                        if "Genres" in text:
+                                            location = text.split('Genres')[0]
                                         else:
-                                            location = np.nan
+                                            if "Occupation" in text:
+                                                location = text.split('Occupation')[0]
+                                            else:
+                                                location = np.nan
                         except:  
                             location = np.nan
                     count+=1
