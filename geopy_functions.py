@@ -16,8 +16,26 @@ from my_functions import *
 
 
 def get_origins_wikipedia(df, start_index, final_index):
-    df = pd.read_csv('Datasets/df_rock_ratings.csv')
-    artists = df['artist'].unique()
+    df_masters_blended = pd.read_csv('Datasets/df_masters_blended.csv')
+    artists_blend = df_masters_blended['artist'].unique()
+
+    df_artists_origins = pd.read_csv('Datasets/df_artists_origins.csv')
+    artists = df_artists_origins['artist'].unique()
+    artists_usa = []
+
+    artists_to_remove = ['Cemetery Skyline', 'Goat', 'Kingcrow', 'Speed', 'Hyperdontia', 'Vredehammer', 'Weston Super Maim',
+                    'Mdou Moctar', 'AVRALIZE', 'Engulfed', 'Coffin Storm', 'samlrc', 'Little Kid', 'Termina', 'Rorcal',
+                    'Reverence To Paroxysm', 'Voyager', 'Blindfolded and Led to the Woods', 'Mork', 'Yeule', 'Pond',
+                    'Empire State Bastard', 'Blood Command', 'Avatar', 'Brutus', 'Faceless Burial', 'Within Destruction',
+                    'Sedimentum', 'Ataraxy', 'Corpsessed', 'Epitaphe', 'Aldous Harding', 'Messa', 'Ghost', 'Ecchymosis',
+                    'Wormrot', 'Vertebra Atlantis', 'Papangu', 'Sermon of Flames', 'Springtime', 'Monolord', 'Sulphurous',
+                    'LLNN', 'Trna', 'Slaughter To Prevail', 'sonhos tomam conta', 'Galvanizer', 'Ophidian I', 'Diabolizer',
+                    'Morbific', 'Defacement', 'Divide And Dissolve', 'Soen', 'Scorpions', 'Accept', 'Respire', 'Undergang',
+                    'Bearings', 'Scalp', 'Miasmatic Necrosis', 'Teenage Mutant Ninja Turtles']
+
+    for artist in artists_blend:
+        if artist not in df_artists_origins['artist'].values and artist not in artists_to_remove:
+            artists_usa.append(artist)
 
     try:
     # import the DataFrame with the locations whose coordinates I already have
@@ -31,7 +49,7 @@ def get_origins_wikipedia(df, start_index, final_index):
     count=0
     scraped=0
 
-    for index in artists[start_index:final_index]:
+    for index in artists_usa[start_index:final_index]:
 
         name_changed = index.replace(' ', '_')
         name_changed_band = name_changed + ('_(band)')
@@ -95,11 +113,11 @@ def get_origins_wikipedia(df, start_index, final_index):
                                     if "Citizenship" in text:
                                         location = text.split('Citizenship')[0]
                                     else:
-                                        if "Genres" in text:
-                                            location = text.split('Genres')[0]
+                                        if "Occupation" in text:
+                                            location = text.split('Occupation')[0]
                                         else:
-                                            if "Occupation" in text:
-                                                location = text.split('Occupation')[0]
+                                            if "Genres" in text:
+                                                location = text.split('Genres')[0]
                                             else:
                                                 location = np.nan
                         except:  
@@ -150,11 +168,11 @@ def get_origins_wikipedia(df, start_index, final_index):
                                     if "Citizenship" in text:
                                         location = text.split('Citizenship')[0]
                                     else:
-                                        if "Genres" in text:
-                                            location = text.split('Genres')[0]
+                                        if "Occupation" in text:
+                                            location = text.split('Occupation')[0]
                                         else:
-                                            if "Occupation" in text:
-                                                location = text.split('Occupation')[0]
+                                            if "Genres" in text:
+                                                location = text.split('Genres')[0]
                                             else:
                                                 location = np.nan
                             except:  
@@ -205,11 +223,11 @@ def get_origins_wikipedia(df, start_index, final_index):
                                         if "Citizenship" in text:
                                             location = text.split('Citizenship')[0]
                                         else:
-                                            if "Genres" in text:
-                                                location = text.split('Genres')[0]
+                                            if "Occupation" in text:
+                                                location = text.split('Occupation')[0]
                                             else:
-                                                if "Occupation" in text:
-                                                    location = text.split('Occupation')[0]
+                                                if "Genres" in text:
+                                                    location = text.split('Genres')[0]
                                                 else:
                                                     location = np.nan
                                 except:  
