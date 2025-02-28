@@ -4484,8 +4484,8 @@ album_id,artist,title,rating,votes
 7194,McFly,Wonderland,3.43,34
 7195,Rory Gallagher,Photo-Finish,4.32,57
 7196,Rory Gallagher,Fresh Evidence,3.6,24
-7197,Embrace,The Good Will Out,3.56,24
-7198,Embrace,Out Of Nothing,3.39,27
+7197,Embrace (UK),The Good Will Out,3.56,24
+7198,Embrace (UK),Out Of Nothing,3.39,27
 7200,Anathallo,Floating World,3.82,121
 7201,Ashlee Simpson,Autobiography,2.33,116
 7202,The Academy Is...,From The Carpet,3.19,44
@@ -8648,7 +8648,7 @@ album_id,artist,title,rating,votes
 14570,3rd Strike,Lost Angel,3.25,36
 14572,Tindersticks,Curtains,4.02,75
 14573,Amon Amarth,The Avenger,3.44,512
-14575,Embrace,Embrace,3.99,309
+14575,Embrace (US),Embrace,3.99,309
 14576,Bruce Springsteen,The Ghost Of Tom Joad,3.19,200
 14579,Michael Jackson,Blood On The Dancefloor: HIStory In The Mix,3.16,98
 14581,Shakira,¿Dónde Están los Ladrones?,3.84,97
@@ -33769,7 +33769,7 @@ album_id,artist,title,rating,votes
 132532,Amarionette [US],Amarionette,3.63,42
 132552,Miracle Musical,Hawaii: Part II,3.96,45
 132566,J. Cole,Born Sinner,3.14,368
-132574,Attila,Attila,2.75,20
+132574,Attila (NY),Attila,2.75,20
 132586,Hands Like Houses,Unimagine,3.8,515
 132596,SECRETS,Fragile Figures,3.44,208
 132608,A Certain Ratio,Sextet,3.54,24

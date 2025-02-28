@@ -4,6 +4,7 @@ def check_duplicates_origins(df):
     else: 
         duplicates = df['origin'].duplicated().sum()
         print(f'Found {duplicates} duplicates:')
+        print(f'{df[df['origin'].duplicated()][['city', 'country']]}\n')
 
         df.drop_duplicates(subset=['origin'], inplace=True)
         df.reset_index(drop=True, inplace=True)
@@ -27,7 +28,6 @@ def check_duplicates(df):
     else: 
         duplicates = df.duplicated().sum()
         print(f'Found {duplicates} duplicates:')
-        print(f'{df[df.duplicated()]}\n')
 
         df.drop_duplicates(inplace=True)
         df.reset_index(drop=True, inplace=True)
