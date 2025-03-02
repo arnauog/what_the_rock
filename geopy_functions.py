@@ -16,12 +16,12 @@ from my_functions import *
 
 
 def get_origins_wikipedia(df, start_index, final_index):
-    df_masters_blended = pd.read_csv('Datasets/df_masters_blended.csv')
-    artists_blend = df_masters_blended['artist'].unique()
+    df_us_new_masters_clean = pd.read_csv('Datasets/df_us_new_masters_clean.csv')
+    artists_blend = df_us_new_masters_clean['artist'].unique()
 
     df_artists_origins = pd.read_csv('Datasets/df_artists_origins.csv')
     artists = df_artists_origins['artist'].unique()
-    artists_usa = []
+    artists_to_do = []
 
     artists_to_remove = ['Cemetery Skyline', 'Goat', 'Kingcrow', 'Speed', 'Hyperdontia', 'Vredehammer', 'Weston Super Maim',
                     'Mdou Moctar', 'AVRALIZE', 'Engulfed', 'Coffin Storm', 'samlrc', 'Little Kid', 'Termina', 'Rorcal',
@@ -65,11 +65,13 @@ def get_origins_wikipedia(df, start_index, final_index):
                      'Lords of Acid', 'Devin Townsend', 'Diablo Swing Orchestra', 'Arcturus', 'Cornelius', 'Manu Chao',
                      'Bryan Adams', 'Peaches', 'Doro', 'Kingdom Come', 'Pekka Pohjola', 'Shakira', 'Massacre', 'Subhumans',
                      'Set Fire to Flames', 'Gorgoroth', 'Gandalf', 'Klaus Schulze', 'The Ecstasy of Saint Theresa',
-                     "Lou Reed and John Cale", 'Brian Eno and David Byrne', 'Bob Dylan and The Band', 'Era', 'Devil Doll']
+                     "Lou Reed and John Cale", 'Brian Eno and David Byrne', 'Bob Dylan and The Band', 'Era', 'Devil Doll',
+                     'Cauterize', 'Roadrunner United', 'Circus Maximus', 'Crowpath', 'Raunchy', 'Tad Morose', 'Kenna',
+                     'Head Control System', 'Torchbearer', 'Rosesdead', 'Angtoria', 'Nightrage']
 
     for artist in artists_blend:
         if artist not in df_artists_origins['artist'].values and artist not in artists_to_remove:
-            artists_usa.append(artist)
+            artists_to_do.append(artist)
 
     try:
     # import the DataFrame with the locations whose coordinates I already have
@@ -83,7 +85,7 @@ def get_origins_wikipedia(df, start_index, final_index):
     count=0
     scraped=0
 
-    for index in artists_usa[start_index:final_index]:
+    for index in artists_to_do[start_index:final_index]:
 
         name_changed = index.replace(' ', '_')
         name_changed_band = name_changed + ('_(band)')
