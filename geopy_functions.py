@@ -17,7 +17,7 @@ from my_functions import *
 
 def get_origins_wikipedia(df, start_index, final_index):
     df_us_new_masters_clean = pd.read_csv('Datasets/df_us_new_masters_clean.csv')
-    artists_blend = df_us_new_masters_clean['artist'].unique()
+    unique_artists = df_us_new_masters_clean['artist'].unique()
 
     df_artists_origins = pd.read_csv('Datasets/df_artists_origins.csv')
     artists = df_artists_origins['artist'].unique()
@@ -67,9 +67,18 @@ def get_origins_wikipedia(df, start_index, final_index):
                      'Set Fire to Flames', 'Gorgoroth', 'Gandalf', 'Klaus Schulze', 'The Ecstasy of Saint Theresa',
                      "Lou Reed and John Cale", 'Brian Eno and David Byrne', 'Bob Dylan and The Band', 'Era', 'Devil Doll',
                      'Cauterize', 'Roadrunner United', 'Circus Maximus', 'Crowpath', 'Raunchy', 'Tad Morose', 'Kenna',
-                     'Head Control System', 'Torchbearer', 'Rosesdead', 'Angtoria', 'Nightrage']
+                     'Head Control System', 'Torchbearer', 'Rosesdead', 'Angtoria', 'Nightrage', 'Necros Christos', 'Hypnos 69',
+                     'Wold', 'Andromeda', 'Chad VanGaalen', 'Melechesh', 'Spheric Universe Experience', 'Anubis Gate',
+                     'The Project Hate MCMXCIX', 'Myrath', 'Savage Circus', 'Hartfield', 'Evereve', 'Daturah', 'Ad Infinitum',
+                     'Tash Sultana', 'Tarja Turunen', 'Ram-Zet', 'Sweven', 'Arcane', 'Sons of Apollo', 'Celesty', 'Brainstorm',
+                     'Unleash The Archers', 'Prostitute Disfigurement', 'The Psyke Project', 'Dornenreich', 'Watain', 'Funeral',
+                     'Cultes Des Ghoules', 'Revolting', 'Igorrr', 'Symfonia', 'Darkestrah', 'Sarah Blasko', 'Fractal Universe',
+                     'The End', 'Apotheosis', 'Drautran', 'Monolithe', 'CrazyEightyEight', 'Black Hole', 'Polaris', 'Nug',
+                     'Klabautamann', 'James LaBrie', 'Vance Joy', 'Helena Deland', 'Authorize', 'Blazon Stone', 'Rapture',
+                     'Worship', 'Conqueror', 'Swan Lake', 'Yyrkoon', 'Inquisition', 'Kerli', 'Keldian', 'Wake', 'Megiddo',
+                     'Juanes', 'William Hung', 'Votum', 'Atramentus', 'Abysmal Torment', 'Paul Dempsey']
 
-    for artist in artists_blend:
+    for artist in unique_artists:
         if artist not in df_artists_origins['artist'].values and artist not in artists_to_remove:
             artists_to_do.append(artist)
 
