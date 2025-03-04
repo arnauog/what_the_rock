@@ -20449,7 +20449,7 @@
             <max>90</max>
           </filter>
           <filter class='categorical' column='[federated.0v0ew8a1h13ruu1401e2x123w17e].[none:style:nk]'>
-            <groupfilter function='member' level='[none:style:nk]' member='&quot;Prog Rock&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:style:nk]' member='&quot;Rock &amp; Roll&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='quantitative' column='[federated.0v0ew8a1h13ruu1401e2x123w17e].[none:year:qk]' included-values='in-range'>
             <min>1960</min>

@@ -17,7 +17,7 @@ from my_functions import *
 
 def get_origins_wikipedia(df, start_index, final_index):
     df_us_new_masters_clean = pd.read_csv('Datasets/df_us_new_masters_clean.csv')
-    unique_artists = df_us_new_masters_clean['artist'].unique()
+    unique_artists = df_us_new_masters_clean[df_us_new_masters_clean['year']<2011]['artist'].unique()
 
     df_artists_origins = pd.read_csv('Datasets/df_artists_origins.csv')
     artists = df_artists_origins['artist'].unique()
@@ -76,10 +76,20 @@ def get_origins_wikipedia(df, start_index, final_index):
                      'The End', 'Apotheosis', 'Drautran', 'Monolithe', 'CrazyEightyEight', 'Black Hole', 'Polaris', 'Nug',
                      'Klabautamann', 'James LaBrie', 'Vance Joy', 'Helena Deland', 'Authorize', 'Blazon Stone', 'Rapture',
                      'Worship', 'Conqueror', 'Swan Lake', 'Yyrkoon', 'Inquisition', 'Kerli', 'Keldian', 'Wake', 'Megiddo',
-                     'Juanes', 'William Hung', 'Votum', 'Atramentus', 'Abysmal Torment', 'Paul Dempsey']
+                     'Juanes', 'William Hung', 'Votum', 'Atramentus', 'Abysmal Torment', 'Paul Dempsey', 'Cytotoxin',
+                     'Vulture Industries', 'Entrails', 'Jorn', 'Conception', 'Centaurus-A', 'Gezan', 'Blood Tsunami',
+                     'Machinemade God', 'Proscription', 'Ragnarok', 'Zeromancer', 'Satariel', 'Circle of Ouroborus', 'Emeth',
+                     'Before The Dawn', 'Near Death Condition', 'Ignivomous', 'MEANS', 'Svart Crown', 'Alan Sorrenti', 'Chthonic',
+                     'Blues Pills', 'Majestica', 'Bedsore', 'Ravencult', 'William Shatner', 'Cheval De Frise', 'Emptiness',
+                     'WHOURKR', 'Jet Black Stare', 'Despondency', 'October Falls', 'Istapp', 'Slumber', 'Night in Gales',
+                     'Ov HELL', 'Aficionado', 'Old Silver Key', 'Junior Battles', 'Adversarial', 'Shugo Tokumaru', 'North',
+                     'Fuck on the Beach', 'Anoice', 'Viscera', 'Two Tongues', 'The Last Felony', 'Revenge', 'The Secret',
+                     'Cosmic Putrefaction', 'Miseration', 'Azusa', 'Stalaggh', 'Cerebral Effusion', 'Nekromantheon', 'Blasphemer',
+                     'Pyaemia', 'Inveracity', 'Orchidectomy', 'Kraanium', 'Human Mincer', 'Deformity', 'Kaospilot',
+                     'Abominable Putridity', 'Iskra', 'Das Oath', 'Torsofuck', 'Internal Suffering']
 
     for artist in unique_artists:
-        if artist not in df_artists_origins['artist'].values and artist not in artists_to_remove:
+        if artist not in artists and artist not in artists_to_remove:
             artists_to_do.append(artist)
 
     try:
