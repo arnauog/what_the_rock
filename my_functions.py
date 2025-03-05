@@ -1,3 +1,8 @@
+import pandas as pd
+import numpy as np
+import requests
+from bs4 import BeautifulSoup
+
 def check_duplicates_origins(df):
     if df['origin'].duplicated().sum() == 0:
         print('No duplicates')
@@ -74,6 +79,7 @@ def delete_non_uk_artists(df):
     df.dropna(subset=['artist'], inplace=True)
     print(f"Final artists: {df['artist'].nunique()}")
 
+
 def columns_show_ratings(df):
     # I want to see the year next to the album title, and I don't care much about the ids
     list_of_columns = ['album_id', 'artist', 'title', 'year', 'rating', 'votes', 'album_length', 'tracks', 'release_country',
@@ -81,12 +87,65 @@ def columns_show_ratings(df):
     df = df[list_of_columns]
     return df
 
+
 def columns_hide_ratings(df):
     # columns like df_masters, they have to be the same in order for the next merge to properly work
     list_of_columns = ['artist_id', 'master_id', 'main_release_id', 'release_country', 'artist', 'title', 'year',
                        'album_length', 'tracks', 'release_type', 'genres', 'styles', 'artist_profile']
     df = df[list_of_columns]
     return df
+
+
+def get_length_wikipedia(df, start_index, final_index):
+    # df = pd.read_csv('Datasets/df_length_to_do.csv')
+
+    artists_list = []
+    titles_list = []
+    lengths_list = []
+    count=0
+    scraped=0
+
+    for artist, title in df[['artist', 'title']].iloc[start_index:final_index].values:
+        title_changed = title.replace(' ', '_')
+        title_band = title_changed + ('_(album)')
+        count+=1
+        artists_list.append(artist)  
+        titles_list.append(title)
+        
+        try:
+            url = f"https://en.wikipedia.org/wiki/{title_changed}"
+            response = requests.get(url).content
+            soup = BeautifulSoup(response, "html.parser")
+
+            table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
+            length = table[0].text.split('Length')[1].split('Label')[0]
+            
+        # save info in lists
+            lengths_list.append(length)
+            scraped+=1
+
+        except:
+            try:
+                url = f"https://en.wikipedia.org/wiki/{title_band}"
+                response = requests.get(url).content
+                soup = BeautifulSoup(response, "html.parser")
+
+                table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
+                length = table[0].text.split('Length')[1].split('Label')[0]
+
+            # save info in lists
+                lengths_list.append(length)
+                scraped+=1
+            except:
+                lengths_list.append(np.nan)
+
+        print(f'{scraped}/{count}: {artist} - {title}')
+
+    df_lengths_wikipedia = pd.DataFrame({'artist': artists_list
+                                         , 'title': titles_list
+                                         , 'album_length': lengths_list})
+    return df_lengths_wikipedia
+
 
 def show_album_cover(query):
     import requests 
@@ -106,6 +165,7 @@ def show_album_cover(query):
     data = response.json()['results']
     album_cover = data[0]['cover_image']
     return album_cover
+
 
 def display_top_albums(df, style):
     import streamlit as st
@@ -140,7 +200,60 @@ def display_top_albums(df, style):
         query = artist + ' ' + album
 
         return artist, album, query
+    
 
+def spoti_open(song_name):
+    from dotenv import load_dotenv
+    import os
+    import spotipy
+    from spotipy.oauth2 import SpotifyClientCredentials
+
+    import time
+    import webbrowser
+
+    load_dotenv()
+    user = os.getenv('client_id')
+    password = os.getenv('client_secret')
+
+    #Initialize SpotiPy with user credentials
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = user,
+                                                            client_secret = password))
+    
+    opensong = sp.search(q=song_name, limit=1)
+    browser = opensong['tracks']['items'][0]['external_urls']['spotify']
+    time.sleep(2)
+    webbrowser.open(browser)
+
+
+def create_folium_map(df, country, subgenre):
+    import folium
+    from folium import Map
+    from folium.plugins import HeatMap
+
+    df = pd.read_csv('Datasets/df_country.csv')
+
+    uk_lat = 53.909290891215214
+    uk_lon = -2.1608240239505117 
+    us_lat = 38.09612098863635 
+    us_lon = -96.48185032372986 
+
+    maps = {f"United Kingdom": Map(location=[uk_lat, uk_lon], zoom_start=6),  # Example coordinates
+            "United States": Map(location=[us_lat, us_lon], zoom_start=5)}
+
+    # Select the correct DataFrame
+    df = df[df['country']==country]
+    
+    # create the subset of the subgenre
+    subset_df = df[df['subgenre'] == subgenre]
+
+    # create the FeatureGroup
+    subset_df_group = folium.FeatureGroup(name = f'{subgenre}: {subset_df.shape[0]}') 
+
+    # the subset is the subgenre and we i només ens interessen 2 columnes: les coordenades
+    HeatMap(data = subset_df[['latitude', 'longitude']]).add_to(subset_df_group) 
+
+    # Add the FeatureGroup to the correct map
+    maps[country].add_child(subset_df_group)
 
 
     

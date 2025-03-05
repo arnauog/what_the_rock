@@ -99,9 +99,13 @@ In the beggining I had models from 24 brands, and I ended up with only **48 mode
 
 I started with 18.636 vehicles and finished with 17.686, meaning I dropped almost a thousand vehicles, which either they were cars or I couldn't find them again on the website.
 
-## ``consumption``
+## ``album_length``
 
-I find there is a '--' value and many outliers that are wrong, so I change them manually looking for vans of the same characteristics. Let's take a look at the boxplot before and after:
+About 2% of the albums didn't have any info of the ``album_length``, so went to get it somewhere else.
+
+First I started with **Spotipy**, the Spotify API, which got me quite good results, but not perfect, they were 2 issues:
+- It couldn't find the length in 25% of the cases
+- When it could find the length, it was another version (expanded, extended, anniversary, etc) longer than the original, so I ended up with a bunch of albums with a lot of songs and long runtimes.
 
 ![](images/08-consumption-boxplot-before.png)
 ![](images/08-consumption-boxplot-after.png)
