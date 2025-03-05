@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import requests
 from bs4 import BeautifulSoup
+import time
 
 def check_duplicates_origins(df):
     if df['origin'].duplicated().sum() == 0:
@@ -96,9 +97,54 @@ def columns_hide_ratings(df):
     return df
 
 
-def get_length_wikipedia(df, start_index, final_index):
-    # df = pd.read_csv('Datasets/df_length_to_do.csv')
+def get_styles(df):
+    most_common_styles = []
+    count = 0
 
+    for master_id in df['master_id'].values:
+        time.sleep(1)
+        count+=1
+        url = "https://api.discogs.com/database/search"
+        headers = {"User-Agent": 'Arnau', "Authorization": "Discogs token=UwfqmsztxwnfABgQpmhaAsprbUgpOJKGOJSQAqfp"}
+
+        # Define parameters for artist search
+        params = {
+            "per_page": 100   # Number of results per page (max 100)
+            , 'type': 'release'
+            , 'format': 'album'
+            , 'genre': 'Rock'
+            , 'master_id': master_id
+        }
+
+        response = requests.get(url, headers=headers, params=params)
+        data = response.json()
+
+        # create an empty list
+        styles_list = []
+
+        # iterate over all the releases
+        for i in range(len(data['results'])):
+            style = data['results'][i]['style'] # get the style(s)
+            if style: 
+                styles_list.append(style)
+            else:
+                styles_list.append(np.nan)
+
+        try:
+            most_common_style = pd.Series(styles_list).value_counts().idxmax()
+            print(f"{count} - {most_common_style}")
+        except:
+            print(f'{count} - No styles found')
+            most_common_style = np.nan
+
+        most_common_styles.append(most_common_style)
+    
+    df_styles_found = pd.DataFrame({'master_id': df['master_id'].values,
+                                    'styles': most_common_styles})
+    return df_styles_found
+
+
+def get_length_wikipedia(df, start_index, final_index):
     artists_list = []
     titles_list = []
     lengths_list = []
@@ -119,9 +165,11 @@ def get_length_wikipedia(df, start_index, final_index):
 
             table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
             length = table[0].text.split('Length')[1].split('Label')[0]
-            
+            minutes, seconds = map(int, length.split(':'))
+            duration_minutes = round(minutes + seconds/60, 2)
+
         # save info in lists
-            lengths_list.append(length)
+            lengths_list.append(duration_minutes)
             scraped+=1
 
         except:
@@ -132,18 +180,21 @@ def get_length_wikipedia(df, start_index, final_index):
 
                 table = soup.select('#mw-content-text > div.mw-content-ltr.mw-parser-output > table.infobox')
                 length = table[0].text.split('Length')[1].split('Label')[0]
+                minutes, seconds = map(int, length.split(':'))
+                duration_minutes = round(minutes + seconds/60, 2)
 
             # save info in lists
-                lengths_list.append(length)
+                lengths_list.append(duration_minutes)
                 scraped+=1
+
             except:
                 lengths_list.append(np.nan)
 
         print(f'{scraped}/{count}: {artist} - {title}')
 
     df_lengths_wikipedia = pd.DataFrame({'artist': artists_list
-                                         , 'title': titles_list
-                                         , 'album_length': lengths_list})
+                                            , 'title': titles_list
+                                            , 'album_length': lengths_list})
     return df_lengths_wikipedia
 
 

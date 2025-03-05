@@ -36,13 +36,13 @@ The **features** I wanted to get were:
 
 Each release relates to a **``master_id``**, where I got the main data from. For every year I got I saved the data in a dataframe, so I would not lose the data if for some reason the code had crashed in the middle of a year, and to check if I had gotten that album already or not (checking the ``master_id``). This was extremely important in the end, when I was getting only about 25% of the albums I was checking on the API.
 
-I finished getting data from all the rock releases in the UK from 1960 in about a week, and I realized most of the releases were from bands from the US, so I decided to get US releases as well.
+I finished getting data from all the rock releases in the UK from 1960 in about a week, and I realized most of the releases were from bands from the US, so I decided to get **United States** releases as well.
 
 ### **API limitations**:
 
 There's a limit of 100 results per page and 100 pages, meaning 10.000 total releases. In the USA, from 1995 there were more than 10.000 releases from each year, so I decided to iterate over ``styles`` as well, which meant 2 things:
 - The code took much longer, because I was checking the same album for all the different styles. It is quite common that an album had different styles.
-- I could not get all the possible styles, there were too many, so at that point (I had gotten all releases from the UK and US releases from 1960 until 1994), I analyzed the most common styles, and kept only the most important ones, dropping styles like *experimental, acoustic, indie pop, lo-fi, jazz-rock, industrial, avantgarde*, etc.
+- I could not get all the possible styles, there were too many, so at that point (I had gotten all releases from the UK and US releases from 1960 until 1994), I analyzed the most common styles, from the years I had scraped and from a sample year of USA releases, in this case 2002, and **kept only the most important ones**, dropping styles like *experimental, acoustic, indie pop, lo-fi, jazz-rock, industrial, avantgarde*, etc.
 
 ![](images/Top_styles_2002_USA.png)
 
@@ -68,47 +68,20 @@ Whenever I finished one round of scraping, I saved the info into a df, which the
 I decided to scrape vans with more than 10.000km to put a limit, and I ended up with 21.738 vans. 
 
 # **Data Cleaning**
-Like I said before, from the date I could get the year, and then the ``age``, the variable which I'm really interested in.
 
-I had only 7 nulls of ``power_cv`` and 2828 nulls of ``consumption``, which represent 13% of the dataset.
-
-### ``title``
-![](images/02-original-title.png)
-
-From the title I got the ``brand`` and ``model`` by assuming that in all the ads the first word is the brand and the second one is the model. In most of the cases it's like this, but not in all of them, so I had to check brand by brand the different models. 
-
-Here's an example of the different models in the beginning and after the clean-up.
-
-**Before**: 
-
-![](images/03-different-models-wrong.png)
-
-**After**: 
-
-![](images/03-different-models-cleaned.png)
-
-The worst brand was **Ford**, because in most of the cases the model is not determined by the second word of the title. The most common second words were Transit and Tourneo, but both of these can vary in sizes (weither if it's Connect, Custom, etc.), therefore exisiting many different models. For the sake of simplicity, and because later I want to group again the models by size, I set 3 different models of Ford depending on the size: Transit, Custom and Connect.
-
-Here is a picture with 4 different models, the 2 on the left being considered the same model, since they are roughly the same size.
-
-![](images/Ford-van-sizes.jpeg)
-
-I drop 4 brands that only had one model each and less than 4 vehicles per brand, not representative, I prefer simplifying the dataset, and also models with 6 or less vans.
-
-In the beggining I had models from 24 brands, and I ended up with only **48 models from 12 brands.**
-
-I started with 18.636 vehicles and finished with 17.686, meaning I dropped almost a thousand vehicles, which either they were cars or I couldn't find them again on the website.
 
 ## ``album_length``
 
-About 2% of the albums didn't have any info of the ``album_length``, so went to get it somewhere else.
+About 2% of the albums didn't have any info of the ``album_length``, so I went to get it somewhere else.
 
-First I started with **Spotipy**, the Spotify API, which got me quite good results, but not perfect, they were 2 issues:
+First I started with **Spotipy**, the Spotify API, which apparently got me quite good results, but when I looked closer, there were 2 issues:
 - It couldn't find the length in 25% of the cases
-- When it could find the length, it was another version (expanded, extended, anniversary, etc) longer than the original, so I ended up with a bunch of albums with a lot of songs and long runtimes.
+- Even when it found the length, sometimes it was another version (expanded, extended, anniversary, etc) longer than the original, so I ended up with a bunch of albums with a lot of songs and long runtimes.
 
-![](images/08-consumption-boxplot-before.png)
-![](images/08-consumption-boxplot-after.png)
+![](images/spotipy_boxplot_album_length.png)
+![](images/spotipy_boxplot_tracks.png)
+
+- Then I decided to check again on the **Discogs API**. It couldn't find the album length on the master release page, but there were several releases of every album, so I created a function to search for the ``artist`` and ``title``, and get the album length of the first 5 releases, which turned out to be quite effective.
 
 ## ``seats``
 
