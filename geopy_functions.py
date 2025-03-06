@@ -16,8 +16,8 @@ from my_functions import *
 
 
 def get_origins_wikipedia(df, start_index, final_index):
-    df_us_new_masters_clean = pd.read_csv('Datasets/df_us_new_masters_clean.csv')
-    unique_artists = df_us_new_masters_clean[df_us_new_masters_clean['year']<2011]['artist'].unique()
+    df_final = pd.read_csv('Datasets/df_final.csv')
+    unique_artists = df_final[df_final['year']<2011]['artist'].unique()
 
     df_artists_origins = pd.read_csv('Datasets/df_artists_origins.csv')
     artists = df_artists_origins['artist'].unique()

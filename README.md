@@ -51,37 +51,53 @@ In the end, getting the US releases for a year between 2000 and 2010 took about 
 Getting more data, of course, meant more time (days) cleaning, which I didn't really have if I wanted to have enough time to properly analyze it. 
 
 ### **Actual code**
-I had more challenges than what I expected, because the information was not perfectly structured, like the title was in two different formats.
 
-Like I said, some information was missing, like the horsepower and the consumption, so I appended a NaN everytime it couldn't find it. 
 
-Filtering for vans with only the rear right door, I had around 29.000 vans. Inside the specific van advertisement, I could change to the next van, so theorically I could run the code only once to scrape all 29.000 vans, but the reality was that when it reached the van number 2.000, it couldn't find the next button, so I had to run the code again.
-
-![](images/01-next-button-not-found-2000.png)
-
-I scrapped the vans in descending number of km, so I could track if it was trying to scrape a van already in my df, and I made it stop scraping it this happened so I wouldn't waste time, if accidentaly it had changed to a previous page, and also I knew from which van to continue just calculating the ``df.km.min()``
-
-I compared if the van I was trying to scrape was already in df, and I skipped it in these cases, which happened quite often.
-
-Whenever I finished one round of scraping, I saved the info into a df, which then I concatenated with the previous df that contained all the vans I had scrapped previously. 
-
-I decided to scrape vans with more than 10.000km to put a limit, and I ended up with 21.738 vans. 
 
 # **Data Cleaning**
 
 
 ## ``album_length``
 
-About 2% of the albums didn't have any info of the ``album_length``, so I went to get it somewhere else.
+From around 20% of the albums didn't have any info of the ``album_length``, so I went to get it somewhere else. I gotta admit it was way longer and difficult than what I expected.
+
+![](images/album_length_0_percentage.jpg)
 
 First I started with **Spotipy**, the Spotify API, which apparently got me quite good results, but when I looked closer, there were 2 issues:
-- It couldn't find the length in 25% of the cases
+- It couldn't find the length from all the albums
+
+![](images/spotipy_special_editions.jpg)
+
 - Even when it found the length, sometimes it was another version (expanded, extended, anniversary, etc) longer than the original, so I ended up with a bunch of albums with a lot of songs and long runtimes.
 
 ![](images/spotipy_boxplot_album_length.png)
 ![](images/spotipy_boxplot_tracks.png)
 
-- Then I decided to check again on the **Discogs API**. It couldn't find the album length on the master release page, but there were several releases of every album, so I created a function to search for the ``artist`` and ``title``, and get the album length of the first 5 releases, which turned out to be quite effective.
+- So I decided to scrap the length from **Wikipedia**, which turned out to be quite easy to code, quite effective and very fast.
+
+![](images/get_length_wikipedia_code.jpg)
+
+- With the albums I couldn't scrape from Wikipedia, I decided to check again on the **Discogs API**. It couldn't find the album length on the master release page, but there were several releases of every album, so I created a function to search for the ``artist`` and ``title``, and get the album length of the first 5 releases, which turned out to be quite effective.
+
+Out of the 3 methods, maybe Wikipedia was the best, because it was easy to code, very fast and **doesn't have any limitation**, unlike the APIs from Discogs or Spotify. From the last one I got banned twice for a period of almost a full day.
+
+There were around 80 albums it couldn't find the length in neither of these places, so I had to look them up manually. 
+
+I did many merges and concats until finally get my dataset with info of the ``album_length`` of all the albums.
+
+![](images/long_album_length.jpg)
+
+Still, there were many that were super long, like 2h. In some cases this was the actual length, but in others not, in some cases it was compilations, live albums, just wrong length, etc. I only check some, like the longest 50, because it's a process I could do for like days and I wanted to have enough time to analyze the data.
+
+Finally, I decided to check the most prolific artists and see if I detected live albums and compilations, which I did.
+
+![](images/live_albums.jpg)
+
+I also detected that some albums were missing, and I found out it's because the titles were slightly different both dataframes (from Discogs and from SputnikMusic), like *Honky Château* vs *Honky Chateau*, so I decided to add these albums manually.
+
+One particular case was ***Grateful Dead***, which appearead as *The Grateful Dead* in Discogs, glad I was looking for prolific artists.
+
+![](images/grateful_dead.jpg)
 
 ## ``seats``
 

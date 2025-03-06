@@ -4,6 +4,19 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+# Spotipy
+from dotenv import load_dotenv
+import os
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
+user = os.getenv('client_id')
+password = os.getenv('client_secret')
+
+# Initialize Spotipy with user credentials
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = user,
+                                                           client_secret = password), requests_timeout=10)
+
 def check_duplicates_origins(df):
     if df['origin'].duplicated().sum() == 0:
         print('No duplicates')
@@ -196,6 +209,244 @@ def get_length_wikipedia(df, start_index, final_index):
                                             , 'title': titles_list
                                             , 'album_length': lengths_list})
     return df_lengths_wikipedia
+
+
+def get_lengths_discogs(df):
+    # create empty lists
+    master_id_list = []
+    artists_list = []
+    titles_list = []
+    lengths_list = []
+    count = 0
+    scraped = 0
+
+    # Function to calculate album length from tracklist durations
+    def get_album_length(tracklist):
+        song_durations = []
+        for track in tracklist:
+            try:
+                song_duration = track['duration']
+                minutes, seconds = map(int, song_duration.split(':'))
+                song_duration_minutes = minutes + seconds / 60
+                song_durations.append(song_duration_minutes)
+            except Exception as e:
+                pass
+        return round(sum(song_durations), 2)
+
+    for master_id, artist, title in df[['master_id', 'artist', 'title']].values:                         
+        count += 1
+        time.sleep(1)
+        master_id_list.append(master_id)
+        artists_list.append(artist)
+        titles_list.append(title)
+        query = artist + ' ' + title
+
+        # Define API headers
+        headers = {
+            "User-Agent": 'Arnau', 
+            "Authorization": "Discogs token=UwfqmsztxwnfABgQpmhaAsprbUgpOJKGOJSQAqfp"
+        }
+
+        # Set the API URL and params
+        url = "https://api.discogs.com/database/search"
+        params = {
+            "per_page": 100,  # Number of results per page (max 100)
+            'type': 'release',
+            'format': 'album',
+            'genre': 'Rock'
+        }
+
+        # If master_id exists, use it in the params
+        if master_id != 0:
+            params['master_id'] = master_id
+        else:
+            params['query'] = query
+
+        # Request the data from Discogs
+        response = requests.get(url, headers=headers, params=params)
+        data = response.json()
+
+        # Store lengths for the album
+        album_lengths = []
+
+        # Iterate over the first 5 results
+        for i in range(min(5, len(data['results']))):
+            time.sleep(1)
+            release_id = data['results'][i]['id']
+            url2 = f"https://api.discogs.com/releases/{release_id}"
+            response = requests.get(url2, headers=headers)
+            data2 = response.json()
+
+            try:
+                tracklist = data2['tracklist']
+                album_length = get_album_length(tracklist)
+                if album_length > 0:
+                    album_lengths.append(album_length)
+            except KeyError:
+                print(f"Tracklist not found for release {release_id}")
+                continue
+
+        # Choose a length for the album
+        if album_lengths:
+            average_length = round(sum(album_lengths) / len(album_lengths), 2)
+            lengths_list.append(average_length)
+            scraped+=1
+        else:
+            lengths_list.append(0)
+
+        print(f"{scraped}/{count}: {artist} - {title}")
+        
+        # Create a DataFrame with the results
+        df_lengths_found = pd.DataFrame({
+            'master_id': master_id_list,
+            'artist': artists_list,
+            'title': titles_list,
+            'album_length': lengths_list
+        })
+
+    # I decided to export the csv inside the function because of the limitations of the Discogs API,
+    # while trying I some code crashed in the middle, having lost time and data,
+    # so I prefer the code to be slower but have the data exported at every new album scraped. 
+        df_lengths_found.to_csv('Datasets/df_lengths_found_discogs.csv', index=False)
+
+
+def get_all_albums_spotipy(artist_id):
+    albums = []
+    results = sp.artist_albums(artist_id, limit=50)  # First request
+
+    while results:
+        albums.extend(results['items'])  # Store the albums
+        if results['next']:  # Check if there's another page
+            results = sp.next(results)  # Fetch next page
+        else:
+            break  # Stop when no more pages
+
+    return albums
+
+
+def get_album_length_spotipy(df):
+    count = 0
+    scraped = 0
+
+    # create empty lists
+    artists_list = []
+    albums_list = []
+    albums_lengths = []
+    tracks_list = []
+    album_name_list = []
+
+    for artist in df['artist'].unique():
+        time.sleep(1)
+
+        results = sp.search(q = artist
+                            , type = 'artist'
+                            , limit = 5)
+
+        artists = results['artists']['items']
+        artists_ids = results['artists']['items'] # get the artist_id
+
+        for i in range(len(artists)):
+            artist_name = artists[i]['name'].lower()
+            artist_name_and = artist.replace('and', '&').lower()
+            try:
+                # look for my artist
+                if artist_name == artist.lower() or artist_name == artist_name_and:
+                    
+                    # if it finds my artist:
+                    artist_id = artists_ids[i]['id']
+                    artist_albums = get_all_albums_spotipy(artist_id)
+                    
+                    for title in df[df['artist']==artist]['title'].values:
+                        time.sleep(1)
+                        count+=1
+                        title_clean = title.replace('and', '&').lower()
+
+                        for album in artist_albums:
+                            album_name = album['name'].lower()
+                               
+                            if title_clean == album_name:
+                                artists_list.append(artist)
+                                albums_list.append(title)
+                                album_name_list.append(album_name)
+
+                                album_id = album['id']
+                                results = sp.album(album_id)
+                                tracks = results['tracks']['items']
+                                tracks_list.append(len(tracks))
+                                
+                                song_durations = [song['duration_ms']/60000 for song in tracks]
+                                
+                                album_length = round(sum(song_durations), 2)
+                                albums_lengths.append(album_length)
+                                scraped+=1
+
+                            # once it finds the album, stop
+                                print(f"{scraped}/{count}: {artist} - {title}, exact match")
+                                break
+                        else:
+                            for album in artist_albums:
+                                album_name = album['name'].lower()
+
+                                if title_clean in album_name:
+                                    artists_list.append(artist)
+                                    albums_list.append(title)
+                                    album_name_list.append(album_name)
+
+                                    album_id = album['id']
+                                    results = sp.album(album_id)
+                                    tracks = results['tracks']['items']
+                                    tracks_list.append(len(tracks))
+
+                                    song_durations = [song['duration_ms']/60000 for song in tracks]
+                                    
+                                    album_length = round(sum(song_durations), 2)
+                                    albums_lengths.append(album_length)
+                                    scraped+=1
+
+                                # once it finds the album, stop
+                                    print(f"{scraped}/{count}: {artist} - {title}, similar match")
+                                    break
+
+                # when it checks all the albums of that artist, stop    
+                    break
+
+            except:
+                print('error')
+                albums_lengths.append(np.nan)
+                tracks_list.append(np.nan)
+                break
+
+        lists = [artists_list, albums_list, album_name_list, albums_lengths, tracks_list]
+
+    # Check if all lists have the same length
+        lengths = [len(lst) for lst in lists]
+
+        if len(set(lengths)) != 1:
+            print("Lengths are not the same.")
+            break # stop the loop, I won't be able to store the data if I have one value missing
+
+    df_lengths_missing = pd.DataFrame({'artist': artists_list,
+                                    'title': albums_list,
+                                    'name': album_name_list,
+                                    'album_length': albums_lengths,
+                                    'tracks': tracks_list})
+    return df_lengths_missing
+
+
+def calculate_duration(duration):
+    if isinstance(duration, str):  # If it's a string, we are dealing with "mm:ss"
+        # Replace ':' with '.' and split
+        duration = duration.replace(':', '.')
+        minutes, seconds = map(int, duration.split('.'))
+    elif isinstance(duration, float):  # If it's a float, just handle it
+        minutes = int(duration)
+        seconds = int((duration - minutes) * 60)
+    else:
+        raise ValueError("Duration should be a string or a float")
+    
+    # Convert to minutes
+    duration_minutes = minutes + seconds / 60
+    return duration_minutes
 
 
 def show_album_cover(query):
