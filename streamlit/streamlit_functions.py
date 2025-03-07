@@ -1,40 +1,42 @@
 import pandas as pd
 import numpy as np
+import streamlit as st
+import time
+
+def get_style(df, subgenre, col2):
+    style = st.selectbox(':musical_note: **Style**', ['Select a style']+list(df[df['subgenre']==subgenre]['style'].unique()))
+    
+    if style != 'Select a style': 
+        year, artist, album, query, df_style = display_top_albums(df, subgenre, style)
+
+        if st.button('Search'):
+            st.dataframe(df_style)
+            album_cover = show_album_cover(query)
+
+            with col2: 
+                st.image(album_cover, width=400)
+                st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
 
 
-def display_top_albums(df, style):
-    import streamlit as st
-    import time
-    col1, col2 = st.columns([0.6, 0.4])
-    roots_rock = ['Blues Rock', 'Country Rock', 'Folk Rock', 'Rock & Roll', 'Soft Rock', 'Southern Rock']
-
-    if style is not 'All':
-        year = st.number_input(':watch: **Year**', min_value=df[df['style']==style]['year'].min(), max_value=2010, step=1, key="year_input")
+def display_top_albums(df, subgenre, style):
+        year = st.number_input(':watch: **Year**', min_value=df[df['style']==style]['year'].min(), max_value=2010, step=1)
         df_style = df[df['year']==year].query(f"style == '{style}'")[['artist', 'title', 'rating']]\
                         .sort_values('rating', ascending=False)\
                         .head()\
                         .reset_index(drop=True)
         df_style.index = range(1, len(df_style) + 1)
 
-    else:
-        year = st.number_input(':watch: **Year**', min_value=1960, max_value=2010, step=1)
-        df_style = df[df['year']==year].query(f"style.isin({roots_rock})")\
-                    [['artist', 'title', 'rating']]\
-                    .groupby(['artist', 'title']).agg('mean')\
-                    .sort_values('rating', ascending=False)\
-                    .head()\
-                    .reset_index()
-        df_style.index = range(1, len(df_style) + 1)
-
-    # st.write('The top rated albums of that year are:')
-    # if st.button('Search'):
-    #     st.dataframe(df_style)
-
-        artist = df_style.head(1)['artist'].values[0]
-        album = df_style.head(1)['title'].values[0]
-        query = artist + ' ' + album
-
-        return artist, album, query
+        if len(df_style)>0:
+            artist = df_style.head(1)['artist'].values[0]
+            album = df_style.head(1)['title'].values[0]
+            query = artist + ' ' + album
+            return year, artist, album, query, df_style
+        else:
+            st.write('Try another style or year')
+            artist = ''
+            album = ''
+            query = artist + ' ' + album
+            return year, artist, album, query, df_style
 
 
 def show_album_cover(query):

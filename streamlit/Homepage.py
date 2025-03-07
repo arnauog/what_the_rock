@@ -21,16 +21,7 @@ df = pd.read_csv('Datasets/df_test.csv')
 
 st.title(':drum_with_drumsticks: What the Rock? :guitar:')
 st.write("A Rock music anaylsis in the US and UK between 1960 and 2010")
-st.image('photos/rock_concert.jpg')
-
-# # Wordcloud
-# styles = df['style'].values
-# styles_joined = ", ".join(styles)
-# wordcloud = WordCloud(width=1600, height=800, background_color="white").generate(styles_joined)
-# fig, ax = plt.subplots(figsize=(8,4), dpi=300)
-# plt.imshow(wordcloud, interpolation="bilinear")
-# plt.axis("off")
-# st.pyplot(fig)
+# st.image('photos/rock_concert.jpg')
 
 # Wordcloud
 artists = df['artist'].values

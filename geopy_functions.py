@@ -88,7 +88,8 @@ def get_origins_wikipedia(df, start_index, final_index):
                      'Pyaemia', 'Inveracity', 'Orchidectomy', 'Kraanium', 'Human Mincer', 'Deformity', 'Kaospilot',
                      'Abominable Putridity', 'Iskra', 'Das Oath', 'Torsofuck', 'Internal Suffering', 'Nerlich', 'Blasphemophagher',
                      'Head Wound City', 'Inanna', 'Disperse', 'Dishammer', 'Damaar', 'Extortion', 'Starring Janet Leigh',
-                     'The Arcane Order', "D'espairsRay", 'Demians', "Dave Matthews"]
+                     'The Arcane Order', "D'espairsRay", 'Demians', "Dave Matthews", 'Monsters of Folk', 'Shrinebuilder',
+                     'The Joe Perry Project', 'Boygenius', 'Scar the Martyr', 'Gordian Knot', 'Rock Star Supernova']
 
     for artist in unique_artists:
         if artist not in artists and artist not in artists_to_remove:
