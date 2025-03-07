@@ -9,13 +9,15 @@ def get_style(df, subgenre, col2):
     if style != 'Select a style': 
         year, artist, album, query, df_style = display_top_albums(df, subgenre, style)
 
-        if st.button('Search'):
-            st.dataframe(df_style)
-            album_cover = show_album_cover(query)
 
-            with col2: 
-                st.image(album_cover, width=400)
-                st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
+        if query != 'No albums':
+            if st.button('Search'):
+                st.dataframe(df_style)
+                album_cover = show_album_cover(query)
+
+                with col2: 
+                    st.image(album_cover, width=400)
+                    st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
 
 
 def display_top_albums(df, subgenre, style):
@@ -35,7 +37,7 @@ def display_top_albums(df, subgenre, style):
             st.write('Try another style or year')
             artist = ''
             album = ''
-            query = artist + ' ' + album
+            query = 'No albums'
             return year, artist, album, query, df_style
 
 
