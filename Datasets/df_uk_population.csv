@@ -1,292 +1,292 @@
-city,state,population
-London,Greater London,8825001
-Birmingham,West Midlands,1137100
-Newcastle,North East,879996
-Leeds,West Yorkshire,789194
-Glasgow,Alba / Scotland,633120
-Manchester,Greater Manchester,547627
-Sheffield,South Yorkshire,518090
-Liverpool,Liverpool City Region,513441
-Edinburgh,City of Edinburgh,488050
-Bristol,West of England,463400
-Coventry,West Midlands,362690
-Caerdydd,Cymru / Wales,361469
-Belfast,County Antrim,333871
-Leicester,England,329839
-Nottingham,East Midlands,321500
-Southampton,Southampton,269781
-Plymouth,Devon,267918
-Kingston upon Hull,England,260200
-Wolverhampton,West Midlands,250970
-Stoke-on-Trent,Stoke-on-Trent,249008
-Derby,East Midlands,248700
-Abertawe,Cymru / Wales,245508
-Portsmouth,Portsmouth,238800
-Reading,Oxfordshire,230046
-Luton,Luton,213052
-Milton Keynes,City of Milton Keynes,207057
-Islington,England,206125
-Norwich,Norfolk,195971
-Swindon,Wiltshire,192599
-Croydon,England,192064
-Basildon,Essex,185900
-Bournemouth,England,183491
-Ipswich,Suffolk,180000
-Sunderland,North East,174286
-Warrington,Warrington,165456
-Huddersfield,England,162949
-York,York and North Yorkshire,153717
-Oxford,Oxfordshire,152000
-Harrow,Greater London,149246
-Dundee,Alba / Scotland,148270
-Middlesbrough,Tees Valley,140545
-Blackpool,England,139305
-Brighton,England,134293
-Enfield,England,132640
-Tottenham,England,129237
-Bolton,Greater Manchester,128139
-Newport,Newport,128060
-Exeter,Devon,124180
-Solihull,West Midlands,123187
-Romford,England,122854
-Preston,Lancashire,122719
-High Wycombe,Buckinghamshire,120256
-Cheltenham,Gloucestershire,116447
-Colchester,Essex,111921
-Chelmsford,Essex,111511
-Doncaster,South Yorkshire,109805
-Walthamstow,England,109424
-Worthing,West Sussex,109120
-Maidstone,Kent,107627
-Basingstoke,England,107355
-Crawley,West Sussex,106597
-Stockport,Greater Manchester,105878
-Salford,Greater Manchester,103886
-Wigan,Greater Manchester,103608
-Hounslow,England,103337
-Eastbourne,East Sussex,101547
-Worcester,Worcestershire,101328
-Wakefield,West Yorkshire,99251
-Lincoln,Lincolnshire,97541
-Oldham,Greater Manchester,96555
-Hemel Hempstead,England,94932
-Bedford,England,92407
-Barnsley,South Yorkshire,91297
-Southport,England,90381
-Watford,Hertfordshire,90301
-Wembley,England,90045
-Bath,West of England,88859
-Hartlepool,England,88855
-Birkenhead,England,88818
-Grimsby,England,88243
-Halifax,England,88134
-Nuneaton,England,86552
-Derry,Northern Ireland / Tuaisceart Éireann,85016
-Ealing,England,85014
-Saint Albans,Hertfordshire,82146
-Chester,England,79645
-Dudley,West Midlands,79379
-Bury,Greater Manchester,78723
-Brixton,England,78536
-Mansfield,East Midlands,77551
-Paisley,Alba / Scotland,77220
-Guildford,Surrey,77057
-South Shields,England,75337
-Carlisle,Cumberland,75306
-East Kilbride,Alba / Scotland,75120
-Harrogate,England,73576
-Burnley,Lancashire,73021
-Burton upon Trent,England,72299
-Lisburn,Northern Ireland / Tuaisceart Éireann,71465
-Lowestoft,Suffolk,70945
-Rugby,Warwickshire,70627
-Wimbledon,England,68187
-Walsall,West Midlands,67594
-Ashford,Kent,67528
-Washington,England,67085
-Chingford,Greater London,66211
-Torquay,England,65245
-Feltham,England,63368
-Stourbridge,England,63298
-Rochester,Kent,62982
-Woking,Surrey,62796
-Wandsworth,England,61594
-Widnes,Liverpool City Region,61464
-Bangor,Northern Ireland / Tuaisceart Éireann,61011
-Wallasey,England,60284
-Barking,England,59068
-Aylesbury,Buckinghamshire,58740
-Halesowen,England,58135
-Royal Tunbridge Wells,England,57772
-Kettering,North Northamptonshire,56226
-Hereford,Herefordshire,55955
-Corby,North Northamptonshire,54927
-Canterbury,Kent,54880
-Keighley,West Yorkshire,53331
-Dunfermline,Fife,53100
-Hendon,England,52972
-Brentwood,Essex,52586
-Lancaster,Lancashire,52234
-Macclesfield,Cheshire East,51482
-Horsham,West Sussex,50934
-Clacton-on-Sea,England,50548
-Crosby,England,50044
-Batley,England,49448
-Wellingborough,England,49128
-Eltham,England,48964
-Morden,England,48233
-Durham,North East,48069
-Beckenham,England,46844
-Wokingham,Berkshire,46745
-Folkestone,Kent,46698
-Welwyn Garden City,England,46619
-Ayr,Alba / Scotland,46490
-Kilmarnock,Alba / Scotland,46450
-Hinckley,England,45249
-Yeovil,Somerset,45000
-Catford,England,44905
-Wallsend,England,43826
-Kingston upon Thames,England,43013
-Middleton,England,42972
-Greenock,Alba / Scotland,41990
-Worksop,England,41820
-Kirkby,Liverpool City Region,40472
-Salisbury,Wiltshire,40302
-Hatfield,Hertfordshire,39201
-Great Yarmouth,Norfolk,38693
-Herne Bay,Kent,38385
-Camberley,England,38038
-Blyth,North East,37339
-Whitley Bay,England,36623
-Airdrie,Alba / Scotland,36620
-Grays,England,36601
-Accrington,England,35456
-Falkirk,Alba / Scotland,35168
-Billingham,Tees Valley,35165
-Chorley,Lancashire,34667
-Grantham,Lincolnshire,34592
-North Shields,England,34423
-Irvine,Alba / Scotland,33698
-Abingdon,England,33130
-Pontypridd,Rhondda Cynon Taf,32694
-Stroud,Gloucestershire,32670
-Windsor,England,32184
-Ryde,Isle of Wight,32072
-Bexleyheath,England,31929
-Prestwich,England,31693
-Pinner,England,31130
-Loughton,Essex,31106
-Dover,Kent,31022
-Sevenoaks,Kent,29506
-Cannock,England,29018
-Kendal,Westmorland and Furness,28586
-Bearsden,Alba / Scotland,28120
-Billericay,Essex,27998
-Ashford,Kent,27382
-Chichester,West Sussex,26795
-Hertford,Hertfordshire,26783
-East Grinstead,West Sussex,26383
-Fleetwood,Lancashire,25939
-Bushey,England,25763
-Wilmslow,Cheshire East,24497
-Rickmansworth,England,23973
-Newport,Newport,23957
-Stanmore,England,23700
-Marple,England,23687
-Bishopbriggs,Alba / Scotland,23540
-Penarth,Vale of Glamorgan,22083
-Reigate,England,21820
-Godalming,Surrey,21804
-Falmouth,Cornwall,21797
-Penzance,Cornwall,21200
-Wallington,England,20850
-Ripley,Surrey,20807
-Sandhurst,Berkshire,20803
-Leek,Staffordshire,20768
-Llandudno,Cymru / Wales,20701
-Dumbarton,Alba / Scotland,20527
-Rothwell,England,20354
-Newquay,Cornwall,20342
-Bellshill,Alba / Scotland,20290
-Davyhulme,England,19634
-Staines-upon-Thames,Surrey,18484
-Sleaford,Lincolnshire,17671
-Moreton,Essex,17670
-Haslemere,Surrey,16826
-Hatfield,Hertfordshire,16776
-Grangemouth,Alba / Scotland,16650
-Bangor,Northern Ireland / Tuaisceart Éireann,16358
-East Finchley,England,15989
-Chertsey,Surrey,15967
-Bingley,West Yorkshire,15925
-Lymington,England,15726
-Porthcawl,Cymru / Wales,15640
-Oswestry,England,15613
-Weybridge,Surrey,15449
-Perivale,England,15339
-Tredegar,Cymru / Wales,15103
-Teignmouth,Devon,14749
-Otley,West Yorkshire,13668
-Bridport,Dorset,13569
-Whitby,York and North Yorkshire,13213
-Hersham,England,12414
-New Mills,East Midlands,12291
-Aberystwyth,Cymru / Wales,12250
-Bridgnorth,England,12079
-Hackney,England,11734
-Newport,Newport,11387
-Epping,Essex,11047
-Tavistock,Devon,11018
-Highgate,England,10955
-Flixton,England,10786
-Hatch End,England,10693
-Abergele,Cymru / Wales,10577
-Castleton,East Midlands,10159
-Beccles,Suffolk,10123
-Mold,Cymru / Wales,10058
-Handsworth,England,9957
-Stocksbridge,South Yorkshire,9869
-Kilsyth,Alba / Scotland,9860
-Kippax,West Yorkshire,9785
-Lambeth,England,9675
-Matlock,England,9543
-Bradford-on-Avon,Wiltshire,9402
-Bude,England,9222
-Ferryhill,England,8942
-Glastonbury,Somerset,8932
-Skewen,Cymru / Wales,8500
-Blackwood,Caerphilly,8496
-Cinderford,Gloucestershire,8494
-Egremont,Cumberland,8194
-Totnes,Devon,8076
-Woodbridge,Suffolk,7749
-Tenterden,Kent,7735
-Rothwell,England,7694
-Kingsbury,England,7652
-Wivenhoe,Essex,7637
-Chobham,Surrey,7456
-Esher,Surrey,6743
-Battle,East Sussex,6673
-Anstey,Leicestershire,6528
-Wimborne Minster,Dorset,6418
-Ventnor,Isle of Wight,5976
-Saltburn-by-the-Sea,England,5958
-Selkirk,Alba / Scotland,5784
-Hoylake,England,5710
-Holmes Chapel,Cheshire East,5605
-Great Bookham,England,5596
-Brynmawr,Cymru / Wales,5530
-Newent,Gloucestershire,5207
-Whiston,Liverpool City Region,5042
-Marston Green,England,5000
-Broseley,England,4929
-Bethesda,Cymru / Wales,4735
-Cowbridge,Cymru / Wales,4063
-Melton,Suffolk,3741
-Water Orton,England,3444
-Menai Bridge,Cymru / Wales,3376
-Cuckfield,West Sussex,3266
-Preston,Lancashire,3258
-Icklesham,East Sussex,2751
-Meriden,West Midlands,2719
-Ironbridge,Shropshire,2582
+city,state,country,population
+London,Greater London,United Kingdom,8825001
+Birmingham,West Midlands,United Kingdom,1137100
+Newcastle,North East,United Kingdom,879996
+Leeds,West Yorkshire,United Kingdom,789194
+Glasgow,Alba / Scotland,United Kingdom,633120
+Manchester,Greater Manchester,United Kingdom,547627
+Sheffield,South Yorkshire,United Kingdom,518090
+Liverpool,Liverpool City Region,United Kingdom,513441
+Edinburgh,City of Edinburgh,United Kingdom,488050
+Bristol,West of England,United Kingdom,463400
+Coventry,West Midlands,United Kingdom,362690
+Caerdydd,Cymru / Wales,United Kingdom,361469
+Belfast,County Antrim,United Kingdom,333871
+Leicester,England,United Kingdom,329839
+Nottingham,East Midlands,United Kingdom,321500
+Southampton,Southampton,United Kingdom,269781
+Plymouth,Devon,United Kingdom,267918
+Kingston upon Hull,England,United Kingdom,260200
+Wolverhampton,West Midlands,United Kingdom,250970
+Stoke-on-Trent,Stoke-on-Trent,United Kingdom,249008
+Derby,East Midlands,United Kingdom,248700
+Abertawe,Cymru / Wales,United Kingdom,245508
+Portsmouth,Portsmouth,United Kingdom,238800
+Reading,Oxfordshire,United Kingdom,230046
+Luton,Luton,United Kingdom,213052
+Milton Keynes,City of Milton Keynes,United Kingdom,207057
+Islington,England,United Kingdom,206125
+Norwich,Norfolk,United Kingdom,195971
+Swindon,Wiltshire,United Kingdom,192599
+Croydon,England,United Kingdom,192064
+Basildon,Essex,United Kingdom,185900
+Bournemouth,England,United Kingdom,183491
+Ipswich,Suffolk,United Kingdom,180000
+Sunderland,North East,United Kingdom,174286
+Warrington,Warrington,United Kingdom,165456
+Huddersfield,England,United Kingdom,162949
+York,York and North Yorkshire,United Kingdom,153717
+Oxford,Oxfordshire,United Kingdom,152000
+Harrow,Greater London,United Kingdom,149246
+Dundee,Alba / Scotland,United Kingdom,148270
+Middlesbrough,Tees Valley,United Kingdom,140545
+Blackpool,England,United Kingdom,139305
+Brighton,England,United Kingdom,134293
+Enfield,England,United Kingdom,132640
+Tottenham,England,United Kingdom,129237
+Bolton,Greater Manchester,United Kingdom,128139
+Newport,Newport,United Kingdom,128060
+Exeter,Devon,United Kingdom,124180
+Solihull,West Midlands,United Kingdom,123187
+Romford,England,United Kingdom,122854
+Preston,Lancashire,United Kingdom,122719
+High Wycombe,Buckinghamshire,United Kingdom,120256
+Cheltenham,Gloucestershire,United Kingdom,116447
+Colchester,Essex,United Kingdom,111921
+Chelmsford,Essex,United Kingdom,111511
+Doncaster,South Yorkshire,United Kingdom,109805
+Walthamstow,England,United Kingdom,109424
+Worthing,West Sussex,United Kingdom,109120
+Maidstone,Kent,United Kingdom,107627
+Basingstoke,England,United Kingdom,107355
+Crawley,West Sussex,United Kingdom,106597
+Stockport,Greater Manchester,United Kingdom,105878
+Salford,Greater Manchester,United Kingdom,103886
+Wigan,Greater Manchester,United Kingdom,103608
+Hounslow,England,United Kingdom,103337
+Eastbourne,East Sussex,United Kingdom,101547
+Worcester,Worcestershire,United Kingdom,101328
+Wakefield,West Yorkshire,United Kingdom,99251
+Lincoln,Lincolnshire,United Kingdom,97541
+Oldham,Greater Manchester,United Kingdom,96555
+Hemel Hempstead,England,United Kingdom,94932
+Bedford,England,United Kingdom,92407
+Barnsley,South Yorkshire,United Kingdom,91297
+Southport,England,United Kingdom,90381
+Watford,Hertfordshire,United Kingdom,90301
+Wembley,England,United Kingdom,90045
+Bath,West of England,United Kingdom,88859
+Hartlepool,England,United Kingdom,88855
+Birkenhead,England,United Kingdom,88818
+Grimsby,England,United Kingdom,88243
+Halifax,England,United Kingdom,88134
+Nuneaton,England,United Kingdom,86552
+Derry,Northern Ireland / Tuaisceart Éireann,United Kingdom,85016
+Ealing,England,United Kingdom,85014
+Saint Albans,Hertfordshire,United Kingdom,82146
+Chester,England,United Kingdom,79645
+Dudley,West Midlands,United Kingdom,79379
+Bury,Greater Manchester,United Kingdom,78723
+Brixton,England,United Kingdom,78536
+Mansfield,East Midlands,United Kingdom,77551
+Paisley,Alba / Scotland,United Kingdom,77220
+Guildford,Surrey,United Kingdom,77057
+South Shields,England,United Kingdom,75337
+Carlisle,Cumberland,United Kingdom,75306
+East Kilbride,Alba / Scotland,United Kingdom,75120
+Harrogate,England,United Kingdom,73576
+Burnley,Lancashire,United Kingdom,73021
+Burton upon Trent,England,United Kingdom,72299
+Lisburn,Northern Ireland / Tuaisceart Éireann,United Kingdom,71465
+Lowestoft,Suffolk,United Kingdom,70945
+Rugby,Warwickshire,United Kingdom,70627
+Wimbledon,England,United Kingdom,68187
+Walsall,West Midlands,United Kingdom,67594
+Ashford,Kent,United Kingdom,67528
+Washington,England,United Kingdom,67085
+Chingford,Greater London,United Kingdom,66211
+Torquay,England,United Kingdom,65245
+Feltham,England,United Kingdom,63368
+Stourbridge,England,United Kingdom,63298
+Rochester,Kent,United Kingdom,62982
+Woking,Surrey,United Kingdom,62796
+Wandsworth,England,United Kingdom,61594
+Widnes,Liverpool City Region,United Kingdom,61464
+Bangor,Northern Ireland / Tuaisceart Éireann,United Kingdom,61011
+Wallasey,England,United Kingdom,60284
+Barking,England,United Kingdom,59068
+Aylesbury,Buckinghamshire,United Kingdom,58740
+Halesowen,England,United Kingdom,58135
+Royal Tunbridge Wells,England,United Kingdom,57772
+Kettering,North Northamptonshire,United Kingdom,56226
+Hereford,Herefordshire,United Kingdom,55955
+Corby,North Northamptonshire,United Kingdom,54927
+Canterbury,Kent,United Kingdom,54880
+Keighley,West Yorkshire,United Kingdom,53331
+Dunfermline,Fife,United Kingdom,53100
+Hendon,England,United Kingdom,52972
+Brentwood,Essex,United Kingdom,52586
+Lancaster,Lancashire,United Kingdom,52234
+Macclesfield,Cheshire East,United Kingdom,51482
+Horsham,West Sussex,United Kingdom,50934
+Clacton-on-Sea,England,United Kingdom,50548
+Crosby,England,United Kingdom,50044
+Batley,England,United Kingdom,49448
+Wellingborough,England,United Kingdom,49128
+Eltham,England,United Kingdom,48964
+Morden,England,United Kingdom,48233
+Durham,North East,United Kingdom,48069
+Beckenham,England,United Kingdom,46844
+Wokingham,Berkshire,United Kingdom,46745
+Folkestone,Kent,United Kingdom,46698
+Welwyn Garden City,England,United Kingdom,46619
+Ayr,Alba / Scotland,United Kingdom,46490
+Kilmarnock,Alba / Scotland,United Kingdom,46450
+Hinckley,England,United Kingdom,45249
+Yeovil,Somerset,United Kingdom,45000
+Catford,England,United Kingdom,44905
+Wallsend,England,United Kingdom,43826
+Kingston upon Thames,England,United Kingdom,43013
+Middleton,England,United Kingdom,42972
+Greenock,Alba / Scotland,United Kingdom,41990
+Worksop,England,United Kingdom,41820
+Kirkby,Liverpool City Region,United Kingdom,40472
+Salisbury,Wiltshire,United Kingdom,40302
+Hatfield,Hertfordshire,United Kingdom,39201
+Great Yarmouth,Norfolk,United Kingdom,38693
+Herne Bay,Kent,United Kingdom,38385
+Camberley,England,United Kingdom,38038
+Blyth,North East,United Kingdom,37339
+Whitley Bay,England,United Kingdom,36623
+Airdrie,Alba / Scotland,United Kingdom,36620
+Grays,England,United Kingdom,36601
+Accrington,England,United Kingdom,35456
+Falkirk,Alba / Scotland,United Kingdom,35168
+Billingham,Tees Valley,United Kingdom,35165
+Chorley,Lancashire,United Kingdom,34667
+Grantham,Lincolnshire,United Kingdom,34592
+North Shields,England,United Kingdom,34423
+Irvine,Alba / Scotland,United Kingdom,33698
+Abingdon,England,United Kingdom,33130
+Pontypridd,Rhondda Cynon Taf,United Kingdom,32694
+Stroud,Gloucestershire,United Kingdom,32670
+Windsor,England,United Kingdom,32184
+Ryde,Isle of Wight,United Kingdom,32072
+Bexleyheath,England,United Kingdom,31929
+Prestwich,England,United Kingdom,31693
+Pinner,England,United Kingdom,31130
+Loughton,Essex,United Kingdom,31106
+Dover,Kent,United Kingdom,31022
+Sevenoaks,Kent,United Kingdom,29506
+Cannock,England,United Kingdom,29018
+Kendal,Westmorland and Furness,United Kingdom,28586
+Bearsden,Alba / Scotland,United Kingdom,28120
+Billericay,Essex,United Kingdom,27998
+Ashford,Kent,United Kingdom,27382
+Chichester,West Sussex,United Kingdom,26795
+Hertford,Hertfordshire,United Kingdom,26783
+East Grinstead,West Sussex,United Kingdom,26383
+Fleetwood,Lancashire,United Kingdom,25939
+Bushey,England,United Kingdom,25763
+Wilmslow,Cheshire East,United Kingdom,24497
+Rickmansworth,England,United Kingdom,23973
+Newport,Newport,United Kingdom,23957
+Stanmore,England,United Kingdom,23700
+Marple,England,United Kingdom,23687
+Bishopbriggs,Alba / Scotland,United Kingdom,23540
+Penarth,Vale of Glamorgan,United Kingdom,22083
+Reigate,England,United Kingdom,21820
+Godalming,Surrey,United Kingdom,21804
+Falmouth,Cornwall,United Kingdom,21797
+Penzance,Cornwall,United Kingdom,21200
+Wallington,England,United Kingdom,20850
+Ripley,Surrey,United Kingdom,20807
+Sandhurst,Berkshire,United Kingdom,20803
+Leek,Staffordshire,United Kingdom,20768
+Llandudno,Cymru / Wales,United Kingdom,20701
+Dumbarton,Alba / Scotland,United Kingdom,20527
+Rothwell,England,United Kingdom,20354
+Newquay,Cornwall,United Kingdom,20342
+Bellshill,Alba / Scotland,United Kingdom,20290
+Davyhulme,England,United Kingdom,19634
+Staines-upon-Thames,Surrey,United Kingdom,18484
+Sleaford,Lincolnshire,United Kingdom,17671
+Moreton,Essex,United Kingdom,17670
+Haslemere,Surrey,United Kingdom,16826
+Hatfield,Hertfordshire,United Kingdom,16776
+Grangemouth,Alba / Scotland,United Kingdom,16650
+Bangor,Northern Ireland / Tuaisceart Éireann,United Kingdom,16358
+East Finchley,England,United Kingdom,15989
+Chertsey,Surrey,United Kingdom,15967
+Bingley,West Yorkshire,United Kingdom,15925
+Lymington,England,United Kingdom,15726
+Porthcawl,Cymru / Wales,United Kingdom,15640
+Oswestry,England,United Kingdom,15613
+Weybridge,Surrey,United Kingdom,15449
+Perivale,England,United Kingdom,15339
+Tredegar,Cymru / Wales,United Kingdom,15103
+Teignmouth,Devon,United Kingdom,14749
+Otley,West Yorkshire,United Kingdom,13668
+Bridport,Dorset,United Kingdom,13569
+Whitby,York and North Yorkshire,United Kingdom,13213
+Hersham,England,United Kingdom,12414
+New Mills,East Midlands,United Kingdom,12291
+Aberystwyth,Cymru / Wales,United Kingdom,12250
+Bridgnorth,England,United Kingdom,12079
+Hackney,England,United Kingdom,11734
+Newport,Newport,United Kingdom,11387
+Epping,Essex,United Kingdom,11047
+Tavistock,Devon,United Kingdom,11018
+Highgate,England,United Kingdom,10955
+Flixton,England,United Kingdom,10786
+Hatch End,England,United Kingdom,10693
+Abergele,Cymru / Wales,United Kingdom,10577
+Castleton,East Midlands,United Kingdom,10159
+Beccles,Suffolk,United Kingdom,10123
+Mold,Cymru / Wales,United Kingdom,10058
+Handsworth,England,United Kingdom,9957
+Stocksbridge,South Yorkshire,United Kingdom,9869
+Kilsyth,Alba / Scotland,United Kingdom,9860
+Kippax,West Yorkshire,United Kingdom,9785
+Lambeth,England,United Kingdom,9675
+Matlock,England,United Kingdom,9543
+Bradford-on-Avon,Wiltshire,United Kingdom,9402
+Bude,England,United Kingdom,9222
+Ferryhill,England,United Kingdom,8942
+Glastonbury,Somerset,United Kingdom,8932
+Skewen,Cymru / Wales,United Kingdom,8500
+Blackwood,Caerphilly,United Kingdom,8496
+Cinderford,Gloucestershire,United Kingdom,8494
+Egremont,Cumberland,United Kingdom,8194
+Totnes,Devon,United Kingdom,8076
+Woodbridge,Suffolk,United Kingdom,7749
+Tenterden,Kent,United Kingdom,7735
+Rothwell,England,United Kingdom,7694
+Kingsbury,England,United Kingdom,7652
+Wivenhoe,Essex,United Kingdom,7637
+Chobham,Surrey,United Kingdom,7456
+Esher,Surrey,United Kingdom,6743
+Battle,East Sussex,United Kingdom,6673
+Anstey,Leicestershire,United Kingdom,6528
+Wimborne Minster,Dorset,United Kingdom,6418
+Ventnor,Isle of Wight,United Kingdom,5976
+Saltburn-by-the-Sea,England,United Kingdom,5958
+Selkirk,Alba / Scotland,United Kingdom,5784
+Hoylake,England,United Kingdom,5710
+Holmes Chapel,Cheshire East,United Kingdom,5605
+Great Bookham,England,United Kingdom,5596
+Brynmawr,Cymru / Wales,United Kingdom,5530
+Newent,Gloucestershire,United Kingdom,5207
+Whiston,Liverpool City Region,United Kingdom,5042
+Marston Green,England,United Kingdom,5000
+Broseley,England,United Kingdom,4929
+Bethesda,Cymru / Wales,United Kingdom,4735
+Cowbridge,Cymru / Wales,United Kingdom,4063
+Melton,Suffolk,United Kingdom,3741
+Water Orton,England,United Kingdom,3444
+Menai Bridge,Cymru / Wales,United Kingdom,3376
+Cuckfield,West Sussex,United Kingdom,3266
+Preston,Lancashire,United Kingdom,3258
+Icklesham,East Sussex,United Kingdom,2751
+Meriden,West Midlands,United Kingdom,2719
+Ironbridge,Shropshire,United Kingdom,2582

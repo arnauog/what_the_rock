@@ -50,6 +50,10 @@ In the end, getting the US releases for a year between 2000 and 2010 took about 
 
 Getting more data, of course, meant more time (days) cleaning, which I didn't really have if I wanted to have enough time to properly analyze it. 
 
+![](images/timeline_albums_countries.png)
+
+So here we can observe that rock music in the UK has been quite stable, whereas in the US it started really growing from the mid 1980's. Until 1983, there were always more rock releases in the UK, which is quite interesting, considering that the population is about one-fifth of the US population.
+
 ### **Actual code**
 
 
