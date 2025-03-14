@@ -9,7 +9,6 @@ def get_style(df, subgenre, col2):
     if style != 'Select a style': 
         year, artist, album, query, df_style = display_top_albums(df, subgenre, style)
 
-
         if query != 'No albums':
             if st.button('Search'):
                 st.dataframe(df_style)
@@ -18,6 +17,10 @@ def get_style(df, subgenre, col2):
                 with col2: 
                     st.image(album_cover, width=400)
                     st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
+
+                    time.sleep(1)
+                    if st.button('Listen on Spotify'):
+                        spoti_open(query)
 
 
 def display_top_albums(df, subgenre, style):
@@ -61,7 +64,7 @@ def show_album_cover(query):
     return album_cover
 
     
-def spoti_open(song_name):
+def spoti_open(query):
     from dotenv import load_dotenv
     import os
     import spotipy
@@ -77,10 +80,10 @@ def spoti_open(song_name):
     #Initialize SpotiPy with user credentials
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = user,
                                                             client_secret = password))
-    opensong = sp.search(q=song_name, limit=1)
+    opensong = sp.search(q=query, limit=1)
     browser = opensong['tracks']['items'][0]['external_urls']['spotify']
-    time.sleep(2)
     webbrowser.open(browser)
+
 
 def create_folium_map(df, country, subgenre):
     import folium

@@ -11064,3 +11064,5 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,Ceremonium,No Longer Silent,3.93,22,32.95,6,5.49,"['Death Metal', 'Doom Metal']"
 1972,Jerry Garcia,Garcia,4.14,28,40.07,10,4.01,"['Folk Rock', 'Psychedelic Rock']"
 2008,Buckethead,Albino Slug,3.69,116,40.15,13,3.09,"['Thrash', 'Hard Rock', 'Experimental', 'Heavy Metal']"
+1976,Aerosmith,Rocks,4.1,739,34.88,9,3.88,"['Hard Rock', 'Blues Rock']"
+1975,Pink Floyd,Wish You Were Here,4.63,7065,44.1,5,8.82,['Prog Rock']

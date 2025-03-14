@@ -32,9 +32,9 @@ The **features** I wanted to get were:
 - ``year``
 - ``album_length`` and ``tracks`` to get the average length of the song
 - ``styles``
-- Info from *ratings* and *origin* of the artist, which the API didn't provide and **I had to get from other websites**.
+- Info from *ratings* of the album, which the API didn't provide and **I had to get from anothe website**.
 
-Each release relates to a **``master_id``**, where I got the main data from. For every year I got I saved the data in a dataframe, so I would not lose the data if for some reason the code had crashed in the middle of a year, and to check if I had gotten that album already or not (checking the ``master_id``). This was extremely important in the end, when I was getting only about 25% of the albums I was checking on the API.
+Each release relates to a **``master_id``**, where I got the main data from. For every year I got I saved the data in a dataframe, so I would not lose the data if for some reason the code had crashed in the middle of a year, and to check if I had gotten that album already or not (checking the ``master_id``). This was extremely important in the end, when I was getting only about 25% of the releases I was checking on the API.
 
 I finished getting data from all the rock releases in the UK from 1960 in about a week, and I realized most of the releases were from bands from the US, so I decided to get **United States** releases as well.
 
