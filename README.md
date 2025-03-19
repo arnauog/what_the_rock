@@ -91,15 +91,15 @@ I did many merges and concats until finally get my dataset with info of the ``al
 
 ![](images/long_album_length.jpg)
 
-Still, there were many that were super long, like 2h. In some cases this was the actual length, but in others not, in some cases it was compilations, live albums, just wrong length, etc. I only check some, like the longest 50, because it's a process I could do for like days and I wanted to have enough time to analyze the data.
+Still, there were many that were super long, like 2h. In some cases this was the actual length, but in others not, in some cases it was compilations, live albums, just wrong length, etc. I only checked some of them, like the longest 50, because it's a process I could do for days and I wanted to have enough time to analyze the data.
 
 Finally, I decided to check the most prolific artists and see if I detected live albums and compilations, which I did.
 
 ![](images/live_albums.jpg)
 
-I also detected that some albums were missing, and I found out it's because the titles were slightly different both dataframes (from Discogs and from SputnikMusic), like *Honky Château* vs *Honky Chateau*, so I decided to add these albums manually.
+I also detected that some data was missing, and I found out it's because the titles were slightly different in the dataframes (from Discogs and from SputnikMusic), like *Honky Château* vs *Honky Chateau*, so I decided to add these albums manually.
 
-One particular case was ***Grateful Dead***, which appearead as *The Grateful Dead* in Discogs, glad I was looking for prolific artists.
+One particular case was ***Grateful Dead***, which appearead as *The Grateful Dead* in Discogs, so I had no data at all from them.
 
 ![](images/grateful_dead.jpg)
 
