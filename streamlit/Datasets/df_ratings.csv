@@ -79,7 +79,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,Linkin Park,Hybrid Theory,3.73,5999,37.85,12,3.15,"['Nu Metal', 'Alternative Rock']"
 1970,Led Zeppelin,Led Zeppelin III,4.14,3586,43.13,10,4.31,"['Classic Rock', 'Hard Rock', 'Psychedelic Rock']"
 2003,Linkin Park,Meteora,3.55,5224,36.62,13,2.82,['Nu Metal']
-1997,Pantera,Official Live: 101 Proof,4.06,371,78.82,16,4.93,['Thrash']
 2001,Thrice,Identity Crisis,3.2,1185,35.7,11,3.25,"['Post-Hardcore', 'Melodic Hardcore', 'Emo']"
 2002,Thrice,The Illusion of Safety,4.05,2479,38.45,13,2.96,"['Hardcore', 'Emo']"
 2003,Thrice,The Artist in the Ambulance,4.11,3276,39.62,12,3.3,['Post-Hardcore']
@@ -327,7 +326,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2004,My Chemical Romance,Three Cheers for Sweet Revenge,3.51,3207,39.57,13,3.04,"['Emo', 'Pop Punk']"
 2004,Hope Of The States,The Lost Riots,3.84,28,65.57,14,4.68,"['Folk Rock', 'Post Rock', 'Indie Rock']"
 1969,Grateful Dead,Aoxomoxoa,3.78,257,36.0,7,5.14,"['Acid Rock', 'Psychedelic Rock', 'Experimental']"
-1986,Van Halen,Live Without A Net,3.46,41,67.67,12,5.64,['Hard Rock']
 2004,Flaw,Endangered Species,3.64,162,49.85,12,4.15,"['Nu Metal', 'Alternative Metal']"
 2004,Eighteen Visions,Obsession,3.17,182,61.2,13,4.71,"['Alternative Rock', 'Hardcore']"
 2002,Doves,The Last Broadcast,3.79,145,53.92,12,4.49,"['Britpop', 'Downtempo', 'Indie Rock']"
@@ -391,7 +389,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1985,The Replacements,Tim,4.2,490,36.48,11,3.32,['Indie Rock']
 2000,Shadows Fall,Of One Blood,3.49,298,45.93,10,4.59,"['Hardcore', 'Heavy Metal', 'Melodic Death Metal', 'Metalcore']"
 2004,The Dillinger Escape Plan,Miss Machine,4.08,3146,39.9,11,3.63,"['Math Rock', 'Mathcore', 'Progressive Metal']"
-1970,Jimi Hendrix,Band of Gypsys,4.31,488,45.55,6,7.59,"['Psychedelic Rock', 'Blues Rock']"
 2001,Fear Factory,Digimortal,3.14,756,43.22,11,3.93,['Industrial Metal']
 1978,The Jam,All Mod Cons,4.0,178,37.47,12,3.12,"['New Wave', 'Mod', 'Punk']"
 2000,Cursive,Domestica,4.07,774,32.23,9,3.58,"['Emo', 'Indie Rock']"
@@ -663,7 +660,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2004,The Casualties,On the Front Line,3.54,116,34.86,14,2.49,"['Hardcore', 'Punk']"
 1988,Guns N' Roses,G N' R Lies,3.35,937,33.28,10,3.33,"['Hard Rock', 'Acoustic']"
 1968,The Byrds,The Notorious Byrd Brothers,4.01,199,58.19,11,5.29,"['Psychedelic Rock', 'Pop Rock', 'Country Rock']"
-1998,Gordian Knot,Gordian Knot,3.99,150,58.23,10,5.82,"['Progressive Metal', 'Fusion', 'Prog Rock']"
 1972,Black Sabbath,Vol. 4,4.03,2512,43.1,10,4.31,"['Hard Rock', 'Heavy Metal']"
 2003,Pelican,Australasia,3.85,722,50.33,6,8.39,['Post-Metal']
 2004,Monster Magnet,Monolithic Baby!,3.48,111,54.36,12,4.53,['Stoner Rock']
@@ -750,7 +746,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1991,Red Hot Chili Peppers,Blood Sugar Sex Magik,4.22,3665,75.6,17,4.45,"['Alternative Rock', 'Funk Metal']"
 1998,Liquid Tension Experiment,Liquid Tension Experiment,3.88,404,73.9,9,8.21,"['Prog Rock', 'Progressive Metal']"
 2004,Arsis,A Celebration of Guilt,3.97,793,44.33,11,4.03,"['Melodic Death Metal', 'Technical Death Metal', 'Death Metal']"
-2003,Gordian Knot,Emergent,3.86,148,49.8,8,6.22,"['Prog Rock', 'Avantgarde', 'Fusion', 'Progressive Metal']"
 1996,Symphony X,The Divine Wings of Tragedy,4.23,828,65.35,9,7.26,['Progressive Metal']
 1999,Mogwai,Come On Die Young,3.83,765,67.53,12,5.63,['Post Rock']
 2000,Rage Against the Machine,Renegades,3.34,1818,60.47,14,4.32,"['Alternative Rock', 'Hard Rock', 'Funk']"
@@ -874,7 +869,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2003,Throwdown,Haymaker,3.3,150,57.93,14,4.14,['Metalcore']
 2004,It Dies Today,The Caitiff Choir,3.58,381,41.42,11,3.77,"['Hardcore', 'Metalcore']"
 1999,Porcupine Tree,Stupid Dream,4.14,1802,59.92,12,4.99,['Prog Rock']
-1982,Metallica,No Life 'til Leather,3.8,249,29.92,7,4.27,"['Thrash', 'Heavy Metal']"
 1994,Peach,Giving Birth To A Stone,3.4,49,44.58,10,4.46,['Alternative Rock']
 2002,Pearl Jam,Riot Act,3.16,782,54.15,15,3.61,['Alternative Rock']
 1996,Nevermore,The Politics of Ecstasy,4.02,353,62.4,10,6.24,"['Thrash', 'Heavy Metal']"
@@ -1263,10 +1257,8 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,Flogging Molly,Swagger,3.93,284,53.57,13,4.12,['Punk']
 1987,Guns N' Roses,Appetite for Destruction,4.07,3306,53.62,14,3.83,"['Hard Rock', 'Heavy Metal']"
 1990,Ride,Nowhere,4.09,932,38.68,8,4.84,"['Shoegaze', 'Indie Rock']"
-2000,Oasis,Familiar To Millions,3.54,136,97.87,18,5.44,"['Pop Rock', 'Britpop']"
 1978,Ramones,Road To Ruin,3.95,551,31.02,12,2.58,"['Rock & Roll', 'Punk']"
 1977,Judas Priest,Sin After Sin,3.88,1093,40.5,8,5.06,"['Heavy Metal', 'Hard Rock']"
-1993,The Cure,Paris,3.96,68,57.53,12,4.79,"['Alternative Rock', 'New Wave', 'Post-Punk', 'Synth-pop']"
 1998,Alkaline Trio,Goddamnit,4.09,736,34.8,12,2.9,['Punk']
 2005,The Red Chord,Clients,3.49,624,37.43,11,3.4,"['Technical Death Metal', 'Grindcore', 'Deathcore', 'Metalcore']"
 1998,Bruce Dickinson,The Chemical Wedding,4.21,438,57.53,10,5.75,['Heavy Metal']
@@ -1449,7 +1441,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1981,Stiff Little Fingers,Go For It,3.85,46,36.57,10,3.66,['Punk']
 1997,Caroline's Spine,Monsoon,3.31,21,50.11,13,3.85,['Alternative Rock']
 2005,Bon Jovi,Have a Nice Day,2.54,348,53.75,13,4.13,"['Hard Rock', 'Country Rock']"
-1980,The Cure,Boys Don't Cry,3.99,380,36.48,13,2.81,"['New Wave', 'Post-Punk']"
 2005,John 5,Songs For Sanity,3.75,75,42.97,12,3.58,"['Blues Rock', 'Country', 'Speed Metal', 'Nu Metal', 'Hard Rock']"
 2005,Lamb of God,Killadelphia,4.07,448,67.03,16,4.19,"['Hardcore', 'Heavy Metal']"
 1984,Agnostic Front,Victim in Pain,3.66,194,15.46,11,1.41,"['Hardcore', 'Punk']"
@@ -1485,7 +1476,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1997,David Bowie,Earthling,3.38,581,49.0,9,5.44,"['Drum n Bass', 'Pop Rock', 'Art Rock']"
 2004,Demon Hunter,Summer of Darkness,3.58,470,54.82,13,4.22,"['Hardcore', 'Experimental', 'Heavy Metal']"
 1984,R.E.M.,Reckoning,4.16,682,37.45,10,3.74,"['Alternative Rock', 'Indie Rock', 'Jangle Pop']"
-2003,Sabbat,Karmagmassacre,3.92,26,46.58,9,5.18,"['Black Metal', 'Heavy Metal']"
 1990,Testament,Souls of Black,3.48,764,39.23,10,3.92,['Thrash']
 1998,Joe Satriani,Crystal Planet,3.99,187,67.62,15,4.51,"['Instrumental', 'Hard Rock']"
 2003,Yellowcard,Ocean Avenue,3.68,1386,47.53,13,3.66,"['Pop Punk', 'Emo']"
@@ -1703,7 +1693,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1994,Cannibal Corpse,The Bleeding,3.99,1222,36.77,10,3.68,['Death Metal']
 1996,Cannibal Corpse,Vile,3.52,787,37.53,11,3.41,['Death Metal']
 1998,Cannibal Corpse,Gallery Of Suicide,3.51,686,44.12,14,3.15,['Death Metal']
-2000,Cannibal Corpse,Live Cannibalism,3.87,144,65.72,18,3.65,['Death Metal']
 2004,Cannibal Corpse,The Wretched Spawn,3.54,749,44.35,14,3.17,['Death Metal']
 1975,Rainbow,Ritchie Blackmore's Rainbow,4.04,760,37.23,9,4.14,"['Hard Rock', 'Heavy Metal']"
 2004,The Autumn Offering,Revelations of the Unsung,3.12,71,38.26,10,3.83,"['Hardcore', 'Heavy Metal']"
@@ -1822,7 +1811,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2001,Puddle of Mudd,Come Clean,2.7,471,48.1,11,4.37,"['Alternative Metal', 'Post-Grunge']"
 2005,Art Brut,Bang Bang Rock and Roll,3.61,92,35.9,13,2.76,"['Indie Rock', 'Post-Punk']"
 1980,Pete Townshend,Empty Glass,3.97,64,40.14,10,4.01,"['Pop Rock', 'Rock & Roll']"
-1971,"Emerson, Lake and Palmer",Pictures at an Exhibition,3.7,127,38.0,13,2.92,"['Prog Rock', 'Symphonic Rock']"
 1971,Van der Graaf Generator,Pawn Hearts,4.28,444,65.86,3,21.95,['Prog Rock']
 2004,Hot Snakes,Audit in Progress,3.89,111,33.35,12,2.78,['Punk']
 1986,R.E.M.,Lifes Rich Pageant,4.07,559,37.4,14,2.67,"['Alternative Rock', 'Jangle Pop']"
@@ -1984,7 +1972,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1994,Helmet,Betty,4.05,612,41.55,14,2.97,"['Alternative Rock', 'Alternative Metal', 'Post-Hardcore']"
 1996,Bush,Razorblade Suitcase,3.22,434,61.58,13,4.74,"['Alternative Rock', 'Grunge']"
 2006,Secret Machines,Ten Silver Drops,3.55,48,45.77,8,5.72,"['Space Rock', 'Prog Rock']"
-1987,Ozzy Osbourne,Tribute,4.38,280,72.78,14,5.2,"['Heavy Metal', 'Hard Rock']"
 2006,Mudhoney,Under a Billion Suns,3.44,69,43.85,11,3.99,"['Alternative Rock', 'Grunge']"
 1983,Suicidal Tendencies,Suicidal Tendencies,4.02,538,28.28,12,2.36,"['Punk', 'Hardcore']"
 1987,Suicidal Tendencies,Join the Army,3.6,225,38.98,12,3.25,"['Crossover thrash', 'Thrash', 'Hardcore', 'Heavy Metal']"
@@ -2005,7 +1992,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2005,The Agony Scene,The Darkest Red,3.64,266,37.45,11,3.4,"['Hardcore', 'Death Metal']"
 2004,Joseph Arthur,Our Shadows Will Remain,3.83,21,45.9,12,3.82,"['Alternative Rock', 'Lo-Fi', 'Pop Rock', 'Soft Rock', 'Indie Rock']"
 1991,Morrissey,Kill Uncle,2.94,124,33.03,10,3.3,['Alternative Rock']
-1993,Morrissey,Beethoven Was Deaf,3.65,27,61.08,16,3.82,"['Alternative Rock', 'Indie Rock']"
 1997,Morrissey,Maladjusted,2.76,91,39.87,10,3.99,['Indie Rock']
 2004,Sufjan Stevens,Seven Swans,3.91,963,46.23,12,3.85,"['Folk Rock', 'Acoustic']"
 2001,Sufjan Stevens,Enjoy Your Rabbit,2.93,281,79.07,14,5.65,"['Leftfield', 'Krautrock', 'Avantgarde', 'Experimental']"
@@ -2070,7 +2056,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,Killswitch Engage,Killswitch Engage,3.35,828,31.78,9,3.53,['Metalcore']
 1992,Pavement,Slanted and Enchanted,4.17,1393,39.02,14,2.79,"['Indie Rock', 'Post-Punk', 'Art Rock']"
 1998,At the Drive-In,In/Casino/Out,4.0,1769,38.58,11,3.51,"['Post-Hardcore', 'Punk', 'Emo']"
-1997,Exodus,Another Lesson in Violence,4.19,106,74.55,12,6.21,['Thrash']
 1987,Savatage,Hall of the Mountain King,4.21,397,36.1,10,3.61,['Heavy Metal']
 1998,Death Cab for Cutie,Something About Airplanes,3.52,440,43.3,10,4.33,['Indie Rock']
 1978,The Police,Outlandos d'Amour,3.85,542,38.27,11,3.48,"['Alternative Rock', 'New Wave', 'Punk']"
@@ -2293,7 +2278,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1996,Sting,Mercury Falling,3.5,74,52.25,11,4.75,"['Country Rock', 'Soft Rock', 'Pop Rock']"
 2001,Stereophonics,Just Enough Education to Perform,3.18,85,45.75,11,4.16,['Britpop']
 2003,Travis,12 Memories,3.61,109,44.97,13,3.46,['Indie Rock']
-1978,Cheap Trick,Cheap Trick At Budokan,4.22,104,41.63,10,4.16,"['Power Pop', 'Pop Rock', 'Arena Rock', 'Hard Rock']"
 1990,Lard,The Last Temptation of Reid,3.75,61,57.1,9,6.34,"['Industrial', 'Punk']"
 1997,Lard,Pure Chewing Satisfaction,3.69,42,37.43,8,4.68,"['Hardcore', 'Industrial']"
 2006,Rob Zombie,Educated Horses,3.17,410,38.5,11,3.5,"['Hard Rock', 'Heavy Metal']"
@@ -2384,7 +2368,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1984,Dokken,Tooth and Nail,3.78,199,37.75,10,3.78,"['Hard Rock', 'Heavy Metal', 'Arena Rock', 'Glam']"
 1985,Dokken,Under Lock and Key,4.0,195,42.18,10,4.22,"['Heavy Metal', 'Hard Rock', 'Arena Rock', 'Glam']"
 1987,Dokken,Back for the Attack,3.89,174,62.9,13,4.84,"['Hard Rock', 'Arena Rock', 'Heavy Metal', 'Glam']"
-1988,Dokken,Beast from the East,3.69,43,84.67,17,4.98,"['Hard Rock', 'Heavy Metal']"
 1984,Ratt,Out Of The Cellar,3.77,279,36.68,10,3.67,"['Glam', 'Hard Rock', 'Heavy Metal']"
 1985,Ratt,Invasion Of Your Privacy,3.69,215,36.03,10,3.6,"['Hard Rock', 'Arena Rock', 'Heavy Metal', 'Glam']"
 1986,Ratt,Dancing Undercover,3.5,138,34.92,10,3.49,"['Hard Rock', 'Heavy Metal', 'Glam', 'Arena Rock']"
@@ -2577,7 +2560,7 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1978,Whitesnake,Trouble,3.17,111,37.65,10,3.76,"['Blues Rock', 'Hard Rock']"
 1980,Whitesnake,Ready An' Willing,3.66,156,39.78,9,4.42,"['Blues Rock', 'Hard Rock']"
 1979,Whitesnake,Lovehunter,3.31,159,41.95,10,4.2,"['Blues Rock', 'Hard Rock']"
-1987,Whitesnake,1987,3.9,440,53.07,11,4.82,"['Hard Rock', 'Glam']"
+1987,Whitesnake,Whitesnake,3.9,440,42.25,9,4.69,"['Hard Rock', 'Glam']"
 1982,Whitesnake,Saints And Sinners,3.36,145,39.05,10,3.9,"['Hard Rock', 'Blues Rock']"
 1984,Whitesnake,Slide It In,3.86,236,39.92,10,3.99,"['Hard Rock', 'Blues Rock', 'Classic Rock']"
 1989,Whitesnake,Slip Of The Tongue,3.48,216,47.0,10,4.7,['Hard Rock']
@@ -2594,7 +2577,7 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1997,Depeche Mode,Ultra,3.85,606,58.75,12,4.9,"['Alternative Rock', 'Downtempo', 'Synth-pop']"
 2000,American Hi-Fi,American Hi-Fi,3.09,103,48.9,13,3.76,"['Pop Rock', 'Alternative Rock']"
 1979,Quiet Riot,Quiet Riot II,2.71,43,41.35,9,4.59,"['Hard Rock', 'Glam']"
-1988,Quiet Riot,Quiet Riot,2.38,42,43.97,11,4.0,['Heavy Metal']
+1988,Quiet Riot,QR,2.13,49,43.97,11,4.0,['Heavy Metal']
 1989,Tesla,The Great Radio Controversy,3.92,123,59.3,13,4.56,"['Hard Rock', 'Blues Rock']"
 1991,Tesla,Five Man Acoustical Jam,3.85,39,67.57,14,4.83,"['Acoustic', 'Hard Rock']"
 1991,Tesla,Psychotic Supper,3.65,85,68.02,13,5.23,"['Hard Rock', 'Classic Rock']"
@@ -2602,7 +2585,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2003,Tesla,Into The Now,3.53,54,55.7,12,4.64,['Hard Rock']
 1989,L.A. Guns,Cocked and Loaded,3.81,59,54.4,14,3.89,"['Hard Rock', 'Heavy Metal']"
 1983,Ozzy Osbourne,Bark At The Moon,3.58,805,38.67,8,4.83,"['Hard Rock', 'Heavy Metal']"
-1982,Ozzy Osbourne,Speak Of The Devil,3.43,142,70.32,12,5.86,"['Hard Rock', 'Heavy Metal']"
 1986,Vinnie Vincent Invasion,Vinnie Vincent Invasion,3.67,21,45.73,10,4.57,"['Hard Rock', 'Glam']"
 1988,Vinnie Vincent Invasion,All Systems Go,3.46,25,49.13,11,4.47,"['Hard Rock', 'Glam', 'Heavy Metal']"
 1993,Vince Neil,Exposed,3.59,29,52.58,11,4.78,"['Hard Rock', 'Heavy Metal']"
@@ -2759,7 +2741,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,ALL,Problematic,3.42,26,34.35,18,1.91,['Punk']
 1975,Ted Nugent,Ted Nugent,3.73,124,38.87,9,4.32,['Hard Rock']
 1976,Ted Nugent,Free-For-All,3.76,66,38.63,9,4.29,['Hard Rock']
-1978,Ted Nugent,Double Live Gonzo!,4.33,35,74.5,11,6.77,['Classic Rock']
 1978,Ted Nugent,Weekend Warriors,2.94,39,39.38,10,3.94,['Hard Rock']
 1979,Ted Nugent,State Of Shock,3.07,30,40.77,10,4.08,['Hard Rock']
 1980,Ted Nugent,Scream Dream,2.99,34,35.37,10,3.54,['Hard Rock']
@@ -2792,7 +2773,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1986,Eric Clapton,August,2.44,49,55.52,12,4.63,"['Blues Rock', 'Pop Rock']"
 1998,Eric Clapton,Pilgrim,2.65,67,75.55,14,5.4,['Soft Rock']
 1989,Gary Moore,After The War,3.56,47,53.03,11,4.82,"['Blues Rock', 'Soft Rock', 'Hard Rock']"
-2005,Misfits,Fiend Club Lounge,2.33,44,23.38,11,2.13,"['Brass Band', 'Punk', 'Horror Rock']"
 1985,Black Flag,In My Head,3.37,302,37.18,9,4.13,"['Hardcore', 'Punk']"
 1985,Black Flag,Loose Nut,3.15,299,34.12,9,3.79,"['Hardcore', 'Punk']"
 1994,Samiam,Clumsy,3.91,54,43.43,11,3.95,"['Hardcore', 'Emo']"
@@ -2944,7 +2924,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1977,The Jam,In The City,3.72,123,31.78,12,2.65,"['Punk', 'Mod']"
 1977,Iggy Pop,Lust For Life,4.13,656,40.68,9,4.52,"['Garage Rock', 'Punk']"
 1977,Iggy Pop,The Idiot,4.27,676,38.82,8,4.85,"['Art Rock', 'New Wave']"
-1978,Iggy Pop,TV Eye 1977 Live,3.46,26,35.93,8,4.49,"['Garage Rock', 'Punk']"
 1979,Iggy Pop,New Values,3.61,130,38.82,12,3.24,"['Garage Rock', 'Glam', 'Pop Rock', 'New Wave']"
 1980,Iggy Pop,Soldier,3.01,79,36.32,11,3.3,"['New Wave', 'Punk']"
 1981,Iggy Pop,Party,1.9,74,35.3,10,3.53,"['Alternative Rock', 'New Wave']"
@@ -2956,7 +2935,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2006,"Defiance, Ohio",The Great Depression,3.9,168,29.45,13,2.27,"['Folk Rock', 'Acoustic', 'Punk']"
 2003,Kelly Clarkson,Thankful,2.55,92,45.68,14,3.26,"['Ballad', 'Vocal', 'Pop Rock']"
 2003,Every Time I Die,Hot Damn!,3.99,1483,27.03,10,2.7,['Hardcore']
-1985,Slayer,Live Undead,3.8,285,23.3,6,3.88,"['Thrash', 'Speed Metal']"
 1969,Elvis Presley,From Elvis In Memphis,4.18,108,36.32,12,3.03,"['Country', 'Soul']"
 2002,Dillinger Four,Situationist Comedy,3.96,114,33.86,13,2.6,['Punk']
 2000,Dillinger Four,Versus God,4.02,108,31.1,13,2.39,"['Hardcore', 'Punk']"
@@ -3050,7 +3028,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1977,Styx,The Grand Illusion,3.81,253,38.98,8,4.87,"['Classic Rock', 'Pop Rock', 'Prog Rock']"
 1992,Def Leppard,Adrenalize,3.2,278,45.6,10,4.56,"['Hard Rock', 'Arena Rock']"
 1980,Def Leppard,On Through The Night,3.51,293,44.45,11,4.04,['Hard Rock']
-1993,Def Leppard,Retro Active,3.73,80,60.47,13,4.65,"['Hard Rock', 'Arena Rock', 'Acoustic']"
 2006,Def Leppard,Yeah!,2.67,124,47.83,14,3.42,"['Hard Rock', 'Pop Rock']"
 1996,Def Leppard,Slang,2.78,179,45.9,11,4.17,"['Hard Rock', 'Pop Rock']"
 1999,Def Leppard,Euphoria,2.86,172,51.02,13,3.92,"['Hard Rock', 'Pop Rock', 'Arena Rock']"
@@ -3185,7 +3162,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1975,Kansas,Song for America,3.92,144,44.77,6,7.46,"['Prog Rock', 'Art Rock', 'Blues Rock']"
 1974,Kansas,Kansas,3.92,161,45.05,8,5.63,['Prog Rock']
 2004,Xiu Xiu,Fabulous Muscles,3.87,301,37.63,10,3.76,"['Alternative Rock', 'Experimental']"
-1978,Kansas,Two for the Show,4.21,43,78.52,16,4.91,"['Pop Rock', 'Prog Rock', 'Arena Rock', 'Classic Rock']"
 1979,Kansas,Monolith,3.24,78,41.48,8,5.18,"['Pop Rock', 'Prog Rock']"
 1980,Kansas,Audio-Visions,3.26,62,43.12,10,4.31,"['Prog Rock', 'Arena Rock', 'AOR']"
 1982,Kansas,Vinyl Confessions,2.88,60,42.18,10,4.22,"['Pop Rock', 'Prog Rock']"
@@ -3202,7 +3178,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2002,Jeff Buckley,Songs To No One 1991-1992,3.07,28,60.68,11,5.52,"['Alternative Rock', 'Folk Rock']"
 1989,Dangerous Toys,Dangerous Toys,3.65,30,39.02,11,3.55,['Hard Rock']
 1984,Twisted Sister,Stay Hungry,3.83,285,37.15,9,4.13,"['Heavy Metal', 'Hard Rock', 'Glam']"
-1995,NOFX,I Heard They Suck Live!!,3.73,99,40.67,19,2.14,['Punk']
 2006,Guster,Ganging Up on the Sun,3.56,98,48.93,12,4.08,['Indie Rock']
 2004,With Honor,Heart Means Everything,3.69,72,26.08,11,2.37,"['Hardcore', 'Punk']"
 2003,Me First and the Gimme Gimmes,Take a Break,3.52,57,32.4,13,2.49,"['Surf', 'Punk']"
@@ -3289,7 +3264,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1992,Manowar,The Triumph Of Steel,3.54,255,97.78,10,9.78,['Heavy Metal']
 2005,Toby Driver,In the L..L..Library Loft,3.94,195,53.17,4,13.29,"['Art Rock', 'Avantgarde', 'Prog Rock']"
 1990,Fleetwood Mac,Behind the Mask,2.26,80,54.08,13,4.16,['Pop Rock']
-1994,Eagles,Hell Freezes Over,3.8,88,72.6,15,4.84,"['Country Rock', 'Pop Rock', 'Southern Rock']"
 2001,Karma To Burn,Almost Heathen,3.85,63,47.95,10,4.8,"['Alternative Rock', 'Stoner Rock', 'Southern Rock', 'Hard Rock']"
 1971,Rod Stewart,Every Picture Tells A Story,4.11,116,40.52,10,4.05,"['Blues Rock', 'Folk Rock', 'Pop Rock', 'Rhythm & Blues', 'Rock & Roll']"
 1966,Count Five,Psychotic Reaction,4.0,24,25.65,11,2.33,"['Garage Rock', 'Psychedelic Rock']"
@@ -3297,7 +3271,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2004,Future Leaders of the World,LVL IV,2.98,24,42.12,10,4.21,"['Grunge', 'Hard Rock']"
 1985,Possessed,Seven Churches,4.08,746,39.17,10,3.92,"['Thrash', 'Speed Metal', 'Death Metal']"
 2006,The King Blues,Under The Fog,3.79,53,38.49,13,2.96,['Punk']
-1998,Obituary,Dead,3.68,39,62.77,16,3.92,['Death Metal']
 1970,MC5,Back In The USA,3.72,153,28.17,11,2.56,"['Garage Rock', 'Rock & Roll']"
 2003,The Forces Of Evil,Friend or FOE?,3.82,25,31.6,11,2.87,"['Ska', 'Punk']"
 1971,Carole King,Tapestry,4.13,219,44.15,12,3.68,"['Pop Rock', 'Vocal']"
@@ -3346,7 +3319,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,The Ataris,End is Forever,3.47,75,41.02,14,2.93,"['Punk', 'Pop Punk']"
 1998,Imogen Heap,I Megaphone,3.26,87,48.7,11,4.43,"['Leftfield', 'Pop Rock']"
 1993,Dio,Strange Highways,3.07,314,53.72,11,4.88,['Heavy Metal']
-1999,Ween,Craters of the Sac,2.71,34,34.23,9,3.8,['Alternative Rock']
 1984,Bon Jovi,Bon Jovi,3.1,240,38.42,9,4.27,"['Hard Rock', 'Pop Rock']"
 1985,Bon Jovi,7800° Fahrenheit,2.85,199,46.68,10,4.67,['Hard Rock']
 1988,Bon Jovi,New Jersey,3.61,346,57.07,12,4.76,"['Hard Rock', 'Heavy Metal', 'Glam']"
@@ -3525,7 +3497,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1986,Alice Cooper,Constrictor,3.23,215,37.05,10,3.7,"['Hard Rock', 'Heavy Metal', 'Horror Rock']"
 2006,Red,End of Silence,3.61,755,46.92,11,4.27,['Nu Metal']
 1978,Alice Cooper,From the Inside,3.73,199,39.05,10,3.9,"['Hard Rock', 'Glam', 'Pop Rock']"
-1986,Rage,Reign of Fear,3.3,41,38.4,9,4.27,['Speed Metal']
 1980,Angel Witch,Angel Witch,3.97,311,37.95,10,3.8,['Heavy Metal']
 1979,Pat Benatar,In The Heat of The Night,3.67,49,38.02,10,3.8,['Pop Rock']
 1980,Pat Benatar,Crimes of Passion,3.8,62,37.12,10,3.71,"['Hard Rock', 'Pop Rock']"
@@ -3775,7 +3746,7 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2002,16 Horsepower,Folklore,3.98,83,37.45,10,3.74,"['Folk Rock', 'Country Rock', 'Alternative Rock']"
 2006,Good Riddance,My Republic,3.0,52,30.67,14,2.19,"['Punk', 'Pop Punk', 'Melodic Hardcore']"
 2006,Black Stone Cherry,Black Stone Cherry,3.67,246,46.28,13,3.56,"['Southern Rock', 'Hard Rock', 'Heavy Metal']"
-1981,Duran Duran,Duran Duran,3.87,192,62.19,9,6.91,"['New Wave', 'Synth-pop']"
+1981,Duran Duran,Duran Duran,3.87,192,38.6,9,4.29,"['New Wave', 'Synth-pop']"
 1983,Duran Duran,Seven and the Ragged Tiger,3.6,129,37.6,9,4.18,"['New Wave', 'Synth-pop']"
 1986,Duran Duran,Notorious,3.22,95,27.41,10,2.74,['Pop Rock']
 1988,Duran Duran,Big Thing,2.87,67,44.72,12,3.73,"['New Wave', 'Pop Rock']"
@@ -3965,7 +3936,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2006,Dead Poetic,Vices,3.29,189,50.97,14,3.64,['Post-Hardcore']
 2006,mewithoutYou,"Brother, Sister",4.34,2088,43.55,13,3.35,"['Alternative Rock', 'Indie Rock']"
 1969,Grand Funk Railroad,Grand Funk,3.99,105,47.77,8,5.97,"['Hard Rock', 'Classic Rock']"
-1970,Grand Funk Railroad,Live Album,4.22,23,76.23,11,6.93,"['Blues Rock', 'Garage Rock', 'Hard Rock', 'Rock & Roll']"
 2006,Monty Are I,Wall Of People,3.93,48,40.38,11,3.67,['Alternative Rock']
 2006,Me First and the Gimme Gimmes,Love Their Country,3.46,41,25.55,12,2.13,['Punk']
 2003,Anatomy of a Ghost,Evanesce,3.78,47,50.3,11,4.57,"['Emo', 'Punk']"
@@ -4064,7 +4034,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2001,Flotsam and Jetsam,My God,3.27,48,64.32,12,5.36,"['Thrash', 'Prog Rock', 'Heavy Metal']"
 1999,Flotsam and Jetsam,Unnatural Selection,2.39,52,45.18,10,4.52,"['Heavy Metal', 'Thrash']"
 1997,Flotsam and Jetsam,High,3.16,52,47.1,11,4.28,"['Thrash', 'Heavy Metal']"
-2006,Rage,Speak of the Dead,3.76,47,63.05,10,6.3,['Heavy Metal']
 1984,Lindsey Buckingham,Go Insane,3.41,23,37.78,9,4.2,['Pop Rock']
 1992,Lindsey Buckingham,Out of the Cradle,4.03,29,48.67,16,3.04,['Pop Rock']
 2006,Destroy the Runner,Saints,3.09,230,43.7,13,3.36,['Metalcore']
@@ -4079,7 +4048,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2005,Silver Jews,Tanglewood Numbers,3.7,62,34.88,10,3.49,['Indie Rock']
 2000,The Suicide Machines,The Suicide Machines,2.64,47,33.7,14,2.41,"['Power Pop', 'Punk']"
 2002,Regina Spektor,Songs,3.85,191,49.33,12,4.11,"['Folk Rock', 'Folk']"
-2005,Bright Eyes,Motion Sickness: Live Recordings,3.36,72,61.5,15,4.1,['Indie Rock']
 1991,Dire Straits,On Every Street,3.26,216,60.24,12,5.02,['Pop Rock']
 1980,Heart,Bebe Le Strange,3.41,50,37.5,10,3.75,"['Hard Rock', 'Pop Rock', 'Blues Rock']"
 1990,Flotsam and Jetsam,When the Storm Comes Down,3.4,85,49.56,11,4.51,['Thrash']
@@ -4167,7 +4135,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2005,Buckethead,Enter the Chicken,3.6,202,41.35,11,3.76,"['Alternative Rock', 'Experimental']"
 2001,Frodus,And We Washed Our Weapons In The Sea,3.99,234,45.97,11,4.18,"['Post-Hardcore', 'Math Rock', 'Post Rock']"
 1997,Hot Water Music,Fuel for the Hate Game,4.09,291,40.92,11,3.72,"['Alternative Rock', 'Emo']"
-2006,Rock Star Supernova,Rock Star Supernova,2.54,35,41.03,11,3.73,['Hard Rock']
 2005,Kids in the Way,Apparitions of Melody,3.45,32,42.97,11,3.91,[]
 2003,Twisted Method,Escape From Cape Coma,3.04,37,46.13,13,3.55,['Nu Metal']
 2004,A Thorn For Every Heart,Things Aren't So Beautiful Now,3.48,61,31.0,10,3.1,['Emo']
@@ -4395,7 +4362,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2006,Dropping Daylight,Brace Yourself,3.18,28,35.52,11,3.23,['Alternative Rock']
 2006,Plain White T's,Every Second Counts,2.61,111,37.57,12,3.13,['Pop Rock']
 2003,Park,It Won't Snow Where You're Going,4.07,125,39.15,10,3.92,"['Indie Rock', 'Emo', 'Alternative Rock']"
-1993,Dave Matthews Band,Remember Two Things,3.37,45,72.0,10,7.2,['Acoustic']
 1994,Failure,Magnified,4.11,341,49.0,10,4.9,"['Alternative Rock', 'Grunge']"
 1984,Saccharine Trust,"Surviving You, Always",3.58,43,39.7,12,3.31,"['Punk', 'Avantgarde', 'Experimental']"
 1998,The Casualties,Underground Army,3.1,31,26.49,12,2.21,['Punk']
@@ -4838,7 +4804,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1994,Shellac,At Action Park,4.03,436,37.03,10,3.7,"['Hardcore', 'Indie Rock', 'Math Rock', 'Noise Rock']"
 1992,Paradise Lost,Shades Of God,3.72,372,52.82,9,5.87,"['Death Metal', 'Doom Metal', 'Gothic Metal']"
 2007,Rwake,Voices of Omens,4.08,172,59.03,9,6.56,"['Doom Metal', 'Sludge Metal', 'Experimental']"
-2000,Pennywise,Live @ The Key Club,3.91,26,51.68,18,2.87,['Punk']
 2006,Derek Sherinian,Blood of the Snake,3.33,24,52.99,10,5.3,['Prog Rock']
 2007,Wilco,Sky Blue Sky,3.64,528,51.2,12,4.27,['Alternative Rock']
 2002,Death In Vegas,Scorpio Rising,3.54,41,49.85,10,4.99,"['Alternative Rock', 'Electro', 'Downtempo']"
@@ -5090,7 +5055,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2003,Gorerotted,Only Tools and Corpses,4.01,76,24.53,9,2.73,['Death Metal']
 2005,Gorerotted,A New Dawn for the Dead,3.21,43,33.83,9,3.76,['Death Metal']
 2007,Art Brut,It's a Bit Complicated,3.19,36,34.0,11,3.09,"['Indie Rock', 'Britpop']"
-2004,Porcupine Tree,Warszawa,3.9,103,79.2,11,7.2,"['Space Rock', 'Prog Rock']"
 2007,August Burns Red,Messengers,3.74,2546,52.05,12,4.34,['Metalcore']
 2004,Courtney Love,America's Sweetheart,2.8,40,47.08,12,3.92,['Alternative Rock']
 1996,The Brian Jonestown Massacre,Thank God For Mental Illness,3.98,85,63.62,13,4.89,"['Folk Rock', 'Garage Rock', 'Alternative Rock', 'Psychedelic Rock', 'Stoner Rock']"
@@ -5108,7 +5072,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2007,Fair to Midland,Fables From a Mayfly: What I Tell You Three Times is True,4.13,1126,49.05,12,4.09,"['Prog Rock', 'Alternative Rock', 'Art Rock']"
 2007,The Clientele,God Save the Clientele,3.26,25,43.93,14,3.14,"['Pop Rock', 'Indie Rock']"
 2003,Blue October,History for Sale,3.85,126,48.15,12,4.01,[]
-1998,Pearl Jam,Live On Two Legs,3.82,138,71.18,16,4.45,"['Alternative Rock', 'Grunge']"
 2002,Blood for Blood,Outlaw Anthems,3.76,52,33.89,11,3.08,['Hardcore']
 2004,Cattle Decapitation,Humanure,3.02,324,47.53,11,4.32,"['Grindcore', 'Death Metal']"
 2007,The Polyphonic Spree,The Fragile Army,3.45,21,46.6,12,3.88,"['Psychedelic Rock', 'Indie Rock']"
@@ -5205,7 +5168,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2002,In Pieces,Learning to Accept Silence,3.75,36,44.18,10,4.42,"['Hardcore', 'Emo']"
 2007,Great Northern,Trading Twilight for Daylight,3.65,26,44.07,10,4.41,"['Alternative Rock', 'Indie Rock']"
 2006,McFly,Motion In The Ocean,3.3,28,56.23,11,5.11,['Power Pop']
-1975,Tom Waits,Nighthawks At The Diner,3.8,228,73.9,18,4.11,['Blues Rock']
 2005,The Plot To Blow Up The Eiffel Tower,Love in the Fascist Brothel,3.61,50,24.0,10,2.4,['Punk']
 2007,Knives Exchanging Hands,Hiatus,3.3,51,41.77,12,3.48,['Heavy Metal']
 1998,Joan of Arc,How Memory Works,3.53,59,38.03,11,3.46,"['Emo', 'Post Rock', 'Indie Rock']"
@@ -5233,7 +5195,7 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1989,Obituary,Slowly We Rot,4.02,848,35.15,12,2.93,['Death Metal']
 1992,Obituary,The End Complete,3.83,473,36.03,9,4.0,['Death Metal']
 1993,Disincarnate,Dreams of the Carrion Kind,4.01,173,47.57,11,4.32,['Death Metal']
-2003,Killing Joke,Killing Joke,4.06,427,55.72,10,5.57,"['Hardcore', 'Industrial']"
+2003,Killing Joke,Killing Joke (2003),4.09,298,55.72,10,5.57,"['Hardcore', 'Industrial']"
 1981,Killing Joke,What's THIS For...!,3.82,176,41.65,8,5.21,"['Post-Punk', 'New Wave']"
 1982,Killing Joke,Revelations,3.53,119,37.08,10,3.71,['Post-Punk']
 1990,Killing Joke,"Extremities, Dirt and Various Repressed Emotions",4.08,150,64.52,10,6.45,"['Industrial', 'Post-Punk']"
@@ -5298,7 +5260,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2002,Fair to Midland,The Carbon Copy Silver Lining,3.12,120,56.15,13,4.32,"['Nu Metal', 'Progressive Metal', 'Alternative Metal', 'Art Rock', 'Alternative Rock']"
 2007,Chuck Ragan,Feast Or Famine,3.75,115,45.92,12,3.83,"['Acoustic', 'Folk', 'Country']"
 2007,Suicide Silence,The Cleansing,3.01,1617,44.05,14,3.15,"['Hardcore', 'Death Metal']"
-1987,Rage,Execution Guaranteed,3.13,41,45.87,9,5.1,"['Thrash', 'Heavy Metal']"
 2007,Rishloo,Eidolon,3.95,440,54.78,14,3.91,['Prog Rock']
 2004,Rishloo,Terras Fames,3.48,194,49.7,12,4.14,['Prog Rock']
 2002,Daylight Dies,No Reply,3.56,73,61.22,9,6.8,"['Doom Metal', 'Melodic Death Metal']"
@@ -5494,7 +5455,7 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2007,Foo Fighters,"Echoes, Silence, Patience and Grace",3.25,1903,51.12,12,4.26,['Hard Rock']
 2004,Dirty Projectors,Slaves' Graves and Ballads,3.6,26,39.42,16,2.46,"['Folk Rock', 'Experimental', 'Indie Rock']"
 2002,The Mercury Program,A Data Learn the Language,3.97,64,47.1,8,5.89,['Post Rock']
-1997,Cheap Trick,Cheap Trick,4.06,141,40.37,11,3.67,"['Power Pop', 'Pop Rock']"
+1997,Cheap Trick,Cheap Trick '97,3.53,32,40.37,11,3.67,"['Power Pop', 'Pop Rock']"
 1980,Cheap Trick,All Shook Up,3.27,48,33.95,10,3.4,"['Power Pop', 'Pop Rock']"
 1982,Cheap Trick,One on One,3.41,46,34.53,11,3.14,"['Classic Rock', 'Hard Rock']"
 1983,Cheap Trick,Next Position Please,3.1,39,44.32,12,3.69,['Power Pop']
@@ -5595,7 +5556,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2007,Oceansize,Frames,4.29,805,77.57,9,8.62,"['Alternative Rock', 'Prog Rock']"
 1998,Richard Youngs,Sapphie,3.81,55,37.05,3,12.35,"['Acoustic', 'Experimental']"
 2007,Obituary,Xecutioner's Return,2.82,207,40.63,11,3.69,['Death Metal']
-1981,Billy Joel,Songs in the Attic,4.05,42,47.97,11,4.36,['Pop Rock']
 1973,Billy Joel,Piano Man,3.69,232,42.85,10,4.28,"['Folk Rock', 'Pop Rock']"
 1971,Billy Joel,Cold Spring Harbor,3.37,78,33.12,10,3.31,"['Folk Rock', 'Ballad']"
 1974,Billy Joel,Streetlife Serenade,3.22,97,37.63,10,3.76,"['Folk Rock', 'Soft Rock']"
@@ -5769,7 +5729,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1979,XTC,Drums And Wires,3.99,226,47.45,12,3.95,['New Wave']
 2004,Skeletonwitch,At One With the Shadows,3.28,57,30.6,9,3.4,"['Thrash', 'Black Metal']"
 2007,Espers,II,3.76,35,50.02,7,7.15,"['Folk Rock', 'Acoustic', 'Psychedelic Rock']"
-1994,Porcupine Tree,Spiral Circus,3.82,42,49.22,6,8.2,"['Acoustic', 'Psychedelic Rock', 'Prog Rock']"
 2000,The Mountain Goats,The Coroner's Gambit,4.07,202,43.13,16,2.7,['Folk Rock']
 2007,The Color Fred,Bend To Break,3.19,45,40.07,11,3.64,"['Alternative Rock', 'Emo']"
 1997,Stereophonics,Word Gets Around,3.6,78,42.03,12,3.5,"['Soft Rock', 'Indie Rock', 'Britpop']"
@@ -6182,7 +6141,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2008,Death Angel,Killing Season,3.31,238,47.3,11,4.3,['Thrash']
 2003,Liz Phair,Liz Phair,2.46,65,50.15,14,3.58,['Pop Rock']
 2003,Starsailor,Silence Is Easy,3.28,29,39.57,11,3.6,"['Alternative Rock', 'Pop Rock']"
-2008,Porcupine Tree,We Lost the Skyline,3.73,152,33.47,8,4.18,"['Prog Rock', 'Acoustic']"
 2004,Orange Goblin,Thieving From The House Of God,3.65,42,47.61,11,4.33,"['Stoner Rock', 'Hard Rock']"
 2008,Ludo,"You're Awful, I Love You",3.42,85,48.52,14,3.47,"['Pop Rock', 'Power Pop']"
 1968,Blue Cheer,Outsideinside,3.85,120,32.73,9,3.64,"['Hard Rock', 'Psychedelic Rock', 'Acid Rock', 'Blues Rock']"
@@ -6310,7 +6268,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2008,Origin,Antithesis,3.66,417,41.93,10,4.19,"['Death Metal', 'Technical Death Metal']"
 1992,Crowbar,Obedience Thru Suffering,3.54,137,43.27,10,4.33,['Sludge Metal']
 1989,Indigo Girls,Indigo Girls,4.09,23,43.38,10,4.34,"['Folk Rock', 'Acoustic', 'Alternative Rock']"
-1996,King Crimson,THRaKaTTaK,2.89,24,57.23,8,7.15,['Avantgarde']
 2008,The Black Keys,Attack and Release,3.61,705,39.18,11,3.56,['Blues Rock']
 1995,Mushroomhead,Mushroomhead,3.13,107,60.18,15,4.01,"['Heavy Metal', 'Avantgarde', 'Industrial']"
 2008,DeVotchKa,A Mad and Faithful Telling,3.75,46,42.25,10,4.22,"['Folk Rock', 'Indie Rock']"
@@ -6423,7 +6380,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1993,The Boo Radleys,Giant Steps,3.85,78,64.21,17,3.78,['Indie Rock']
 1995,The Boo Radleys,Wake Up!,3.61,33,51.22,12,4.27,"['Indie Rock', 'Britpop']"
 2004,Brodequin,Methods of Execution,3.31,32,35.37,12,2.95,['Death Metal']
-2008,Underoath,Survive Kaleidoscope,3.58,216,53.7,26,2.07,"['Post-Hardcore', 'Metalcore']"
 2008,10 Years,Division,3.6,454,53.62,13,4.12,['Alternative Rock']
 2006,Akron/Family,Meek Warrior,3.68,25,35.45,7,5.06,"['Folk Rock', 'Post Rock']"
 2006,Suspyre,A Great Divide,3.67,21,70.0,12,5.83,"['Progressive Metal', 'Symphonic Metal', 'Speed Metal']"
@@ -6649,8 +6605,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2007,Pissed Jeans,Hope for Men,3.52,50,41.71,10,4.17,"['Alternative Rock', 'Hardcore', 'Punk']"
 2005,Pissed Jeans,Shallow,3.68,49,32.67,8,4.08,"['Hardcore', 'Punk']"
 2001,Major Organ and the Adding Machine,Major Organ and the Adding Machine,3.19,26,35.32,19,1.86,"['Indie Rock', 'Art Rock', 'Avantgarde', 'Sound Collage', 'Psychedelic', 'Musique Concrète', 'Free Jazz', 'Lo-Fi', 'Leftfield', 'Experimental', 'Novelty', 'Noise', 'Abstract', 'Pop Rock']"
-1990,The Cure,Entreat,4.21,43,47.4,8,5.92,"['Alternative Rock', 'New Wave', 'Shoegaze', 'Synth-pop']"
-1993,The Cure,Show,3.9,56,88.6,18,4.92,"['Alternative Rock', 'New Wave', 'Shoegaze', 'Synth-pop']"
 1987,Primal Scream,Sonic Flower Groove,2.91,47,34.36,10,3.44,"['Psychedelic Rock', 'Indie Rock', 'Indie Pop']"
 2008,Brigade,Come Morning We Fight,3.64,21,53.63,13,4.13,['Alternative Rock']
 2006,Nekrogoblikon,Goblin Island,3.66,53,39.85,12,3.32,"['Thrash', 'Melodic Death Metal']"
@@ -6676,7 +6630,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2002,Suede,A New Morning,2.5,102,52.67,12,4.39,"['Alternative Rock', 'Britpop']"
 2005,Smile Empty Soul,Anxiety,3.79,61,51.75,15,3.45,"['Alternative Rock', 'Grunge']"
 2008,The Hold Steady,Stay Positive,3.68,216,55.25,12,4.6,['Indie Rock']
-1999,Fugazi,Instrument Soundtrack,3.47,157,45.75,18,2.54,"['Soundtrack', 'Punk', 'Post-Hardcore']"
 2008,Paul Baribeau,Grand Ledge,3.83,72,18.0,9,2.0,['Acoustic']
 2008,Joan of Arc,Boo! Human,3.53,44,43.7,14,3.12,"['Emo', 'Indie Rock']"
 1982,Oingo Boingo,Nothing to Fear,4.02,98,41.82,10,4.18,"['New Wave', 'Art Rock']"
@@ -6722,7 +6675,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2008,Supergrass,Diamond Hoo Ha,3.07,37,41.23,11,3.75,['Indie Rock']
 1995,Mercury Rev,See You On The Other Side,3.62,56,39.22,8,4.9,"['Alternative Rock', 'Psychedelic Rock']"
 2005,Mercury Rev,The Secret Migration,2.89,41,44.05,13,3.39,['Indie Rock']
-2005,Porcupine Tree,XMII,4.07,51,50.47,8,6.31,"['Alternative Rock', 'Prog Rock']"
 2008,Loma Prieta,Last City,3.93,370,22.9,10,2.29,['Hardcore']
 2008,Capital Lights,This Is An Outrage!,3.53,44,45.03,12,3.75,['Punk']
 2007,Ozma,Pasadena,3.17,21,36.92,11,3.36,['Alternative Rock']
@@ -6767,7 +6719,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1997,Jungle Rot,Slaughter the Weak,3.53,64,33.61,9,3.73,['Death Metal']
 1999,Tori Amos,To Venus and Back,3.71,150,123.15,26,4.74,['Alternative Rock']
 2003,Super Furry Animals,Phantom Power,3.98,59,53.08,14,3.79,"['Soft Rock', 'Indie Rock', 'Ambient', 'Experimental', 'Psychedelic Rock']"
-2000,Built to Spill,Live,3.87,52,71.75,9,7.97,['Indie Rock']
 1997,Cornershop,When I Was Born For The 7th Time,3.65,34,54.17,15,3.61,"['Electro', 'Big Beat', 'Indie Rock']"
 2001,My Morning Jacket,At Dawn,3.91,169,73.97,26,2.84,['Indie Rock']
 1983,Cocteau Twins,Head Over Heels,3.92,439,37.08,12,3.09,"['Art Rock', 'Experimental', 'Ethereal']"
@@ -6792,7 +6743,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2005,Dr. Dog,Easy Beat,3.92,46,37.7,9,4.19,"['Psychedelic Rock', 'Pop Rock']"
 2008,With Dead Hands Rising,Expect Hell,3.26,21,40.54,11,3.69,"['Death Metal', 'Hardcore']"
 1992,Ani DiFranco,Ani DiFranco,3.6,25,47.04,13,3.62,['Folk Rock']
-1991,Exodus,Good Friendly Violent Fun,3.07,29,42.47,8,5.31,['Thrash']
 2008,Withered,Folie Circulaire,3.52,30,46.15,10,4.62,"['Black Metal', 'Death Metal', 'Sludge Metal']"
 2008,The War On Drugs,Wagonwheel Blues,3.46,100,43.08,9,4.79,"['Psychedelic Rock', 'Indie Rock']"
 1996,The Black Crowes,Three Snakes and One Charm,3.35,72,48.4,12,4.03,"['Alternative Rock', 'Southern Rock']"
@@ -6870,7 +6820,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1990,Fields of the Nephilim,Elizium,4.12,178,49.0,8,6.12,['Goth Rock']
 2008,El Ten Eleven,These Promises Are Being Videotaped,3.17,26,27.77,8,3.47,['Post Rock']
 2008,El Ten Eleven,Every Direction is North,3.51,38,41.89,10,4.19,['Post Rock']
-1987,Misfits,Evilive,3.52,77,13.0,12,1.08,"['Hardcore', 'Punk']"
 2008,Buckcherry,Black Butterfly,2.34,182,42.89,12,3.57,['Alternative Rock']
 1970,Sir Lord Baltimore,Kingdom Come,3.91,131,37.72,10,3.77,"['Hard Rock', 'Blues Rock', 'Psychedelic Rock', 'Heavy Metal']"
 1999,Blood for Blood,Livin' In Exile,3.62,21,22.2,8,2.78,['Hardcore']
@@ -7134,7 +7083,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2004,Krieg,The Black House,3.64,36,41.65,12,3.47,['Black Metal']
 1986,Queen,A Kind of Magic,3.42,514,40.48,9,4.5,"['Arena Rock', 'Hard Rock', 'Pop Rock', 'Glam']"
 2008,Cradle of Filth,Godspeed on the Devil's Thunder,2.87,583,71.45,13,5.5,"['Symphonic Metal', 'Black Metal', 'Thrash']"
-1986,Queen,Live Magic,3.18,51,47.89,15,3.19,"['Pop Rock', 'Hard Rock']"
 2008,Rise Against,Appeal to Reason,3.42,2220,48.47,13,3.73,"['Alternative Rock', 'Hardcore', 'Punk']"
 1989,The The,Mind Bomb,3.93,52,46.15,8,5.77,"['Alternative Rock', 'Pop Rock', 'Synth-pop']"
 1994,Shudder To Think,Pony Express Record,4.0,100,53.87,13,4.14,['Alternative Rock']
@@ -7464,7 +7412,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2001,Deeds of Flesh,Mark of the Legion,3.73,119,41.57,9,4.62,['Death Metal']
 2008,Secondhand Serenade,A Twist In My Story,3.27,92,44.33,11,4.03,"['Acoustic', 'Pop Rock']"
 2008,Cage The Elephant,Cage the Elephant,3.54,728,37.78,11,3.43,['Alternative Rock']
-1991,Sabbat,Envenom,3.84,57,45.93,12,3.83,"['Thrash', 'Black Metal']"
 1995,Lycia,The Burning Circle and Then Dust,4.07,46,116.15,28,4.15,['Ethereal']
 2000,Brodequin,Instruments of Torture,3.64,55,25.03,10,2.5,['Death Metal']
 2001,Brodequin,Festival of Death,3.69,59,30.88,12,2.57,['Death Metal']
@@ -7658,7 +7605,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2008,Neal Morse,Lifeline,3.53,35,69.48,14,4.96,['Prog Rock']
 2009,Pure Reason Revolution,Amor Vincit Omnia,3.69,145,45.4,9,5.04,"['Experimental', 'Prog Rock']"
 2008,Nightbringer,Death And The Black Work,3.14,32,64.48,7,9.21,['Black Metal']
-1988,Tom Waits,Big Time,3.69,59,67.55,12,5.63,"['Blues Rock', 'Experimental']"
 2008,Jarboe,Mahakali,3.7,40,71.62,15,4.77,"['Art Rock', 'Experimental', 'Ethereal']"
 2009,Bomb the Music Industry!,Scrambles,4.16,642,37.8,13,2.91,"['Punk', 'Hardcore', 'Ska']"
 1992,Grief,Dismal,3.83,66,21.67,4,5.42,"['Hardcore', 'Doom Metal']"
@@ -7672,7 +7618,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2009,Akron/Family,"Set 'Em Wild, Set 'Em Free",3.59,53,49.78,11,4.53,['Alternative Rock']
 1993,Cancer,The Sins of Mankind,3.39,57,25.9,7,3.7,"['Thrash', 'Death Metal']"
 1994,Oppressor,Solstice of Oppression,3.59,38,41.68,9,4.63,['Death Metal']
-2008,Rage,Carved in Stone,3.74,38,47.88,10,4.79,['Heavy Metal']
 1988,Atrophy,Socialized Hate,3.64,56,38.59,10,3.86,['Thrash']
 1990,Atrophy,Violent by Nature,3.91,83,41.27,9,4.59,['Thrash']
 2006,Dangers,Anger,4.2,588,23.2,14,1.66,"['Hardcore', 'Hard Rock', 'Punk']"
@@ -7841,7 +7786,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1993,Pendragon,The Window of Life,4.01,39,53.67,6,8.94,['Prog Rock']
 2007,xDEATHSTARx,We Are The Threat,2.7,20,35.58,11,3.23,['Metalcore']
 2009,Dave Matthews Band,Big Whiskey and the GrooGrux King,3.46,212,54.47,13,4.19,"['Alternative Rock', 'Pop Rock']"
-1977,Gentle Giant,Playing the Fool,4.25,48,78.17,9,8.69,['Prog Rock']
 2006,Ingrid Michaelson,Girls And Boys,3.89,53,45.38,12,3.78,"['Alternative Rock', 'Pop Rock']"
 2008,Soul Embraced,Dead Alive,3.57,41,45.47,13,3.5,['Death Metal']
 2009,He Is Legend,It Hates You,3.77,563,57.37,12,4.78,"['Hard Rock', 'Prog Rock']"
@@ -8055,7 +7999,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1993,Unbroken,Ritual,3.3,20,32.37,11,2.94,['Hardcore']
 2009,For Today,Portraits,3.41,381,32.88,10,3.29,"['Metalcore', 'Religious']"
 1969,Soft Machine,Volume Two,3.79,134,33.32,17,1.96,"['Psychedelic Rock', 'Experimental', 'Prog Rock']"
-2009,Monsters of Folk,Monsters of Folk,3.47,148,54.73,15,3.65,['Indie Rock']
 2009,Steel Panther,Feel the Steel,3.48,346,41.45,11,3.77,"['Parody', 'Hard Rock', 'Heavy Metal', 'Glam']"
 2007,Weekend Nachos,Punish and Destroy,3.54,90,52.15,27,1.93,"['Thrash', 'Hardcore']"
 2003,Keelhaul,Subject To Change Without Notice,3.43,34,44.03,12,3.67,"['Math Rock', 'Hardcore']"
@@ -8267,7 +8210,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2008,Red Fang,Red Fang,3.52,219,36.28,11,3.3,"['Stoner Rock', 'Experimental', 'Heavy Metal']"
 2009,Edward Sharpe and the Magnetic Zeros,Up From Below,3.43,176,56.97,13,4.38,"['Indie Rock', 'Folk Rock']"
 2009,Cormorant,Metazoa,3.91,180,69.27,10,6.93,"['Black Metal', 'Death Metal', 'Prog Rock']"
-1972,Jimi Hendrix,Hendrix in the West,4.06,40,40.92,8,5.12,"['Blues Rock', 'Psychedelic Rock']"
 1995,Shiner,Splay,3.24,31,41.68,10,4.17,"['Math Rock', 'Indie Rock']"
 2009,Jay Reatard,Watch Me Fall,3.78,100,33.98,12,2.83,"['Garage Rock', 'Indie Rock']"
 2009,Emmure,Felony,1.65,1101,31.62,12,2.64,"['Hardcore', 'Metalcore']"
@@ -8347,7 +8289,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2008,Midsummer,Inside The Trees,3.98,26,71.85,12,5.99,"['Shoegaze', 'Post Rock', 'Indie Rock']"
 1994,Converge,Halo In A Haystack,2.66,597,7.1,10,0.71,['Metalcore']
 2009,Megadeth,Endgame,3.89,2612,44.7,11,4.06,"['Heavy Metal', 'Thrash']"
-1987,Phish,Phish,3.39,32,54.62,16,3.41,['Experimental']
 1989,Laaz Rockit,Annihilation Principle,3.7,44,44.53,9,4.95,['Thrash']
 2009,The Cribs,Ignore The Ignorant,3.37,75,47.75,12,3.98,"['Alternative Rock', 'Indie Rock']"
 2009,Ingrid Michaelson,Everybody,3.62,42,43.25,12,3.6,['Pop Rock']
@@ -8405,7 +8346,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2009,Converge,Axe to Fall,4.04,3303,42.18,13,3.24,['Hardcore']
 1993,Brad,Shame,3.53,35,42.58,11,3.87,"['Alternative Rock', 'Grunge', 'Pop Rock']"
 1997,Chumbawamba,Tubthumper,3.34,75,55.12,12,4.59,"['Folk Rock', 'Punk', 'Pop Rock', 'Drum n Bass', 'Synth-pop']"
-1974,Caravan,Caravan and the New Symphonia,3.88,20,43.95,5,8.79,['Prog Rock']
 1976,Caravan,Blind Dog at St. Dunstans,3.13,30,46.32,9,5.15,"['Pop Rock', 'Prog Rock']"
 1995,The Dismemberment Plan,!,3.21,73,50.94,12,4.24,"['Punk', 'Indie Rock']"
 1996,Polvo,Exploded Drawing,3.97,147,58.93,16,3.68,"['Math Rock', 'Post Rock', 'Indie Rock']"
@@ -8579,7 +8519,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2001,Dilute,Grape Blueprints Pour Spinach Olive Grape,4.16,79,48.48,10,4.85,"['Math Rock', 'Indie Rock', 'Post Rock']"
 2009,Dead to Me,African Elephants,3.14,35,34.81,13,2.68,['Punk']
 2000,Steve Von Till,As the Crow Flies,3.55,30,43.8,7,6.26,['Folk Rock']
-2009,Shrinebuilder,Shrinebuilder,3.83,186,39.18,5,7.84,"['Stoner Rock', 'Doom Metal', 'Heavy Metal']"
 2009,A Sunny Day in Glasgow,Ashes Grammar,3.74,91,63.32,24,2.64,"['Leftfield', 'Ambient']"
 2009,Mumford and Sons,Sigh No More,3.36,1373,48.68,12,4.06,"['Folk Rock', 'Bluegrass', 'Folk']"
 1999,Malignancy,Intrauterine Cannibalism,3.83,50,33.68,13,2.59,['Death Metal']
@@ -8602,7 +8541,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1993,Snapcase,Lookinglasself,3.52,79,25.84,9,2.87,['Hardcore']
 2009,Elder,Reflect,3.62,69,23.55,6,3.92,"['Hardcore', 'Emo']"
 1980,Dexys Midnight Runners,Searching for the Young Soul Rebels,3.99,46,41.62,11,3.78,"['New Wave', 'Soul']"
-2009,Death,...For the Whole World to See,3.93,179,26.38,7,3.77,"['Garage Rock', 'Punk']"
 2009,Icarus the Owl,The Spotless Mind,3.75,76,51.78,14,3.7,['Indie Rock']
 2009,Ancestors,Of Sound Mind,3.73,53,71.5,8,8.94,"['Prog Rock', 'Space Rock', 'Avantgarde', 'Stoner Rock', 'Psychedelic Rock', 'Ethereal', 'Hard Rock', 'Doom Metal']"
 2009,Norah Jones,The Fall,3.6,91,45.95,13,3.53,['Pop Rock']
@@ -8716,7 +8654,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,Overkill,Ironbound,4.08,630,57.8,10,5.78,['Thrash']
 2009,Real Estate,Real Estate,3.57,205,39.53,10,3.95,"['Lo-Fi', 'Indie Rock']"
 2004,Rabbit Junk,Rabbit Junk,3.56,34,44.15,10,4.42,"['Breakbeat', 'Hardcore', 'Industrial']"
-2010,Rage,Strings to a Web,3.8,61,54.73,15,3.65,['Heavy Metal']
 1999,Lack of Interest,Trapped Inside,3.28,30,14.77,24,0.62,"['Hardcore', 'Grindcore', 'Power Violence', 'Punk']"
 2007,Ash Pool,World Turns On Its Hinge,3.08,24,32.82,8,4.1,['Black Metal']
 2009,Bloody Panda,Summon,3.84,45,58.82,10,5.88,"['Doom Metal', 'Sludge Metal']"
@@ -8802,7 +8739,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1974,Nazareth,Rampant,3.26,39,39.72,8,4.96,"['Hard Rock', 'Classic Rock', 'Blues Rock']"
 2009,Julien-K,Death To Analog,3.65,40,59.88,14,4.28,"['Industrial', 'Hard Rock']"
 1999,The Black Crowes,By Your Side,3.47,72,44.93,11,4.08,"['Blues Rock', 'Southern Rock']"
-2002,Dream Theater,The Number Of The Beast,2.6,77,45.37,8,5.67,['Heavy Metal']
 1969,Johnny Winter,Johnny Winter,3.98,41,33.58,9,3.73,['Blues Rock']
 2010,The Wonder Years,The Upsides,3.91,1061,39.92,12,3.33,"['Emo', 'Punk']"
 1988,Keith Richards,Talk Is Cheap,3.69,21,46.87,11,4.26,['Soft Rock']
@@ -8848,7 +8784,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2009,Kurt Vile,Childish Prodigy,3.59,76,42.17,9,4.69,['Alternative Rock']
 2002,Sweep the Leg Johnny,Going Down Swingin',3.81,21,50.52,7,7.22,"['Math Rock', 'Indie Rock']"
 2001,Soilent Green,A Deleted Symphony For the Beaten Down,3.79,38,33.47,10,3.35,['Sludge Metal']
-1996,Morbid Angel,Entangled in Chaos,3.89,80,39.07,11,3.55,['Death Metal']
 2009,Richard Hawley,Truelove's Gutter,3.85,34,50.78,8,6.35,"['Acoustic', 'Indie Rock']"
 2002,Floor,Floor,3.82,69,32.52,13,2.5,"['Alternative Rock', 'Doom Metal']"
 2004,Floor,Dove,3.31,26,49.73,7,7.1,['Doom Metal']
@@ -8875,7 +8810,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2003,The Jayhawks,Rainy Day Music,3.51,24,49.77,14,3.56,"['Acoustic', 'Indie Rock', 'Country Rock']"
 1992,Los Lobos,Kiko,3.74,25,52.57,16,3.29,"['Blues Rock', 'Rock & Roll', 'Latin']"
 1980,John Martyn,Grace and Danger,3.8,22,39.42,9,4.38,"['Jazz-Rock', 'Soul', 'Folk Rock']"
-1991,Paul McCartney,Unplugged (The Official Bootleg),3.83,21,47.27,17,2.78,"['Acoustic', 'Pop Rock', 'Rock & Roll']"
 1970,Van Morrison,His Band and the Street Choir,3.71,114,41.67,12,3.47,"['Blues Rock', 'Rhythm & Blues', 'Soul-Jazz']"
 1986,Van Morrison,"No Guru, No Method, No Teacher",3.59,35,50.83,10,5.08,"['Folk Rock', 'Acoustic']"
 1989,Van Morrison,Avalon Sunset,3.34,38,52.72,10,5.27,"['Rhythm & Blues', 'Ballad', 'Pop Rock', 'Soul-Jazz']"
@@ -8888,7 +8822,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2009,Horseback,The Invisible Mountain,3.99,82,38.15,4,9.54,['Experimental']
 1965,The Pretty Things,Get the Picture?,3.75,20,46.09,12,3.84,"['Blues Rock', 'Rhythm & Blues']"
 2010,Lostprophets,The Betrayed,3.22,394,47.08,11,4.28,['Alternative Rock']
-1989,Rage,Secrets In A Weird World,3.8,47,51.32,11,4.67,"['Thrash', 'Heavy Metal']"
 2009,The Taxpayers,A Rhythm in the Cages,3.55,21,28.09,12,2.34,"['Punk', 'Folk Rock']"
 1991,My Life with the Thrill Kill Kult,Sexplosion!,3.67,33,65.78,12,5.48,"['House', 'Industrial', 'Disco', 'Alternative Rock', 'Lounge']"
 2000,Songs: Ohia,Ghost Tropic,4.1,100,51.27,8,6.41,"['Lo-Fi', 'Indie Rock']"
@@ -8937,7 +8870,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,Jimi Hendrix,Valleys of Neptune,3.75,215,61.65,12,5.14,"['Blues Rock', 'Hard Rock', 'Psychedelic Rock', 'Classic Rock']"
 2010,Locksley,Be In Love,3.25,26,34.5,12,2.88,['Indie Rock']
 2010,Midlake,The Courage Of Others,3.58,117,41.75,11,3.8,"['Alternative Rock', 'Folk Rock']"
-1986,Venom,Eine Kleine Nachtmusik,3.28,23,71.49,20,3.57,"['Black Metal', 'Heavy Metal', 'Punk']"
 2010,Never Shout Never,What Is Love?,2.13,198,20.65,8,2.58,"['Acoustic', 'Pop Rock', 'Folk']"
 2008,Take That,The Circus,2.91,32,51.08,14,3.65,"['Soft Rock', 'Pop Rock']"
 2010,Greeley Estates,"No Rain, No Rainbow",3.37,242,39.08,12,3.26,['Metalcore']
@@ -8958,7 +8890,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,Nick Jonas and the Administration,Who I Am,2.62,26,41.32,10,4.13,"['Soft Rock', 'Pop Rock']"
 1979,Rickie Lee Jones,Rickie Lee Jones,3.86,28,42.15,11,3.83,['Rhythm & Blues']
 1967,Donovan,A Gift From A Flower To A Garden,4.0,64,59.4,22,2.7,"['Folk Rock', 'Psychedelic Rock']"
-2009,Jimmy Eat World,Clarity Live,4.35,34,67.15,15,4.48,"['Emo', 'Alternative Rock']"
 2010,The Courteeners,Falcon,2.79,21,49.33,12,4.11,['Indie Rock']
 2010,We Are The Ocean,Cutting Our Teeth,3.47,164,32.38,10,3.24,"['Alternative Rock', 'Hardcore', 'Emo']"
 1979,Styx,Cornerstone,3.1,75,37.88,9,4.21,"['Prog Rock', 'Pop Rock']"
@@ -9157,14 +9088,11 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1994,The Wedding Present,Watusi,3.69,21,41.39,12,3.45,['Indie Rock']
 1992,Television,Television,3.18,94,42.37,10,4.24,"['Alternative Rock', 'New Wave']"
 2010,Artist Vs Poet,Favorite Fix,2.96,35,42.3,12,3.52,"['Pop Rock', 'Power Pop']"
-1984,The Who,Who's Last,3.38,20,71.37,17,4.2,"['Rock & Roll', 'Classic Rock']"
-2000,The Who,BBC Sessions,4.24,36,72.0,26,2.77,['Mod']
 1974,The Who,Odds and Sods,3.93,54,40.38,11,3.67,"['Hard Rock', 'Pop Rock']"
 2002,Downthesun,Downthesun,3.33,30,53.0,12,4.42,['Nu Metal']
 2010,Coheed and Cambria,Year of the Black Rainbow,3.33,1602,53.87,12,4.49,['Prog Rock']
 2010,She and Him,Volume Two,3.53,165,43.37,13,3.34,"['Country', 'Folk', 'Indie Rock', 'Country Rock']"
 2009,From Indian Lakes,The Man With Wooden Legs,3.99,163,45.03,11,4.09,['Indie Rock']
-2001,King Crimson,Level Five,3.68,37,45.77,5,9.15,"['Art Rock', 'Prog Rock']"
 2010,Rinoa,An Age Among Them,4.0,256,60.24,8,7.53,"['Post Rock', 'Hardcore']"
 2010,The National,High Violet,4.24,2524,47.57,11,4.32,['Indie Rock']
 1983,Clock DVA,Advantage,3.98,20,39.07,8,4.88,"['New Wave', 'Post-Punk', 'Avantgarde']"
@@ -9246,7 +9174,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1995,PIG,Sinsation,3.78,23,46.43,10,4.64,['Industrial']
 1994,"Emerson, Lake and Palmer",In the Hot Seat,1.86,73,60.78,11,5.53,"['Pop Rock', 'Prog Rock']"
 1986,"Emerson, Lake and Powell","Emerson, Lake and Powell",2.97,29,42.7,8,5.34,['Prog Rock']
-2002,Ministry,Sphinctour,4.31,40,61.32,11,5.57,['Industrial Metal']
 2010,Darwin Deez,Darwin Deez,3.49,70,32.78,10,3.28,"['Lo-Fi', 'Indie Rock']"
 1983,Meat Loaf,Midnight at the Lost and Found,2.58,24,36.77,10,3.68,"['AOR', 'Arena Rock', 'Classic Rock', 'Pop Rock', 'Power Pop', 'Rock & Roll', 'Rock Opera']"
 1984,Meat Loaf,Bad Attitude,2.85,23,39.1,9,4.34,"['Soft Rock', 'Hard Rock', 'Southern Rock']"
@@ -9257,7 +9184,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2005,Confessor,Unraveled,3.5,20,46.7,9,5.19,['Doom Metal']
 2010,Hundredth,When Will We Surrender,3.51,229,42.82,13,3.29,"['Melodic Hardcore', 'Hardcore']"
 2009,Pretend,"Bones In The Soil, Rust In The Oil",4.04,101,77.18,10,7.72,"['Emo', 'Post Rock', 'Prog Rock']"
-1986,Dio,Intermission,3.43,38,33.77,6,5.63,['Heavy Metal']
 1991,Desecrator,Subconscious Release,3.52,50,64.65,8,8.08,['Death Metal']
 2000,Blue October,Consent to Treatment,3.93,71,56.58,14,4.04,['Alternative Rock']
 2001,Electric Light Orchestra,Zoom,2.44,55,43.57,13,3.35,"['Pop Rock', 'Prog Rock']"
@@ -9279,7 +9205,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1997,Patti Smith,Peace and Noise,3.23,45,52.43,10,5.24,"['Folk Rock', 'New Wave', 'Punk', 'Avantgarde']"
 2000,Patti Smith,Gung Ho,3.09,38,65.08,13,5.01,"['Alternative Rock', 'Acoustic', 'Bluegrass']"
 2010,White Wizzard,Over The Top,3.54,47,55.72,11,5.07,['Heavy Metal']
-1992,Swans,Omniscience,3.54,24,56.83,12,4.74,"['Industrial', 'Noise']"
 2002,The Apex Theory,Topsy-Turvy,3.49,86,43.37,12,3.61,"['Alternative Rock', 'Indie Rock', 'Prog Rock']"
 1986,Agnostic Front,Cause For Alarm,3.53,101,23.8,10,2.38,['Hardcore']
 1987,Agnostic Front,Liberty and Justice For...,3.34,54,25.83,11,2.35,"['Punk', 'Hardcore']"
@@ -9351,7 +9276,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1985,Supertramp,Brother Where You Bound,3.32,53,42.0,6,7.0,"['Pop Rock', 'Art Rock']"
 1987,Supertramp,Free As A Bird,2.4,31,43.78,9,4.86,"['Art Rock', 'Pop Rock', 'Prog Rock']"
 1997,Supertramp,Some Things Never Change,2.72,23,69.85,12,5.82,"['Soft Rock', 'Pop Rock', 'Prog Rock']"
-1980,Supertramp,Paris,4.28,30,83.62,16,5.23,"['Art Rock', 'Pop Rock', 'Prog Rock']"
 2010,Continuance,Carry Ourselves,3.73,60,32.89,13,2.53,['Melodic Hardcore']
 2010,Soulfly,Omen,3.19,243,40.57,11,3.69,['Thrash']
 2010,Harvey Milk,A Small Turn of Human Kindness,3.62,104,37.58,7,5.37,"['Doom Metal', 'Experimental']"
@@ -9377,7 +9301,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,"Us, From Outside",Inspired By the Threat of Failure,3.49,48,35.13,10,3.51,"['Post-Hardcore', 'Prog Rock']"
 2010,Exodus,Exhibit B: The Human Condition,3.67,466,78.6,13,6.05,['Thrash']
 2010,Ariel Pink's Haunted Graffiti,Before Today,3.77,304,45.02,12,3.75,"['Pop Rock', 'Psychedelic Rock', 'Lo-Fi', 'Glam', 'Hypnagogic pop']"
-1984,Gary Moore,We Want Moore!,4.21,21,64.47,10,6.45,['Hard Rock']
 2010,Sleigh Bells,Treats,3.64,667,32.1,11,2.92,"['Noise', 'Chiptune', 'Indie Rock']"
 2010,Josh Ritter,So Runs The World Away,3.76,37,53.7,13,4.13,"['Folk Rock', 'Acoustic', 'Country Rock']"
 1997,Karma To Burn,Karma to Burn,3.82,41,59.95,12,5.0,['Stoner Rock']
@@ -9464,7 +9387,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1997,Karp,Self Titled LP,3.77,42,30.1,8,3.76,"['Noise', 'Punk']"
 1995,Karp,Suplex,3.68,22,50.04,11,4.55,"['Punk', 'Heavy Metal']"
 1989,Jefferson Airplane,Jefferson Airplane,2.32,31,54.55,13,4.2,"['Psychedelic Rock', 'Classic Rock']"
-1969,Jefferson Airplane,Bless Its Pointed Little Head,3.77,22,50.75,10,5.08,"['Acid Rock', 'Psychedelic Rock']"
 2010,Woods,At Echo Lake,3.58,50,29.47,11,2.68,"['Folk', 'Lo-Fi', 'Indie Rock', 'Psychedelic Rock']"
 2010,Male Bonding,Nothing Hurts,3.44,56,29.02,13,2.23,"['Alternative Rock', 'Grunge']"
 2010,Anarbor,The Words You Don't Swallow,3.52,43,37.58,11,3.42,['Alternative Rock']
@@ -9483,7 +9405,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,We Are Scientists,Barbara,2.93,64,31.83,10,3.18,['Indie Rock']
 2010,Confide,Recover,2.88,193,35.82,11,3.26,"['Hardcore', 'Emo']"
 2010,In Fear and Faith,Imperial,2.87,262,43.45,13,3.34,['Post-Hardcore']
-2010,Bad Religion,30 Years Live,3.84,85,42.07,17,2.47,['Punk']
 2008,Metal Church,This Present Wasteland,3.27,57,57.2,10,5.72,"['Heavy Metal', 'Speed Metal', 'Hard Rock']"
 2010,Black Tusk,Taste The Sin,3.41,116,34.2,11,3.11,"['Stoner Rock', 'Heavy Metal']"
 2009,OSI,Blood,3.74,140,46.52,9,5.17,['Prog Rock']
@@ -9563,7 +9484,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,The Drums,The Drums,3.38,167,43.27,12,3.61,"['New Wave', 'Indie Rock']"
 2010,Sleepy Sun,Fever,3.98,104,42.28,9,4.7,"['Stoner Rock', 'Psychedelic Rock']"
 2010,The Wild,Set Ourselves Free,3.73,48,31.33,8,3.92,"['Folk Rock', 'Punk']"
-1996,Sabbat,The Dwelling,4.18,79,59.8,1,59.8,"['Thrash', 'Black Metal']"
 2010,Clinging to the Trees of a Forest Fire,Songs of Ill Hope and Desperation,3.77,113,33.18,13,2.55,"['Grindcore', 'Hardcore']"
 2010,Blitzen Trapper,Destroyer Of The Void,3.67,29,45.93,12,3.83,"['Indie Rock', 'Psychedelic Rock', 'Country Rock']"
 2010,MyChildren MyBride,Lost Boy,2.15,143,40.72,11,3.7,"['Hardcore', 'Heavy Metal']"
@@ -9869,7 +9789,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1989,Ozric Tentacles,Pungent Effulgent,4.03,84,41.3,7,5.9,['Space Rock']
 2010,Terror,Keepers of the Faith,3.61,206,33.53,13,2.58,['Hardcore']
 1981,Wall Of Voodoo,Dark Continent,4.0,35,34.58,13,2.66,"['New Wave', 'Post-Punk']"
-2010,Megadeth,Rust in Peace Live,4.07,149,73.9,17,4.35,"['Heavy Metal', 'Thrash']"
 2000,The Arrogant Sons of Bitches,Pornocracy,2.83,41,43.92,17,2.58,"['Ska', 'Punk']"
 2010,Goo Goo Dolls,Something for the Rest of Us,2.8,93,48.43,12,4.04,['Pop Rock']
 2009,Weatherbox,The Cosmic Drama,3.85,59,66.36,13,5.1,"['Alternative Rock', 'Emo', 'Indie Rock']"
@@ -10145,8 +10064,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1982,Missing Persons,Spring Session M,3.56,24,43.63,12,3.64,"['New Wave', 'Synth-pop']"
 2000,Duster,Contemporary Movement,3.92,181,39.38,12,3.28,"['Space Rock', 'Indie Rock']"
 2010,Candy Claws,Hidden Lands,3.19,26,45.28,10,4.53,"['Post Rock', 'Psychedelic Rock', 'Indie Rock']"
-1988,Rage,Perfect Man,3.73,48,43.45,12,3.62,"['Heavy Metal', 'Speed Metal']"
-1990,Rage,Reflections Of A Shadow,3.47,29,56.33,12,4.69,"['Power Metal', 'Speed Metal']"
 1991,Simply Red,Stars,3.44,34,41.1,10,4.11,"['Pop Rock', 'Ballad']"
 2010,My Chemical Romance,Danger Days: The True Lives of the Fabulous Killjoys,2.71,1682,53.93,15,3.6,"['Alternative Rock', 'Punk']"
 1983,Scream,Still Screaming,3.75,36,41.78,17,2.46,"['Hardcore', 'Punk']"
@@ -10159,7 +10076,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1982,23 Skidoo,Seven Songs,3.62,24,71.22,8,8.9,"['Tribal', 'Industrial']"
 1995,Chris Isaak,Forever Blue,4.11,40,39.77,13,3.06,['Pop Rock']
 1987,Chris Isaak,Chris Isaak,3.6,23,36.08,11,3.28,"['Blues Rock', 'Rockabilly']"
-1989,Queen,At the Beeb,4.14,28,37.55,8,4.69,"['Hard Rock', 'Classic Rock']"
 1995,Seam,Are You Driving Me Crazy?,3.69,49,43.08,10,4.31,['Alternative Rock']
 2005,Nine Horses,Snow Borne Sorrow,4.29,36,59.08,9,6.56,"['Art Rock', 'Downtempo', 'Experimental', 'Avant-garde Jazz']"
 1969,Free,Free,3.77,73,35.93,9,3.99,['Blues Rock']
@@ -10214,7 +10130,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1974,Slade,Slade in Flame,3.91,32,40.23,10,4.02,"['Rock & Roll', 'Pop Rock']"
 1976,Slade,Nobody's Fools,3.58,24,42.05,11,3.82,"['Classic Rock', 'Glam', 'Hard Rock']"
 1977,Slade,Whatever Happened to Slade,3.52,21,40.67,11,3.7,['Hard Rock']
-1981,Slade,We'll Bring the House Down,3.82,22,30.82,10,3.08,"['Hard Rock', 'Glam']"
 1981,Slade,Till Deaf Do Us Part,3.83,24,37.58,12,3.13,['Hard Rock']
 1983,Slade,The Amazing Kamikaze Syndrome,3.75,24,41.47,10,4.15,"['Hard Rock', 'Glam']"
 1985,Slade,Rogues Gallery,3.35,23,43.72,10,4.37,"['Arena Rock', 'Synth-pop']"
@@ -10318,7 +10233,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1985,Sting,The Dream of the Blue Turtles,3.78,115,41.67,10,4.17,"['Pop Rock', 'Vocal']"
 1987,Sting,...Nothing Like the Sun,3.97,133,54.75,12,4.56,"['Soft Rock', 'Pop Rock']"
 2010,Sting,Symphonicities,3.12,28,55.92,12,4.66,"['Symphonic Rock', 'Ballad', 'Vocal']"
-1986,Sting,Bring on the Night,4.42,20,82.73,13,6.36,"['Jazz-Rock', 'Pop Rock', 'Fusion']"
 2003,Macabre,Murder Metal,3.7,23,44.08,13,3.39,['Death Metal']
 1989,Macabre,Gloom,3.5,28,24.55,19,1.29,"['Thrash', 'Death Metal', 'Grindcore']"
 1987,Macabre,Grim Reality,3.52,23,55.63,6,9.27,['Death Metal']
@@ -10440,7 +10354,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1982,Adrian Belew,Lone Rhino,3.68,22,35.95,11,3.27,['Avantgarde']
 2010,The Bunny The Bear,The Bunny The Bear,2.2,74,36.81,12,3.07,"['Metalcore', 'Post-Hardcore']"
 1996,Today Is the Day,Today Is the Day,3.73,78,36.65,12,3.05,"['Math Rock', 'Noise', 'Experimental']"
-1980,Whitesnake,Live... In The Heart Of The City,3.74,34,80.58,16,5.04,"['Classic Rock', 'Hard Rock']"
 2010,"Duck. Little brother, duck!",Survival Is Not a Workout,3.9,30,78.37,15,5.22,"['Math Rock', 'Emo', 'Noise']"
 1987,Tony Macalpine,Maximum Security,4.14,43,38.2,11,3.47,['Heavy Metal']
 2007,Hollywood Undead,Hollywood Undead,2.24,68,57.3,16,3.58,"['Alternative Rock', 'Horrorcore']"
@@ -10470,7 +10383,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2010,Forevermore,Moths And Rust,3.38,43,35.32,10,3.53,['Metalcore']
 2007,Gregory Alan Isakov,"That Sea, The Gambler",4.0,44,48.09,11,4.37,"['Folk Rock', 'Country Rock', 'Bluegrass']"
 2009,Dawes,North Hills,3.67,21,55.03,11,5.0,['Indie Rock']
-1994,Jimi Hendrix,Woodstock,4.37,38,63.77,12,5.31,"['Blues Rock', 'Psychedelic Rock']"
 2002,Echolyn,Mei,4.22,27,49.55,1,49.55,['Prog Rock']
 1989,Peter Murphy,Deep,4.14,62,54.02,9,6.0,['Alternative Rock']
 1979,Gillan,Mr. Universe,4.1,25,44.15,10,4.42,['Hard Rock']
@@ -10742,7 +10654,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2009,Pile,Jerk Routine,3.73,37,38.36,10,3.84,['Post-Punk']
 1995,Karate,Karate,3.85,49,37.97,9,4.22,"['Alternative Rock', 'Post Rock', 'Indie Rock']"
 2003,Fanisk,Noontide,3.95,41,62.37,6,10.4,"['Black Metal', 'Atmospheric Black Metal', 'Symphonic Metal']"
-1994,Sabbat,Fetishism,3.92,36,54.0,10,5.4,"['Thrash', 'Black Metal']"
 1972,Babe Ruth,First Base,3.66,25,41.6,7,5.94,"['Classic Rock', 'Prog Rock']"
 1974,Mott The Hoople,The Hoople,4.18,31,39.02,9,4.34,"['Glam', 'Hard Rock', 'Rock & Roll']"
 1976,Starcastle,Starcastle,3.89,62,39.57,7,5.65,['Prog Rock']
@@ -10875,13 +10786,11 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1987,Cows,Taint Pluribus Taint Unum,3.68,31,35.5,12,2.96,"['Noise Rock', 'Post-Punk', 'Punk']"
 1979,Squeeze,Cool for Cats,3.15,26,38.17,12,3.18,['New Wave']
 1981,Squeeze,East Side Story,3.89,32,49.02,14,3.5,['Pop Rock']
-1981,Journey,Captured,3.91,22,71.3,17,4.19,['Pop Rock']
 2009,Candy Claws,In the Dream of the Sea Life,3.78,23,41.28,10,4.13,"['Shoegaze', 'Ambient']"
 1989,Breathless,Chasing Promises,4.11,22,47.83,8,5.98,['Indie Rock']
 2005,Astrobrite,Pinkshinyultrablast,3.59,42,67.28,14,4.81,['Shoegaze']
 1970,Egg,Egg,3.64,21,43.37,8,5.42,['Prog Rock']
 1969,Kevin Ayers,Joy of a Toy,4.05,33,67.21,10,6.72,"['Psychedelic Rock', 'Prog Rock']"
-1992,Sabbat,Evoke,3.78,40,49.57,11,4.51,"['Thrash', 'Black Metal']"
 2003,The Clientele,The Violet Hour,3.73,26,49.78,15,3.32,"['Indie Rock', 'Ethereal', 'Indie Pop']"
 2008,The Front Bottoms,I Hate My Friends,3.36,81,30.22,10,3.02,"['Acoustic', 'Folk', 'Indie Rock']"
 1975,Druid,Toward the Sun,3.74,38,57.42,7,8.2,['Prog Rock']
@@ -10893,7 +10802,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1984,The Psychedelic Furs,Mirror Moves,3.66,25,37.48,9,4.16,"['Alternative Rock', 'New Wave']"
 1996,Mortician,Hacked Up for Barbecue,3.37,101,49.58,24,2.07,"['Death Metal', 'Grindcore']"
 2010,The Growlers,Hot Tropics,3.9,24,24.0,10,2.4,['Psychedelic Rock']
-2009,Radiohead,In Rainbows Disk 2,3.79,402,26.8,8,3.35,['Alternative Rock']
 1985,Squirrel Bait,Squirrel Bait,3.53,29,17.72,8,2.22,"['Alternative Rock', 'Hardcore']"
 1990,Billy Idol,Charmed Life,2.82,34,53.03,11,4.82,"['Hard Rock', 'Pop Rock', 'Rock & Roll', 'Rockabilly']"
 1995,No Knife,Drunk on the Moon,3.88,26,43.58,11,3.96,"['Garage Rock', 'Hardcore', 'Punk']"
@@ -10913,7 +10821,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1984,Dolly Mixture,Demonstration Tapes,3.85,30,73.24,31,2.36,"['Indie Rock', 'Indie Pop']"
 2010,Brother Dege,Folk Songs of the American Longhair,3.8,22,45.0,10,4.5,"['Southern Rock', 'Folk Rock']"
 1987,Simply Red,Men and Women,3.12,21,41.12,10,4.11,"['Pop Rock', 'Synth-pop']"
-1998,Deicide,When Satan Lives,3.77,24,55.88,17,3.29,['Death Metal']
 1992,Corpus Rottus,Rituals of Silence,3.68,20,29.31,8,3.66,['Death Metal']
 1995,Wicked Innocence,Omnipotence,3.72,25,46.17,8,5.77,"['Death Metal', 'Grindcore']"
 1980,A Certain Ratio,The Graveyard and The Ballroom,3.52,24,45.77,16,2.86,"['Leftfield', 'New Wave']"
@@ -11025,7 +10932,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 1999,Reatards,"Grown Up, Fucked Up",3.57,21,24.13,18,1.34,"['Garage Rock', 'Punk']"
 2009,Rival Sons,Before the Fire,3.06,25,38.9,11,3.54,"['Alternative Rock', 'Classic Rock']"
 1972,Catapilla,Changes,4.08,26,37.86,4,9.46,"['Jazz-Rock', 'Prog Rock']"
-2003,Ween,All Request Live,4.2,20,68.28,18,3.79,"['Alternative Rock', 'Synth-pop']"
 1982,REO Speedwagon,Good Trouble,3.42,25,37.65,10,3.76,['Pop Rock']
 1984,REO Speedwagon,Wheels Are Turnin',3.52,29,39.22,9,4.36,"['Pop Rock', 'AOR']"
 1972,Sparks,A Woofer In Tweeter's Clothing,3.63,30,39.93,11,3.63,"['Pop Rock', 'Glam']"
@@ -11064,3 +10970,180 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,styles
 2000,Ceremonium,No Longer Silent,3.93,22,32.95,6,5.49,"['Death Metal', 'Doom Metal']"
 1972,Jerry Garcia,Garcia,4.14,28,40.07,10,4.01,"['Folk Rock', 'Psychedelic Rock']"
 2008,Buckethead,Albino Slug,3.69,116,40.15,13,3.09,"['Thrash', 'Hard Rock', 'Experimental', 'Heavy Metal']"
+1976,Aerosmith,Rocks,4.1,739,34.88,9,3.88,"['Hard Rock', 'Blues Rock']"
+1975,Pink Floyd,Wish You Were Here,4.63,7065,44.1,5,8.82,['Prog Rock']
+1969,The Moody Blues,To Our Children's Children's Children,3.82,109,40.3,13,3.1,['Psychedelic Rock']
+1971,Hawkwind,In Search Of Space,3.97,186,44.65,6,7.44,"['Space Rock', 'Prog Rock', 'Hard Rock', 'Psychedelic Rock']"
+1979,Hawkwind,PXR5,3.27,37,37.58,8,4.7,"['Psychedelic Rock', 'Prog Rock', 'Hard Rock', 'Space Rock']"
+1977,Santana,Festivál,2.91,39,45.57,11,4.14,"['Jazz-Rock', 'Fusion']"
+1982,Santana,Shangó,2.4,29,44.48,11,4.04,"['Jazz-Rock', 'Latin Jazz', 'Blues Rock', 'Fusion']"
+1990,Santana,Spirits Dancing in the Flesh,2.42,20,48.07,10,4.81,"['Fusion', 'Pop Rock', 'Latin Jazz']"
+2001,Iggy Pop,Beat 'Em Up,2.18,56,72.3,17,4.25,"['Alternative Rock', 'Hard Rock', 'Punk']"
+1986,Iggy Pop,Beat 'Em Up,2.84,86,41.57,9,4.62,['Pop Rock']
+1969,King Crimson,In the Court of the Crimson King,4.56,4440,41.98,5,8.4,"['Prog Rock', 'Symphonic Rock']"
+1994,Mike Oldfield,The Songs Of Distant Earth,3.71,72,55.78,17,3.28,"['Ambient', 'Downtempo', 'New Age', 'Prog Rock']"
+1981,The Cure,Faith,4.01,1064,36.73,8,4.59,"['Post-Punk', 'Goth Rock', 'New Wave', 'Coldwave']"
+1987,The Cure,Kiss Me Kiss Me Kiss Me,3.88,1188,74.15,25,2.97,"['Alternative Rock', 'Psychedelic Rock', 'Synth-pop', 'Indie Rock']"
+1973,Bruce Springsteen,"The Wild, The Innocent & The E Street Shuffle",4.0,483,46.57,7,6.65,['Classic Rock']
+1977,Cheap Trick,Cheap Trick,4.06,141,39.82,10,3.98,['Hard Rock']
+1971,Paul McCartney,Ram,4.2,379,42.4,12,3.53,['Pop Rock']
+1997,Genesis,...Calling All Stations...,1.93,433,67.77,11,6.16,['Pop Rock']
+1983,Genesis,Genesis,3.15,504,45.9,9,5.1,"['Pop Rock', 'Art Rock']"
+2005,Napalm Death,The Code Is Red... Long Live The Code,3.78,329,45.0,15,3.0,"['Grindcore', 'Death Metal']"
+1985,R.E.M.,Fables Of The Reconstruction,3.79,467,39.77,13,3.06,"['Indie Rock', 'Alternative Rock']"
+1995,Ramones,¡Adios Amigos!,3.1,186,33.85,13,2.6,"['Rock & Roll', 'Punk']"
+1988,Ted Nugent,If You Can't Lick 'Em... Lick 'Em,2.55,21,40.2,10,4.02,['Hard Rock']
+1997,W.A.S.P.,Kill Fuck Die,2.8,79,45.23,10,4.52,['Heavy Metal']
+1994,Buckethead,Giant Robot,3.74,166,73.37,19,3.86,"['Post-Punk', 'Psychedelic Rock', 'Shoegaze', 'Noise Rock']"
+2004,Buckethead,Population Override,4.12,266,55.35,10,5.54,['Prog Rock']
+1971,Wishbone Ash,Pilgrimage,3.85,96,39.9,7,5.7,"['Prog Rock', 'Blues Rock']"
+2000,Yo La Tengo,And Then Nothing Turned Itself Inside-Out,4.05,438,77.25,13,5.94,['Indie Rock']
+1993,Duran Duran,Duran Duran (The Wedding Album),3.47,120,62.5,13,4.81,"['New Wave', 'Pop Rock']"
+1974,Electric Light Orchestra,Eldorado,4.1,223,39.35,10,3.94,"['Symphonic Rock', 'Art Rock']"
+2007,Exodus,The Atrocity Exhibition: Exhibit A,3.49,492,71.6,10,7.16,['Thrash']
+1978,Gary Moore,Back on the Streets,3.52,31,37.55,8,4.69,"['Blues Rock', 'Hard Rock']"
+1969,Jeff Beck,Beck-Ola,3.83,66,30.92,7,4.42,"['Blues Rock', 'Garage Rock', 'Rock & Roll']"
+1971,Jeff Beck,Rough and Ready,3.42,31,36.18,7,5.17,['Blues Rock']
+1972,Jeff Beck,Jeff Beck Group,3.22,29,40.43,9,4.49,['Blues Rock']
+1980,Killing Joke,Killing Joke,4.06,427,35.0,8,4.38,"['New Wave', 'Post-Punk']"
+1988,Killing Joke,Outside the Gate,3.02,97,37.88,8,4.74,"['New Wave', 'Post-Punk']"
+1973,Lynyrd Skynyrd,(pronounced 'lĕh-'nérd 'skin-'nérd),4.35,736,43.05,8,5.38,"['Blues Rock', 'Hard Rock', 'Southern Rock']"
+1989,NOFX,S&M Airlines,3.0,266,30.42,11,2.77,['Punk']
+1991,Savatage,Streets: A Rock Opera,4.18,275,59.12,16,3.7,"['Prog Rock', 'Heavy Metal']"
+1970,The Byrds,(Untitled),3.27,37,71.35,18,3.96,"['Folk Rock', 'Country Rock', 'Psychedelic Rock']"
+1987,The Flaming Lips,Oh My Gawd!!!...The Flaming Lips,3.02,159,48.0,11,4.36,['Alternative Rock']
+1979,Van Halen,Van Halen II,3.85,744,31.2,10,3.12,"['Hard Rock', 'Classic Rock', 'Heavy Metal']"
+1974,Bad Company,Bad Company,3.87,267,34.6,8,4.32,"['Hard Rock', 'Blues Rock']"
+1982,Dokken,Breakin' The Chains,3.28,134,36.43,10,3.64,"['Hard Rock', 'Heavy Metal']"
+1988,GWAR,Hell-O!,3.25,90,38.43,16,2.4,['Heavy Metal']
+1995,GWAR,Ragnarök,3.5,107,47.18,14,3.37,['Heavy Metal']
+1990,King's X,Faith Hope Love,3.75,124,61.92,13,4.76,"['Heavy Metal', 'Art Rock', 'Hard Rock', 'Progressive Metal']"
+2005,King's X,Ogre Tones,3.57,61,47.5,13,3.65,"['Hard Rock', 'Prog Rock']"
+1983,Ministry,With Sympathy,2.55,248,37.87,9,4.21,['New Wave']
+1992,Ministry,Psalm 69,4.11,838,44.63,9,4.96,['Thrash']
+1979,Simple Minds,Real to Real Cacophony,3.48,28,40.77,12,3.4,"['New Wave', 'Post-Punk', 'Art Rock']"
+1984,Siouxsie and the Banshees,Hyæna,3.85,151,40.2,9,4.47,"['Post-Punk', 'Art Rock']"
+1979,Slade,Return to Base,3.95,21,33.72,11,3.07,['Hard Rock']
+1977,Supertramp,Even in the Quietest Moments...,3.97,197,43.42,7,6.2,"['Prog Rock', 'Pop Rock']"
+1982,Supertramp,'...Famous Last Words...',3.57,92,47.8,9,5.31,['Pop Rock']
+2005,Ween,"Shinola, Vol. 1",3.71,103,47.57,12,3.96,"['Alternative Rock', 'Synth-pop']"
+1990,Ween,God Ween Satan: The Oneness,3.74,286,71.15,26,2.74,"['Alternative Rock', 'Punk']"
+1997,Whitesnake,Restless Heart,2.94,77,55.85,11,5.08,"['Hard Rock', 'Blues Rock']"
+1998,Anthrax,Volume 8 - The Threat Is Real,2.62,492,63.63,16,3.98,"['Thrash', 'Heavy Metal']"
+1977,"Emerson, Lake and Palmer",Works Volume 1,2.8,143,68.05,14,4.86,"['Prog Rock', 'Neo-Classical', 'Jazz-Rock', 'Soft Rock']"
+1984,Fates Warning,Night on Bröcken,3.23,176,42.17,9,4.69,['Progressive Metal']
+2010,Fu Manchu,The Cold,3.72,81,52.08,10,5.21,"['Thrash', 'Heavy Metal']"
+1999,Fu Manchu,Eatin' Dust,3.92,86,34.43,8,4.3,['Alternative Rock']
+1974,Grand Funk Railroad,All The Girls In The World Beware!!!,3.25,20,38.87,10,3.89,['Hard Rock']
+1976,Grand Funk Railroad,Born To Die,3.45,20,48.2,10,4.82,"['Pop Rock', 'Blues Rock', 'Funk', 'Hard Rock']"
+1976,Grand Funk Railroad,Good Singin' Good Playin',3.49,20,46.1,11,4.19,['Hard Rock']
+1981,Grand Funk Railroad,Grand Funk Lives,3.15,20,36.08,10,3.61,"['Hard Rock', 'Pop Rock']"
+1983,Grand Funk Railroad,What's Funk?,2.78,20,39.57,10,3.96,['Hard Rock']
+1971,Jimi Hendrix,Rainbow Bridge,3.7,71,42.37,8,5.3,"['Hard Rock', 'Psychedelic Rock', 'Blues Rock']"
+2006,Meat Loaf,Bat Out Of Hell III: The Monster Is Loose,3.04,103,77.48,14,5.53,"['Pop Rock', 'Classic Rock']"
+2003,Neurosis,Neurosis & Jarboe,3.43,158,59.75,8,7.47,['Doom Metal']
+2001,Pennywise,Land Of The Free?,3.59,230,39.5,14,2.82,['Punk']
+1977,Sparks,Introducing Sparks,3.18,20,35.97,9,4.0,"['Pop Rock', 'Art Rock', 'Glam']"
+1981,Sparks,Whomp That Sucker,3.41,20,38.63,10,3.86,"['Art Rock', 'Synth-pop', 'New Wave']"
+1984,Sparks,Pulling Rabbits Out Of A Hat,2.7,20,39.78,11,3.62,"['Pop Rock', 'Synth-pop']"
+1997,The Brian Jonestown Massacre,Give It Back!,4.1,94,54.75,13,4.21,['Psychedelic Rock']
+2003,The Brian Jonestown Massacre,...And This Is Our Music,3.78,36,53.3,16,3.33,"['Psychedelic Rock', 'Indie Rock']"
+2001,of Montreal,Coquelicot Asleep in the Poppies: A Variety of Whimsical Verse,3.67,104,69.78,22,3.17,"['Psychedelic Rock', 'Indie Rock']"
+2005,311,Don't Tread On Me,3.03,243,37.3,11,3.39,['Alternative Rock']
+1996,Anathema,Eternity,3.8,543,58.1,12,4.84,['Doom Metal']
+1983,Asia,Alpa,3.12,92,45.0,10,4.5,"['Pop Rock', 'Symphonic Rock']"
+2010,Asia,Omega,2.62,29,61.75,12,5.15,['Pop Rock']
+1998,Bright Eyes,A Collection of Songs Written and Recorded 1995-1997,2.74,103,67.2,20,3.36,['Indie Rock']
+1977,Caravan,Better by Far,2.83,20,43.9,9,4.88,"['Prog Rock', 'Soft Rock']"
+1980,Caravan,The Album,2.73,20,42.75,9,4.75,['Prog Rock']
+1982,Caravan,Back to Front,2.95,20,42.9,8,5.36,['Pop Rock']
+1995,Caravan,The Battle of Hastings,3.06,20,52.35,11,4.76,['Pop Rock']
+2003,Caravan,The Unauthorised Breakfast Item,3.13,20,60.1,10,6.01,['Prog Rock']
+1970,Chicago,Chicago II,4.1,119,66.08,23,2.87,"['Prog Rock', 'Pop Rock']"
+1975,Chicago,Chicago VIII,3.09,20,39.3,10,3.93,"['Soft Rock', 'Pop Rock']"
+1978,Chicago,Hot Streets,2.76,20,40.95,10,4.1,"['Soft Rock', 'Pop Rock']"
+1980,Chicago,Chicago XIV,2.63,20,38.95,10,3.9,['Pop Rock']
+1982,Chicago,Chicago 16,2.9,20,41.3,10,4.13,"['Pop Rock', 'Soft Rock']"
+1988,Chicago,Chicago 19,2.88,20,43.7,10,4.37,"['Pop Rock', 'Classic Rock']"
+1986,Chicago,Chicago 18,2.69,20,44.75,10,4.47,['Pop Rock']
+1991,Chicago,Twenty 1,2.38,20,51.85,12,4.32,"['Pop Rock', 'Soft Rock']"
+2006,Chicago,Chicago XXX,2.46,20,56.75,13,4.37,"['Pop Rock', 'Soft Rock']"
+1993,Clutch,"Transnational Speedway League: Anthems, Anecdotes and Undeniable Truths",3.38,193,46.15,11,4.2,"['Hardcore', 'Stoner Rock']"
+2009,Eels,Hombre Lobo,3.58,117,40.27,12,3.36,['Indie Rock']
+1978,Elvis Costello,This Year's Model,4.18,408,35.23,12,2.94,['New Wave']
+1979,Elvis Costello,Armed Forces,4.13,204,48.87,16,3.05,"['New Wave', 'Pop Rock']"
+1980,Elvis Costello,Get Happy!!,3.93,114,48.32,20,2.42,"['New Wave', 'Post-Punk']"
+1981,Elvis Costello,Trust,3.89,77,40.85,14,2.92,"['New Wave', 'Pop-Rock']"
+1981,Elvis Costello,Almost Blue,3.41,43,31.13,12,2.59,['Country Rock']
+1982,Elvis Costello,Imperial Bedroom,3.95,113,49.95,15,3.33,"['Alternative Rock', 'New Wave', 'Pop Rock']"
+1983,Elvis Costello,Punch The Clock,3.2,37,45.32,13,3.49,"['New Wave', 'Pop Rock']"
+1984,Elvis Costello,Goodbye Cruel World,2.48,33,44.17,13,3.4,"['Alternative Rock', 'Pop Rock']"
+1986,Elvis Costello,King of America,3.96,61,57.5,15,3.83,"['Rock & Roll', 'Country Rock']"
+1986,Elvis Costello,Blood & Chocolate,3.79,70,74.92,11,6.81,"['Alternative Rock', 'New Wave']"
+1995,Elvis Costello,Kojak Variety,2.1,21,53.5,15,3.57,['Pop Rock']
+1996,Elvis Costello,All This Useless Beauty,3.06,26,48.35,12,4.03,"['Pop Rock', 'Power Pop', 'Art Rock', 'Ballad']"
+2004,Elvis Costello,The Delivery Man,3.0,29,52.9,13,4.07,"['Alternative Rock', 'Country Rock']"
+2008,Elvis Costello,Momofuku,3.25,24,47.2,12,3.93,"['Pop Rock', 'Rock & Roll']"
+2010,Foetus,Hide,3.36,29,50.75,10,5.08,['Symphonic Rock']
+2009,Foreigner,Can't Slow Down,2.58,25,50.0,13,3.85,"['Hard Rock', 'Pop Rock']"
+1988,Fugazi,Fugazi,4.19,373,23.1,7,3.3,"['Alternative Rock', 'Punk', 'Hardcore', 'Post-Hardcore']"
+2007,Iced Earth,Framing Armageddon: Something Wicked Part 1,2.94,391,68.93,19,3.63,"['Thrash', 'Heavy Metal']"
+2008,Iced Earth,The Crucible Of Man: Something Wicked Part 2,2.63,369,59.15,15,3.94,"['Thrash', 'Heavy Metal']"
+2007,Korn,Untitled,2.48,1414,48.7,13,3.75,['Nu Metal']
+1971,Led Zeppelin,Led Zeppelin IV,4.51,5234,42.4,8,5.3,['Classic Rock']
+1985,Manilla Road,Open the Gates,4.02,143,53.2,10,5.32,['Heavy Metal']
+1992,Manilla Road,The Circus Maximus,2.76,34,68.25,11,6.2,['Heavy Metal']
+2001,Manilla Road,Atlantis Rising,3.75,51,56.9,10,5.69,['Heavy Metal']
+2002,Manilla Road,Spiral Castle,3.88,66,46.45,7,6.64,['Heavy Metal']
+2005,Manilla Road,Gates of Fire,3.84,47,72.2,9,8.02,['Heavy Metal']
+2008,Manilla Road,Voyager,3.76,50,63.95,9,7.11,['Heavy Metal']
+2004,Metal Church,The Weight of the World,3.08,60,56.2,10,5.62,['Heavy Metal']
+1983,Misfits,Earth A.D. / Wolfs Blood,4.11,777,14.6,9,1.62,"['Hardcore', 'Punk']"
+1993,Morbid Angel,Covenant,4.18,1329,41.1,10,4.11,['Death Metal']
+2006,MxPx,Let's Rock,3.07,27,30.95,12,2.58,"['Punk', 'Pop Punk']"
+2006,My Dying Bride,A Line Of Deathless Kings,3.79,295,61.0,9,6.78,['Doom Metal']
+2009,My Dying Bride,For Lies I Sire,3.38,272,59.95,9,6.66,['Doom Metal']
+2002,Nine Inch Nails,Still,4.24,480,43.35,9,4.82,"['Art Rock', 'Alternative Rock']"
+1991,Pere Ubu,Worlds in Collision,2.82,20,43.45,13,3.34,"['New Wave', 'Alternative Rock']"
+1993,Pere Ubu,Story of My Life,2.88,20,40.75,11,3.7,"['New Wave', 'Alternative Rock']"
+1995,Pere Ubu,Raygun Suitcase,3.44,20,62.3,15,4.15,"['Art Rock', 'Alternative Rock']"
+1998,Pere Ubu,Pennsylvania,3.28,20,51.6,15,3.44,['Art Rock']
+2002,Pere Ubu,St. Arkansas,3.28,20,41.6,10,4.16,"['Art Rock', 'Post-Punk']"
+1978,Quiet Riot,Quiet Riot,2.38,42,38.35,12,3.2,"['Heavy Metal', 'Hard Rock']"
+1986,Quiet Riot,QR III,3.03,66,42.08,11,3.83,"['Heavy Metal', 'Hard Rock', 'Glam Rock']"
+1995,Quiet Riot,Down To The Bone,2.5,37,68.65,14,4.9,"['Heavy Metal', 'Hard Rock']"
+1971,REO Speedwagon,REO Speedwagon,2.88,20,38.17,8,4.77,['Hard Rock']
+1975,REO Speedwagon,This Time We Mean It,2.64,20,38.97,10,3.9,['Pop Rock']
+1976,REO Speedwagon,R.E.O.,3.31,20,33.45,8,4.18,['Classic Rock']
+1987,REO Speedwagon,Life As We Know It,3.07,20,40.32,10,4.03,['Pop Rock']
+1990,REO Speedwagon,"The Earth, A Small Man, His Dog And A Chicken",2.93,20,46.4,11,4.22,['Hard Rock']
+1996,REO Speedwagon,Building the Bridge,2.76,20,48.6,11,4.42,"['Hard Rock', 'Pop Rock']"
+2007,REO Speedwagon,Find Your Own Way Home,2.9,20,43.9,10,4.39,['Pop Rock']
+1977,Ringo Starr,Ringo the 4th,2.48,20,37.32,10,3.73,['Pop Rock']
+1978,Ringo Starr,Bad Boy,2.37,20,33.95,10,3.4,"['Blues Rock', 'Pop Rock']"
+1981,Ringo Starr,Stop And Smell The Roses,2.64,20,32.55,10,3.26,['Pop Rock']
+1983,Ringo Starr,Old Wave,2.64,20,36.77,10,3.68,"['Pop Rock', 'Rock & Roll']"
+2008,Ringo Starr,Liverpool 8,2.85,20,45.4,12,3.78,['Pop Rock']
+1970,Rod Stewart,An Old Raincoat Won't Ever Let You Down,3.69,27,32.45,8,4.06,"['Blues Rock', 'Folk Rock']"
+1974,Rod Stewart,Smiler,3.07,20,42.82,12,3.57,"['Classic Rock', 'Folk Rock', 'Rock & Roll']"
+1980,Rod Stewart,Foolish Behaviour,2.88,20,40.82,10,4.08,"['Classic Rock', 'Pop Rock']"
+1983,Rod Stewart,Body Wishes,2.76,20,41.18,10,4.12,['Pop Rock']
+1984,Rod Stewart,Camouflage,2.63,20,37.52,8,4.69,['Pop Rock']
+1986,Rod Stewart,Every Beat Of My Heart,2.71,20,42.6,10,4.26,['Pop Rock']
+1988,Rod Stewart,Out Of Order,2.88,20,46.6,10,4.66,['Pop Rock']
+1991,Rod Stewart,Vagabond Heart,2.98,20,59.32,13,4.56,['Classic Rock']
+1995,Rod Stewart,A Spanner In The Works,2.9,20,57.1,12,4.76,['Classic Rock']
+1998,Rod Stewart,When We Were The New Boys,3.04,20,41.82,10,4.18,['Pop Rock']
+2001,Rod Stewart,Human,2.31,20,45.42,11,4.13,['Pop Rock']
+2009,Rod Stewart,Soulbook,2.65,20,53.93,16,3.37,['Pop Rock']
+1970,Soft Machine,Third,4.15,347,75.75,6,12.62,"['Jazz-Rock', 'Psychedelic Rock', 'Prog Rock']"
+2004,Starflyer 59,I Am The Portuguese Blues,3.39,23,27.45,10,2.74,['Indie Rock']
+2003,Steely Dan,Everything Must Go,2.88,92,42.25,9,4.69,"['Pop Rock', 'Jazz-Rock']"
+1999,Super Furry Animals,Guerrilla,3.93,72,51.75,15,3.45,['Indie Rock']
+1976,The Alan Parsons Project,Tales of Mystery and Imagination,3.98,192,40.5,7,5.79,"['Pop Rock', 'Prog Rock', 'Symphonic Rock']"
+1980,The Alan Parsons Project,The Turn Of A Friendly Card,3.88,139,39.92,6,6.65,"['Pop Rock', 'Soft Rock']"
+1988,Wire,A Bell Is A Cup Until It Is Struck,3.27,59,43.65,10,4.36,['New Wave']
+1990,Wire,Manscape,2.6,20,63.43,13,4.88,['Post-Punk']
+1991,Wire,The Drill,2.46,20,55.39,9,6.15,['New Wave']
+2003,Zao,All Else Failed,3.07,117,41.6,8,5.2,"['Hardcore', 'Death Metal']"
+1999,Zao,Liberate Te Ex Inferis,4.14,505,40.12,15,2.67,"['Heavy Metal', 'Metalcore', 'Hardcore']"
