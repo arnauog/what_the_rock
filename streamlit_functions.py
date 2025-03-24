@@ -127,9 +127,9 @@ def bandcamp_albums(artist):
     titles_list = []
     title_changed_list = []
     album_length_list = []
+    tracks_list = []
     prices_list = []
     years_list = []
-
     artist_clean = artist.lower().replace(' ', '')
 
     try:
@@ -141,7 +141,7 @@ def bandcamp_albums(artist):
 
         releases = soup.select('#music-grid li a p')
         for i in releases:
-            tracks_list = []
+
             title = i.text.replace('\n', '').strip()
             print(title)
             title_changed = (
@@ -195,6 +195,7 @@ def bandcamp_albums(artist):
         artists_list.append(artist)
         titles_list.append(np.nan)
         title_changed_list.append(np.nan)
+        tracks_list.append(np.nan)
         print(f"{artist_clean} - Maybe this artist doesn't have a bandcamp page")
         
     # Create a DataFrame with the results
@@ -204,8 +205,9 @@ def bandcamp_albums(artist):
                                 , 'tracks': tracks_list
                                 , 'price_$': prices_list})
 
-    df_bandcamp['price_per_minute'] = round(df_bandcamp['price_$'] / df_bandcamp['album_length'], 3)
+    df_bandcamp['price_per_minute'] = round(df_bandcamp['price_$'] / df_bandcamp['length'], 3)
     df_bandcamp.dropna(subset='price_$', inplace=True)
+    df_bandcamp['tracks'] = df_bandcamp['tracks'].astype(int)
     df_bandcamp.sort_values('price_per_minute', inplace=True)
     df_bandcamp.reset_index(drop=True, inplace=True)
 

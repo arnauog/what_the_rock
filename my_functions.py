@@ -557,6 +557,3 @@ def create_folium_map(df, country, subgenre):
     # Add the FeatureGroup to the correct map
     maps[country].add_child(subset_df_group)
 
-
-    
-
