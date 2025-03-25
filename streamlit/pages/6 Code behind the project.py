@@ -193,6 +193,7 @@ for artist in artists_to_remove:
                         """)
                 
                 st.code("df_new_artists = df_new_artists[~df_new_artists['artist'].isin(artists_to_remove)]")
+                st.video('images/np where wrong origins 3 artist to remove.mp4')
                 st.write("This way I knew exactly which artists I had gotten already the origin and which ones still not.")
                 
                 st.code("""df_final = pd.read_csv('Datasets/df_final.csv')
@@ -206,16 +207,18 @@ for artist in unique_artists:
     if artist not in artists and artist not in artists_to_remove:
         artists_to_do.append(artist)
                         """)
-            
+
                 st.divider()
-                st.subheader("GeoPy")
+                st.image("logos/GeoPy.jpg", width=200)
                 st.write("Thanks to this library I could find the coordinates of every city.")
                 st.write("First I tested it just printing them, where I found more wrong locations and found that GeoPy doesn't recognize places like *Cumbria* or *Middlesex*.")
 
             with col3:                 
                 st.image("images/RYM_origin.png")
                 st.image("images/np where real origins wikipedia.jpg")
-                
+                st.write(" ")
+                st.write(" ")
+                st.video('images/np where wrong origins 2.mp4')
                 st.write("I had some techniques to quickly find the wrong locations.")
                 st.code("""# print abnormally short origins and visually check if they are correct
 for index, row in df_new_artists.iterrows():
@@ -226,7 +229,8 @@ df_new_artists["origin_length"] = df_new_artists["origin"].str.len()
 long_strings = df_new_artists[df_new_artists["origin_length"]>40] # create a df based on these long origins
 long_strings # display the df so I can copy the parts I am interested in""")
 
-                st.image("logos/GeoPy.jpg", width=300)
+                st.write(" ")
+                st.write(" ")
                 st.write("There were many artists that had squared brackets in their origins from Wikipedia.")
                 st.image("images/wikipedia_origins_claudators.png")
                 st.code("""origin = "Kirkland, Washington"
@@ -240,10 +244,18 @@ print(location.latitude, location.longitude)""")
                 st.write(" ")
                 st.divider()
                 st.header("State")
-                st.write("Apart from the city, I needed info from the state, which I got from the GeoPy address.  \n"
-                "I only searched for states in the United States, in the United Kingdom I couldn't find enough information about the subregions.  \n"
-                "I initially thought a simple split would do, but it was not that simple, so I had to apply **Regex**.")
-
+                st.write("Apart from the city, I needed info from the state, which I got from the GeoPy address.")
+                st.subheader('United States')
+                st.write("I initially thought a simple split would do, but it was not that simple, so I had to apply **Regex**.")
+                st.subheader('United Kingdom')
+                st.write("For the UK it was more tricky. I could'nt get the info directly from the Geopy address like I did with the US, so I searched for a **public dataframe** with info about cities and regions.")
+                st.write("But it was not that simple. 96 artists didn't have their city in the regions df, with meant some of the following:  \n"
+                "- Their city was just not there.  \n"
+                "- My city was incorrect.  \n"
+                "- The public dataframe didn't include cities from Northern Ireland.")
+                st.write("There were more problems. After merging, there were **510 extra rows**, which meant that there were **cities with the same name in the UK**.  \n"
+                "So I searched for each of these cities and dropped from the public dataset the 'wrong' cities, the ones that were not my artist's origin city.")
+                
             with col3:
                 st.write(" ")
                 st.code("""def extract_state(location):
@@ -263,6 +275,8 @@ print(location.latitude, location.longitude)""")
         return match.group(1)  # Extract state from 1st capture group
 
     return None  # No match found""")
+                
+                st.image("images/uk_repeated_cities.png")
 
             with col2:
                 st.write(" ")

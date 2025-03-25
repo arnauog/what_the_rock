@@ -5,7 +5,7 @@ The Xcerts,United Kingdom,Aberdeen,57.1482429,-2.0928095,"Aberdeen City, Alba / 
 Annie Lennox,United Kingdom,Aberdeen,57.1482429,-2.0928095,"Aberdeen City, Alba / Scotland, United Kingdom",Aberdeen City
 Hellripper,United Kingdom,Aberdeen,57.1482429,-2.0928095,"Aberdeen City, Alba / Scotland, United Kingdom",Aberdeen City
 Jesu,United Kingdom,Abergele,53.2840692,-3.5810655,"Abergele, Conwy, Cymru / Wales, LL22 7BE, United Kingdom",Wales
-Warpath,United Kingdom,Abertawe,51.6195955,-3.9459248,"Swansea, Cymru / Wales, SA1 3BN, United Kingdom",Wales
+Warpath,United Kingdom,Swansea,51.6195955,-3.9459248,"Swansea, Cymru / Wales, SA1 3BN, United Kingdom",Wales
 Novo Amor,United Kingdom,Aberystwyth,52.4143113,-4.0816846,"Aberystwyth, Ceredigion, Cymru / Wales, SY23 1LH, United Kingdom",Wales
 Radiohead,United Kingdom,Abingdon,51.6714842,-1.2779715,"Abingdon, Vale of White Horse, Oxfordshire, England, OX14 3UJ, United Kingdom",England
 Jon Anderson,United Kingdom,Accrington,53.7541156,-2.3655434,"Accrington, Hyndburn, Lancashire, England, BB5 1ES, United Kingdom",England
@@ -95,12 +95,12 @@ Ocean Colour Scene,United Kingdom,Birmingham,52.4796992,-1.9026911,"Birmingham, 
 Epic45,United Kingdom,Birmingham,52.4796992,-1.9026911,"Birmingham, West Midlands, England, United Kingdom",West Midlands
 Flux of Pink Indians,United Kingdom,Bishop's Stortford,51.8676279,0.1631961,"Bishop's Stortford, East Hertfordshire, Hertfordshire, England, United Kingdom",Hertfordshire
 Amy Macdonald,United Kingdom,Bishopbriggs,55.9039659,-4.2244495,"Bishopbriggs, Donhoe Court, Auchinairn, Bishopbriggs, East Dunbartonshire, Alba / Scotland, G64 1QD, United Kingdom",Scotland
-Boston Manor,United Kingdom,Blackpool,53.84036055,-3.016109110103628,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
-Jethro Tull,United Kingdom,Blackpool,53.84036055,-3.016109110103628,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
-Ian Anderson,United Kingdom,Blackpool,53.84036055,-3.016109110103628,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
-Me vs Hero,United Kingdom,Blackpool,53.84036055,-3.016109110103628,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
-Blanket,United Kingdom,Blackpool,53.8179442,-3.0509812,"Blackpool, England, FY1 1DL, United Kingdom",England
-Jon Gomm,United Kingdom,Blackpool,53.84036055,-3.016109110103628,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
+Boston Manor,United Kingdom,Blackpool,53.817944,-3.050981,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
+Jethro Tull,United Kingdom,Blackpool,53.817944,-3.050981,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
+Ian Anderson,United Kingdom,Blackpool,53.817944,-3.050981,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
+Me vs Hero,United Kingdom,Blackpool,53.817944,-3.050981,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
+Blanket,United Kingdom,Blackpool,53.817944,-3.050981,"Blackpool, England, FY1 1DL, United Kingdom",England
+Jon Gomm,United Kingdom,Blackpool,53.817944,-3.050981,"The Blackpool Sixth Form College, Blackpool Old Road, Little Carleton, Carleton, Blackpool, Lancashire, England, FY3 7LR, United Kingdom",England
 Nicky Wire,United Kingdom,Blackwood,51.6663189,-3.1974329,"Blackwood, Caerphilly, Cymru / Wales, United Kingdom",Caerphilly
 Manic Street Preachers,United Kingdom,Blackwood,51.6663189,-3.1974329,"Blackwood, Caerphilly, Cymru / Wales, United Kingdom",Caerphilly
 Mark Knopfler,United Kingdom,Blyth,55.1270903,-1.5099726,"Blyth, Northumberland, North East, England, United Kingdom",North East
@@ -203,7 +203,7 @@ The Telescopes,United Kingdom,Burton upon Trent,52.802742,-1.629917,"Burton-on-T
 Joe Jackson,United Kingdom,Burton upon Trent,52.802742,-1.629917,"Burton-on-Trent, East Staffordshire, Staffordshire, England, DE14 1JN, United Kingdom",England
 Elbow,United Kingdom,Bury,53.5927543,-2.2972827,"Bury, Greater Manchester, England, United Kingdom",Greater Manchester
 Wham!,United Kingdom,Bushey,51.6441567,-0.3621858,"Bushey, Hertsmere, Hertfordshire, England, WD23 3DH, United Kingdom",England
-Shaped By Fate,United Kingdom,Caerdydd,51.4816546,-3.1791934,"Cardiff, Cymru / Wales, CF10 2AF, United Kingdom",Wales
+Shaped By Fate,United Kingdom,Cardiff,51.4816546,-3.1791934,"Cardiff, Cymru / Wales, CF10 2AF, United Kingdom",Wales
 Attack! Attack!,United Kingdom,Caerffili,51.5745432,-3.2208487,"Caerphilly, Cymru / Wales, United Kingdom",Caerphilly
 Lucy Rose,United Kingdom,Camberley,51.3392845,-0.7460981,"Camberley, Surrey Heath, Surrey, England, GU15 3SA, United Kingdom",England
 Jamie Lenman,United Kingdom,Camberley,51.3392845,-0.7460981,"Camberley, Surrey Heath, Surrey, England, GU15 3SA, United Kingdom",England
@@ -1159,7 +1159,7 @@ Roxy Music,United Kingdom,Newcastle upon Tyne,54.9738474,-1.6131572,"Newcastle u
 Joe Meek,United Kingdom,Newent,51.92365975,-2.392118168022077,"Newent, Forest of Dean, Gloucestershire, England, United Kingdom",Gloucestershire
 Dub War,United Kingdom,Newport,51.5882332,-2.9974967,"Newport, Cymru / Wales, United Kingdom",Newport
 Skindred,United Kingdom,Newport,51.5882332,-2.9974967,"Newport, Cymru / Wales, United Kingdom",Newport
-Save Your Breath,United Kingdom,Newport,50.7003707,-1.2952039,"Newport, Isle of Wight, England, PO30 5HD, United Kingdom",England
+Save Your Breath,United Kingdom,Newport (Isle of Wight),50.7003707,-1.2952039,"Newport, Isle of Wight, England, PO30 5HD, United Kingdom",England
 Feeder,United Kingdom,Newport,51.5882332,-2.9974967,"Newport, Cymru / Wales, United Kingdom",Newport
 Wunderhorse,United Kingdom,Newquay,50.4134414,-5.0848836,"Newquay, Cornwall, England, United Kingdom",Cornwall
 Gama Bomb,United Kingdom,Newry,54.1775283,-6.337506,"Newry, County Down, Northern Ireland / Tuaisceart Éireann, United Kingdom",County Down
@@ -1277,7 +1277,7 @@ New Order,United Kingdom,Salford,53.4877463,-2.2891921,"Salford, Greater Manches
 Bad Lieutenant,United Kingdom,Salford,53.4877463,-2.2891921,"Salford, Greater Manchester, England, United Kingdom",Greater Manchester
 The Ting Tings,United Kingdom,Salford,53.4877463,-2.2891921,"Salford, Greater Manchester, England, United Kingdom",Greater Manchester
 Black Grape,United Kingdom,Salford,53.4877463,-2.2891921,"Salford, Greater Manchester, England, United Kingdom",Greater Manchester
-Graham Nash,United Kingdom,Salford,53.99259143744687,-2.791447015695809,"Salford Road, Ellel, Galgate, Lancaster, Lancashire, England, LA2 0LN, United Kingdom",England
+Graham Nash,United Kingdom,Blackpool,53.817944,-3.050981,"Salford Road, Ellel, Galgate, Lancaster, Lancashire, England, LA2 0LN, United Kingdom",England
 Joy Division,United Kingdom,Salford,53.4877463,-2.2891921,"Salford, Greater Manchester, England, United Kingdom",Greater Manchester
 Jerusalem,United Kingdom,Salisbury,51.0690613,-1.7954134,"Salisbury, Wiltshire, England, United Kingdom",Wiltshire
 Tokyo Blade,United Kingdom,Salisbury,51.0690613,-1.7954134,"Salisbury, Wiltshire, England, United Kingdom",Wiltshire
@@ -1338,7 +1338,7 @@ Desolated,United Kingdom,Southampton,50.8995203,-1.3275406,"Southampton, Bursled
 Delays,United Kingdom,Southampton,50.9025349,-1.404189,"Southampton, England, United Kingdom",Southampton
 Our Time Down Here,United Kingdom,Southampton,50.9025349,-1.404189,"Southampton, England, United Kingdom",Southampton
 Power Quest,United Kingdom,Southampton,50.9025349,-1.404189,"Southampton, England, United Kingdom",Southampton
-Get Cape. Wear Cape. Fly,United Kingdom,Southend,51.5388241,0.7128137,"Southend-on-Sea, Essex, England, United Kingdom",Essex
+Get Cape. Wear Cape. Fly,United Kingdom,Southend-on-Sea,51.5388241,0.7128137,"Southend-on-Sea, Essex, England, United Kingdom",Essex
 Busted,United Kingdom,Southend-on-Sea,51.5388241,0.7128137,"Southend-on-Sea, Essex, England, United Kingdom",Essex
 Between the Screams,United Kingdom,Southend-on-Sea,51.5388241,0.7128137,"Southend-on-Sea, Essex, England, United Kingdom",Essex
 These New Puritans,United Kingdom,Southend-on-Sea,51.5388241,0.7128137,"Southend-on-Sea, Essex, England, United Kingdom",Essex
@@ -1378,8 +1378,8 @@ Battleaxe,United Kingdom,Sunderland,54.9058512,-1.3828727,"Sunderland, North Eas
 Wodensthrone,United Kingdom,Sunderland,54.9058512,-1.3828727,"Sunderland, North East, England, United Kingdom",North East
 Lebanon Hanover,United Kingdom,Sunderland,54.9058512,-1.3828727,"Sunderland, North East, England, United Kingdom",North East
 Field Music,United Kingdom,Sunderland,54.9058512,-1.3828727,"Sunderland, North East, England, United Kingdom",North East
-Leatherface,United Kingdom,Sunderland,54.9394665,-1.4090161555978118,"Sunderland_Greyhound_Stadium, Sunderland Road, East Boldon, South Tyneside, Tyne and Wear, North East, England, SR5 1RP, United Kingdom",England
-Nexilva,United Kingdom,Sunderland,54.9394665,-1.4090161555978118,"Sunderland_Greyhound_Stadium, Sunderland Road, East Boldon, South Tyneside, Tyne and Wear, North East, England, SR5 1RP, United Kingdom",England
+Leatherface,United Kingdom,Sunderland,54.9058512,-1.3828727,"Sunderland_Greyhound_Stadium, Sunderland Road, East Boldon, South Tyneside, Tyne and Wear, North East, England, SR5 1RP, United Kingdom",England
+Nexilva,United Kingdom,Sunderland,54.9058512,-1.3828727,"Sunderland_Greyhound_Stadium, Sunderland Road, East Boldon, South Tyneside, Tyne and Wear, North East, England, SR5 1RP, United Kingdom",England
 Forefather,United Kingdom,Surrey,51.2715316,-0.3414523511290909,"Surrey, England, United Kingdom",Surrey
 Threshold,United Kingdom,Surrey,51.2715316,-0.3414523511290909,"Surrey, England, United Kingdom",Surrey
 Anika,United Kingdom,Surrey,51.2715316,-0.3414523511290909,"Surrey, England, United Kingdom",Surrey
@@ -1388,10 +1388,10 @@ Air Formation,United Kingdom,Sussex,50.8823136,0.0120421532928756,"East Sussex F
 Mumm-Ra,United Kingdom,Sussex,50.94451385000001,-0.0622673284178475,"Sussex, England, United Kingdom",Sussex
 Badfinger,United Kingdom,Swansea,51.6195955,-3.9459248,"Swansea, Cymru / Wales, SA1 3BN, United Kingdom",Wales
 Acrimony,United Kingdom,Swansea,51.6195955,-3.9459248,"Swansea, Cymru / Wales, SA1 3BN, United Kingdom",Wales
-The Dukes Of Stratosphear,United Kingdom,Swindon,51.6057801,-1.841922049963434,"Swindon & Cricklade Railway, Purton, Wiltshire, England, United Kingdom",Wiltshire
-The Cold Harbour,United Kingdom,Swindon,51.6057801,-1.841922049963434,"Swindon & Cricklade Railway, Purton, Wiltshire, England, United Kingdom",Wiltshire
+The Dukes Of Stratosphear,United Kingdom,Swindon,51.5615327,-1.7854322,"Swindon & Cricklade Railway, Purton, Wiltshire, England, United Kingdom",Wiltshire
+The Cold Harbour,United Kingdom,Swindon,51.5615327,-1.7854322,"Swindon & Cricklade Railway, Purton, Wiltshire, England, United Kingdom",Wiltshire
 Lyrinx,United Kingdom,Swindon,51.5615327,-1.7854322,"Swindon, England, SN1 1JZ, United Kingdom",England
-XTC,United Kingdom,Swindon,51.6057801,-1.841922049963434,"Swindon & Cricklade Railway, Purton, Wiltshire, England, United Kingdom",Wiltshire
+XTC,United Kingdom,Swindon,51.5615327,-1.7854322,"Swindon & Cricklade Railway, Purton, Wiltshire, England, United Kingdom",Wiltshire
 Eternal Lord,United Kingdom,Swindon,51.5615327,-1.7854322,"Swindon, England, SN1 1JZ, United Kingdom",England
 Heriot,United Kingdom,Swindon,51.5615327,-1.7854322,"Swindon, England, SN1 1JZ, United Kingdom",England
 Wolfsbane,United Kingdom,Tamworth,52.6345819,-1.6948438,"Tamworth, Staffordshire, England, United Kingdom",Staffordshire
