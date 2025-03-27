@@ -30,12 +30,13 @@ with col1:
     if artist != 'Select an artist':
         st.write(f"Looking for the albums of {artist} in Bandcamp... Please wait.")
         df_bandcamp = bandcamp_albums(artist)
+        st.write('FUCK')
         artist_clean = artist.lower().replace(' ', '')
-        url = f'https://{artist_clean}.bandcamp.com/music'
+        url_artist = f'https://{artist_clean}.bandcamp.com/music'
 
         st.divider()
 
-        if len(df_bandcamp) != 0:
+        if len(df_bandcamp) > 0:
             st.write(f'The cheapest albums of {artist} are:')
             st.dataframe(df_bandcamp)
 
@@ -50,6 +51,8 @@ with col1:
                     .replace("'", '')
                     .replace('& ', '')
                     .replace('feat.', 'feat')
+                    .replace(',', '')
+                    .replace(' - ', '-') 
                     .replace(' ', '-')
                     .lower()
             )
@@ -65,6 +68,6 @@ with col1:
                 st.write(f'**{album}**, from {year} is the **{artist}** album with the lowest price per minute')
 
                 time.sleep(1)
-                st.link_button("Visit the artist's Bandcamp website", url)
+                st.link_button("Visit the artist's Bandcamp website", url_artist)
         else:
             st.write(f"Sorry, we couldn't find any albums from {artist}")
