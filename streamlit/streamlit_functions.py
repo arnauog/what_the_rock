@@ -4,7 +4,7 @@ import streamlit as st
 import time
 import requests
 from bs4 import BeautifulSoup
-
+import regex as re
 
 def get_style(df, subgenre, col2):
     style = st.selectbox(':musical_note: **Style**', ['Select a style']+list(df[df['subgenre']==subgenre]['style'].unique()))
@@ -120,16 +120,13 @@ def create_folium_map(df, country, subgenre):
 
 
 def bandcamp_albums(artist):
-    df_ratings = pd.read_csv('Datasets/df_ratings.csv')
-
-    # create empty lists
+        # create empty lists
     artists_list = []
     titles_list = []
-    title_changed_list = []
     album_length_list = []
+    tracks_list = []
     prices_list = []
     years_list = []
-
     artist_clean = artist.lower().replace(' ', '')
 
     try:
@@ -140,32 +137,65 @@ def bandcamp_albums(artist):
         print(f"{artist_clean} - {location}")
 
         releases = soup.select('#music-grid li a p')
-        for i in releases:
-            tracks_list = []
-            title = i.text.replace('\n', '').strip()
-            print(title)
-            title_changed = (
-                title.replace('(', '')
-                    .replace(')', '')
-                    .replace('[', '')
-                    .replace(']', '')
-                    .replace('/', ' ')
-                    .replace("'", '')
-                    .replace('& ', '')
-                    .replace('feat.', 'feat')
-                    .replace(' ', '-')
-                    .lower()
-            )
-            artists_list.append(artist)
-            titles_list.append(title)
-            title_changed_list.append(title_changed)
 
+        if len(releases) > 0:
+            for i in releases:
+                title = i.text.replace('\n', '').strip()
+                print(title)
+                title_changed = (
+                    title.replace('(', '')
+                        .replace(')', '')
+                        .replace('[', '')
+                        .replace(']', '')
+                        .replace('/', ' ')
+                        .replace("'", '')
+                        .replace('& ', '')
+                        .replace('feat.', 'feat')
+                        .replace(' ', '-')
+                        .lower()
+                )
+                artists_list.append(artist)
+                titles_list.append(title)
+
+                try:
+                    url = f'https://{artist_clean}.bandcamp.com/album/{title_changed}'
+                    response = requests.get(url)
+                    soup = BeautifulSoup(response.content, "html.parser")
+                    price = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4.ft.compound-button.main-button > span > span.base-text-color')[0].text
+                    prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
+                    release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
+                    year = release_date[0].text.strip().split(', ')[1][:4]
+                    years_list.append(year)
+                    songs_table = soup.select('table', class_='track_list track_table')[1]('span')
+                    tracks = len(songs_table)/2
+                    tracks_list.append(tracks)
+                    song_durations = []
+
+                    for i in range(1, len(songs_table), 2):
+                        song_duration = songs_table[i].text.strip()
+                        try:
+                            minutes, seconds = map(int, song_duration.split(':'))
+                            song_duration_minutes = minutes + seconds/60
+                            song_durations.append(song_duration_minutes)
+                        except:
+                            pass
+                        album_length = round(sum(song_durations), 2)
+                    album_length_list.append(album_length)
+                except: 
+                    print("Couldn't find the album")
+                    album_length_list.append(np.nan)
+                    prices_list.append(np.nan)
+                    years_list.append(np.nan)
+                    tracks_list.append(np.nan)
+        else:
+            artists_list.append(artist)
+            title = soup.select('#name-section > h2')[0].text.replace('\n', '').strip()
+            titles_list.append(title)
             try:
-                url = f'https://{artist_clean}.bandcamp.com/album/{title_changed}'
                 response = requests.get(url)
                 soup = BeautifulSoup(response.content, "html.parser")
-                price = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4.ft.compound-button.main-button > span > span.base-text-color')[0].text.replace('$', '')
-                prices_list.append(float(price))
+                price = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4.ft.compound-button.main-button > span > span.base-text-color')[0].text
+                prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
                 release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                 year = release_date[0].text.strip().split(', ')[1][:4]
                 years_list.append(year)
@@ -194,19 +224,28 @@ def bandcamp_albums(artist):
     except:
         artists_list.append(artist)
         titles_list.append(np.nan)
-        title_changed_list.append(np.nan)
+        tracks_list.append(np.nan)
         print(f"{artist_clean} - Maybe this artist doesn't have a bandcamp page")
-        
+
     # Create a DataFrame with the results
+    if re.match(r'^\$', price):
+        currency = '$'
+    elif re.match(r'^\€', price):
+        currency = '€'
+    elif re.match(r'^\£', price):
+        currency = '£'
+
     df_bandcamp = pd.DataFrame({'year': years_list
                                 , 'title': titles_list
                                 , 'length': album_length_list
                                 , 'tracks': tracks_list
-                                , 'price_$': prices_list})
+                                , f'price_{currency}': prices_list})
 
-    df_bandcamp['price_per_minute'] = round(df_bandcamp['price_$'] / df_bandcamp['album_length'], 3)
-    df_bandcamp.dropna(subset='price_$', inplace=True)
+    df_bandcamp['price_per_minute'] = round(df_bandcamp[f'price_{currency}'] / df_bandcamp['length'], 3)
+    df_bandcamp.dropna(subset=f'price_{currency}', inplace=True)
+    df_bandcamp['tracks'] = df_bandcamp['tracks'].astype(int)
     df_bandcamp.sort_values('price_per_minute', inplace=True)
     df_bandcamp.reset_index(drop=True, inplace=True)
-
     return df_bandcamp
+
+
