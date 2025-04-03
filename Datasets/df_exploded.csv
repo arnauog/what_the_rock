@@ -4236,7 +4236,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,subgenre,styl
 2005,Eisley,Room Noises,3.86,158,41.02,12,3.42,indie,Indie Rock
 2005,Eisley,Room Noises,3.86,158,41.02,12,3.42,indie,Pop Rock
 2007,Eisley,Combinations,3.51,98,37.08,10,3.71,indie,Indie Rock
-2009,El Grupo Nuevo de Omar Rodriguez Lopez,Cryptomnesia,3.22,148,36.25,11,3.3,classic,Prog Rock
 2004,El Ten Eleven,El Ten Eleven,3.78,99,35.62,9,3.96,indie,Post Rock
 2008,El Ten Eleven,Every Direction is North,3.51,38,41.89,10,4.19,indie,Post Rock
 2008,El Ten Eleven,These Promises Are Being Videotaped,3.17,26,27.77,8,3.47,indie,Post Rock
@@ -10363,7 +10362,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,subgenre,styl
 2006,Plain White T's,Every Second Counts,2.61,111,37.57,12,3.13,indie,Pop Rock
 2008,Plain White T's,Big Bad World,2.27,51,34.02,10,3.4,indie,Pop Rock
 2010,Plain White T's,Wonders of the Younger,2.0,47,49.75,15,3.32,indie,Pop Rock
-2010,Plan B,The Defamation Of Strickland Banks,3.58,74,50.13,13,3.86,indie,Pop Rock
 1998,Planes Mistaken for Stars,Planes Mistaken for Stars,3.91,51,24.01,8,3.0,indie,Emo
 1998,Planes Mistaken for Stars,Planes Mistaken for Stars,3.91,51,24.01,8,3.0,punk,Hardcore
 1998,Planes Mistaken for Stars,Planes Mistaken for Stars,3.91,51,24.01,8,3.0,punk,Punk
@@ -10632,8 +10630,6 @@ year,artist,title,rating,votes,album_length,tracks,avg_song_length,subgenre,styl
 2003,Putrid Pile,Collection Of Butchery,3.66,56,32.18,12,2.68,metal,Death Metal
 2005,Putrid Pile,The Pleasure in Suffering,3.68,40,31.57,12,2.63,metal,Death Metal
 2009,Putrid Pile,House of Dementia,3.58,48,44.2,13,3.4,metal,Death Metal
-1999,Puya,Fundamental,3.76,27,46.78,12,3.9,metal,Nu Metal
-1999,Puya,Fundamental,3.76,27,46.78,12,3.9,metal,Progressive Metal
 1980,Pylon,Gyrate,3.84,35,35.65,11,3.24,indie,Alternative Rock
 1980,Pylon,Gyrate,3.84,35,35.65,11,3.24,indie,Indie Rock
 1980,Pylon,Gyrate,3.84,35,35.65,11,3.24,indie,New Wave
