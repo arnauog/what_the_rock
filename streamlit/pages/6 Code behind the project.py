@@ -248,7 +248,7 @@ print(location.latitude, location.longitude)""")
                 st.subheader('United States')
                 st.write("I initially thought a simple split would do, but it was not that simple, so I had to apply **Regex**.")
                 st.subheader('United Kingdom')
-                st.write("For the UK it was more tricky. I could'nt get the info directly from the Geopy address like I did with the US, so I searched for a **public dataframe** with info about cities and regions.")
+                st.write("For the UK it was more tricky. I couldn't get the info directly from the Geopy address like I did with the US, so I searched for a **public dataframe** with info about cities and regions.")
                 st.write("But it was not that simple. 96 artists didn't have their city in the regions df, with meant some of the following:  \n"
                 "- Their city was just not there.  \n"
                 "- My city was incorrect.  \n"
@@ -283,9 +283,10 @@ print(location.latitude, location.longitude)""")
                 st.divider()
                 st.header("Population")
                 st.write("I though it would be interesting to analyze if there were some particular cities with a big musical scene,\n"
-                "but I couldn't simply get the cities with the most releases, because it's gonna be obviously the biggest cities, like Los Angeles and New York.")
+                "but I couldn't simply get the cities with the most releases, because it's gonna be obviously the biggest cities, like Los Angeles and London.")
                 st.write("First I wanted to get the cities population, which I did with a dataset from Kaggle, but then I realized there were many cities missing, in both countries.")
-                st.write("So in the end I got the **US states population**, a much better way since there are only 51 and I know the exact number, unlike cities.")
+                st.write("So in the end I got the **state/region population**, a much better way since there are much fewer and I know the exact number, unlike cities.")
+                st.write("For the UK, I chose Scotland, Wales, Northern Ireland and the 11 regions of England.")
 
             with col3:
                 st.image("images/city_population_missing.png")

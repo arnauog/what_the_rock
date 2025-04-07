@@ -22,7 +22,7 @@ df = pd.read_csv('Datasets/df_final.csv')
 st.title(':drum_with_drumsticks: What the Rock? :guitar:')
 st.subheader("A Rock music anaylsis in the US and UK between 1960 and 2010")
 st.divider()
-st.image('Roadmap/Roadmap.jpg', width=1200)
+st.image('Roadmap/Roadmap.jpg', width=1000)
 
 # # Wordcloud
 # artists = df['artist'].values
