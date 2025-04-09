@@ -4,3 +4,9 @@ streamlit
 seaborn
 matplotlib
 scikit-learn
+beautifulsoup4
+requests
+folium
+dotenv
+spotipy
+geopy
