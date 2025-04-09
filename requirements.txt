@@ -10,3 +10,4 @@ folium
 dotenv
 spotipy
 geopy
+regex
