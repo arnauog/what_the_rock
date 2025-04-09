@@ -16,8 +16,6 @@ from folium.plugins import HeatMap
 
 st.set_page_config(page_title='What the Rock?', page_icon=':guitar:', layout='wide')
 
-df = pd.read_csv('Datasets/df_final.csv')
-
 st.title(':drum_with_drumsticks: What the Rock? :guitar:')
 st.subheader("A Rock music anaylsis in the US and UK between 1960 and 2010")
 st.divider()
@@ -40,6 +38,7 @@ st.subheader("Project flowchart: visual representation of the development of the
 st.image('Roadmap/Roadmap.jpg', width=1000)
 
 # # Wordcloud
+# df = pd.read_csv('Datasets/df_final.csv')
 # artists = df['artist'].values
 # artists_joined = ", ".join(artists)
 # wordcloud = WordCloud(width=1600, height=800, background_color="white").generate(artists_joined)
