@@ -11,7 +11,6 @@ import folium
 from folium import Marker, Icon, Map
 from folium.plugins import HeatMap
 
-
 # https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
 
 st.set_page_config(page_title='What the Rock?', page_icon=':guitar:', layout='wide')
@@ -35,7 +34,7 @@ st.write("- **Buy the album with the lowest price per minute** to make the most 
 
 st.divider()
 st.subheader("Project flowchart: visual representation of the development of the project")
-st.image('Roadmap/Roadmap.jpg', width=1000)
+st.image('streamlit/Roadmap/Roadmap.jpg', width=1000)
 
 # # Wordcloud
 # df = pd.read_csv('Datasets/df_final.csv')
