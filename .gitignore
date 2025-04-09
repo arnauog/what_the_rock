@@ -3,5 +3,4 @@ Tableau
 .env
 Other_notebooks
 .cache
-streamlit
 __pycache__
