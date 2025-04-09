@@ -4,7 +4,6 @@ import streamlit.components.v1 as components
 
 import numpy as np
 import pandas as pd
-from wordcloud import WordCloud
 import seaborn as sns
 import matplotlib.pyplot as plt
 
