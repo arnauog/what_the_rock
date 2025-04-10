@@ -21,8 +21,8 @@ def spoti_open(query):
                                                             client_secret = client_secret))
     opensong = sp.search(q=query, limit=1)
     browser = opensong['tracks']['items'][0]['external_urls']['spotify']
-    st.write("Click the link to open the song on Spotify:")
-    st.markdown(f"[{query}]({browser})")
+    # st.write("Click the link to open the song on Spotify:")
+    st.markdown(f"['Listen on Spotify']({browser})")
 
     webbrowser.open(browser)
 

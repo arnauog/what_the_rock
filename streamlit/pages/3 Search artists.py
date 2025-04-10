@@ -54,8 +54,7 @@ with col1:
                 st.write(f'**{album}**, from **{year}**, is the best rated album of **{artist}** with a rating of **{rating}**')
 
                 time.sleep(1)
-                if st.button('Listen on Spotify'):
-                    spoti_open(query)
+                spoti_open(query)
 
 
         elif album_kind == 'Worst rated':
