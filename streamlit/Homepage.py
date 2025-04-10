@@ -34,7 +34,7 @@ st.write("- **Buy the album with the lowest price per minute** to make the most 
 
 st.divider()
 st.subheader("Project flowchart: visual representation of the development of the project")
-st.image('streamlit/Roadmap.jpg', width=1000)
+st.image('Roadmap.jpg', width=1000)
 
 # # Wordcloud
 # df = pd.read_csv('Datasets/df_final.csv')
