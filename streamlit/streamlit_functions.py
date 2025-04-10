@@ -68,8 +68,6 @@ def show_album_cover(query):
 
     
 def spoti_open(query):
-    from dotenv import load_dotenv
-    import os
     import spotipy
     from spotipy.oauth2 import SpotifyClientCredentials
 
@@ -83,6 +81,7 @@ def spoti_open(query):
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = client_id,
                                                             client_secret = client_secret))
     opensong = sp.search(q=query, limit=1)
+    st.write(opensong)
     browser = opensong['tracks']['items'][0]['external_urls']['spotify']
     webbrowser.open(browser)
 
