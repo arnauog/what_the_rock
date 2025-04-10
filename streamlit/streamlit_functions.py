@@ -6,6 +6,27 @@ import requests
 from bs4 import BeautifulSoup
 import regex as re
 
+def spoti_open(query):
+    import spotipy
+    from spotipy.oauth2 import SpotifyClientCredentials
+
+    import time
+    import webbrowser
+
+    client_id = st.secrets['client_id']
+    client_secret = st.secrets['client_secret']
+
+    #Initialize SpotiPy with user credentials
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = client_id,
+                                                            client_secret = client_secret))
+    opensong = sp.search(q=query, limit=1)
+    browser = opensong['tracks']['items'][0]['external_urls']['spotify']
+    st.write("Click the link to open the song on Spotify:")
+    st.markdown(f"[{query}]({browser})")
+
+    webbrowser.open(browser)
+
+
 def get_style(df, subgenre, col2):
     style = st.selectbox(':musical_note: **Style**', ['Select a style']+list(df[df['subgenre']==subgenre]['style'].unique()))
     
@@ -67,25 +88,6 @@ def show_album_cover(query):
     return album_cover
 
     
-def spoti_open(query):
-    import spotipy
-    from spotipy.oauth2 import SpotifyClientCredentials
-
-    import time
-    import webbrowser
-
-    client_id = st.secrets['client_id']
-    client_secret = st.secrets['client_secret']
-
-    #Initialize SpotiPy with user credentials
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = client_id,
-                                                            client_secret = client_secret))
-    opensong = sp.search(q=query, limit=1)
-    browser = opensong['tracks']['items'][0]['external_urls']['spotify']
-    st.write(browser)
-    webbrowser.open(browser)
-
-
 def create_folium_map(df, country, subgenre):
     import folium
     from folium import Map
