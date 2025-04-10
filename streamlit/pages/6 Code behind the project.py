@@ -150,7 +150,7 @@ df[df['artist']=='Big Kids'.strip()].sort_values('year').head()
                 with col4:
                     st.image("streamlit/logos/Wikipedia.jpg")
                 with col5:
-                    st.image("streamlit/images/wikipedia_origin_us.png")
+                    st.image("streamlit/images/wikipedia_origin_us.PNG")
 
                 st.code("""    for index in artists_to_do[start_index:final_index]:
 
