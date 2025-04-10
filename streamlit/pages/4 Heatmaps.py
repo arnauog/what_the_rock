@@ -20,7 +20,7 @@ url_final = 'https://drive.google.com/uc?export=download&id=1E-lnbjMb6eQJ3do4WbN
 df = pd.read_csv(url_final)
 
 url_country = "https://drive.google.com/uc?export=download&id=1zqEnQuFrJKFO0JEQU9jmPAJOY7wBPzLG"
-data = pd.read_csv(url_country)
+df_country = pd.read_csv(url_country)
 
 st.header('Geographical distribution of rock music')
 
@@ -81,7 +81,7 @@ with col1:
         if feature == 'Decades':
             uk_map_decades = Map(location=[uk_lat, uk_lon], zoom_start=6)
             for decade in decades:
-                create_folium_map_decades(data, "United Kingdom", decade, uk_map_decades)
+                create_folium_map_decades(df_country, "United Kingdom", decade, uk_map_decades)
             folium.LayerControl(collapsed=False, position="topleft").add_to(uk_map_decades)
                 
             # Save map to HTML
@@ -90,7 +90,7 @@ with col1:
         elif feature == 'Subgenres':
             uk_map_subgenres = Map(location=[uk_lat, uk_lon], zoom_start=6)
             for subgenre in subgenres:
-                create_folium_map_subgenres(data, "United Kingdom", subgenre, uk_map_subgenres)
+                create_folium_map_subgenres(df_country, "United Kingdom", subgenre, uk_map_subgenres)
             folium.LayerControl(collapsed=False, position="topleft").add_to(uk_map_subgenres)
             
             # Save map to HTML
@@ -102,7 +102,7 @@ with col1:
         if feature == 'Decades':
             us_map_decades = Map(location=[us_lat, us_lon], zoom_start=4)
             for decade in decades:
-                create_folium_map_decades(data, "United States", decade, us_map_decades)
+                create_folium_map_decades(df_country, "United States", decade, us_map_decades)
             folium.LayerControl(collapsed=False, position="topleft").add_to(us_map_decades)
                 
             # Save map to HTML
@@ -111,7 +111,7 @@ with col1:
         elif feature == 'Subgenres':
             us_map_subgenres = Map(location=[us_lat, us_lon], zoom_start=4)
             for subgenre in subgenres:
-                create_folium_map_subgenres(data, "United States", subgenre, us_map_subgenres)
+                create_folium_map_subgenres(df_country, "United States", subgenre, us_map_subgenres)
             folium.LayerControl(collapsed=False, position="topleft").add_to(us_map_subgenres)
             
             # Save map to HTML
