@@ -143,7 +143,7 @@ df[df['artist']=='Big Kids'.strip()].sort_values('year').head()
                         """)
                 
                 st.write("First I searched for the artist and if I wanted to get the full ``artist_profile`` I searched for the index:")
-                st.image("streamlit/images/artist_profile.png")
+                st.image("streamlit/images/artist_profile.PNG")
 
             with col3: 
                 col4, col5 = st.columns([0.3,0.7])
