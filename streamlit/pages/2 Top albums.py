@@ -3,7 +3,8 @@ from streamlit_functions import *
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('Datasets/df_final.csv')
+url = 'https://drive.google.com/file/d/1E-lnbjMb6eQJ3do4WbNJG6XXyrynyyb0/view?usp=sharing'
+df = pd.read_csv(url)
 st.title('Best albums of every rock style')
 
 st.markdown("""<style>
