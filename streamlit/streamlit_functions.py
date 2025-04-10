@@ -21,8 +21,7 @@ def spoti_open(query):
                                                             client_secret = client_secret))
     opensong = sp.search(q=query, limit=1)
     browser = opensong['tracks']['items'][0]['external_urls']['spotify']
-    # st.write("Click the link to open the song on Spotify:")
-    st.markdown(f"['Listen on Spotify']({browser})")
+    st.markdown(f"[Listen on Spotify]({browser})")
 
     webbrowser.open(browser)
 
@@ -43,8 +42,7 @@ def get_style(df, subgenre, col2):
                     st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
 
                     time.sleep(1)
-                    if st.button('Listen on Spotify'):
-                        spoti_open(query)
+                    spoti_open(query)
 
 
 def display_top_albums(df, subgenre, style):
