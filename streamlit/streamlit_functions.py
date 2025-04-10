@@ -76,13 +76,12 @@ def spoti_open(query):
     import time
     import webbrowser
 
-    load_dotenv()
-    user = st.secrets['client_id']
-    password = st.secrets['client_secret']
+    client_id = st.secrets['client_id']
+    client_secret = st.secrets['client_secret']
 
     #Initialize SpotiPy with user credentials
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = user,
-                                                            client_secret = password))
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = client_id,
+                                                            client_secret = client_secret))
     opensong = sp.search(q=query, limit=1)
     browser = opensong['tracks']['items'][0]['external_urls']['spotify']
     webbrowser.open(browser)
