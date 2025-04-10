@@ -35,7 +35,7 @@ with col1:
                             .sort_values('rating', ascending=False)\
                             .head()\
                             .reset_index(drop=True)
-            df_subset['rating'] = df_subset['rating'].astype(float)
+            df_subset['rating'] = df_subset['rating'].astype(float).map('{:.2f}'.format)
             df_subset.index = range(1, len(df_subset) + 1)
 
             st.divider()
