@@ -25,8 +25,8 @@ with tab1:
                 st.write("After doing some research, I decided to get the data from the **Discogs API**, which provides **all the releases**, not just one from every album.")
                 st.write("https://www.discogs.com")
             with col3:
-                st.image('images/Discogs_releases.png')
-                st.image("images/Discogs_get_masters_function.png")
+                st.image('streamlit/images/Discogs_releases.png')
+                st.image("streamlit/images/Discogs_get_masters_function.png")
             with col2:
                 st.write("The topic, rock music, was too broad, so first I decided to focus on **artists from the United Kingdom**, birth of many influential and key bands on rock history.")
                 st.write("I finished getting data from all the rock releases in the UK from 1960 in about a week,\n"
@@ -46,8 +46,8 @@ with tab1:
                     "and to check if I had gotten that album already or not (checking the ``master_id`` and the combination of ``artist`` and ``title``).")
                 st.write("This was extremely important in the end, when I was getting only about 25% of the releases I was checking on the API.")
             with col3:
-                st.image("images/Discogs_get_masters_print.png")
-                st.image("images/Top_styles_2002_USA.png")
+                st.image("streamlit/images/Discogs_get_masters_print.png")
+                st.image("streamlit/images/Top_styles_2002_USA.png")
             with col2:
                 st.divider()
                 st.subheader("API limitations")
@@ -79,7 +79,7 @@ with tab1:
 
         if topic == 'Ratings':
             with col2: 
-                st.image('logos/SputnikMusicLogo.jpg')
+                st.image('streamlit/logos/SputnikMusicLogo.jpg')
                 st.write("https://www.sputnikmusic.com/")
                 st.write("I checked many music websites to get the ratings via an API or webscraping, but in many there was no API or webscraping was banned, like in *Rate Your Music*.  \n"
                     "In the end I found ***SputnikMusic***, from where I could scrape with **BeautifulSoup** the ``ratings`` and ``votes`` from all the albums.")
@@ -118,8 +118,8 @@ with tab1:
                 st.code("df_ratings_top = df_ratings[df_ratings['votes']>=20]")
                 
             with col3:
-                st.image("images/SputnikMusic_main.png")
-                st.image("images/sputnik_album_ratings.png")
+                st.image("streamlit/images/SputnikMusic_main.png")
+                st.image("streamlit/images/sputnik_album_ratings.png")
         
         if topic == 'Origin':
             with col2:
@@ -143,14 +143,14 @@ df[df['artist']=='Big Kids'.strip()].sort_values('year').head()
                         """)
                 
                 st.write("First I searched for the artist and if I wanted to get the full ``artist_profile`` I searched for the index:")
-                st.image("images/artist_profile.png")
+                st.image("streamlit/images/artist_profile.png")
 
             with col3: 
                 col4, col5 = st.columns([0.3,0.7])
                 with col4:
-                    st.image("logos/Wikipedia.jpg")
+                    st.image("streamlit/logos/Wikipedia.jpg")
                 with col5:
-                    st.image("images/wikipedia_origin_us.png")
+                    st.image("streamlit/images/wikipedia_origin_us.png")
 
                 st.code("""    for index in artists_to_do[start_index:final_index]:
 
@@ -193,7 +193,7 @@ for artist in artists_to_remove:
                         """)
                 
                 st.code("df_new_artists = df_new_artists[~df_new_artists['artist'].isin(artists_to_remove)]")
-                st.video('images/np where wrong origins 3 artist to remove.mp4')
+                st.video('streamlit/images/np where wrong origins 3 artist to remove.mp4')
                 st.write("This way I knew exactly which artists I had gotten already the origin and which ones still not.")
                 
                 st.code("""df_final = pd.read_csv('Datasets/df_final.csv')
@@ -209,16 +209,16 @@ for artist in unique_artists:
                         """)
 
                 st.divider()
-                st.image("logos/GeoPy.jpg", width=200)
+                st.image("streamlit/logos/GeoPy.jpg", width=200)
                 st.write("Thanks to this library I could find the coordinates of every city.")
                 st.write("First I tested it just printing them, where I found more wrong locations and found that GeoPy doesn't recognize places like *Cumbria* or *Middlesex*.")
 
             with col3:                 
-                st.image("images/RYM_origin.png")
-                st.image("images/np where real origins wikipedia.jpg")
+                st.image("streamlit/images/RYM_origin.png")
+                st.image("streamlit/images/np where real origins wikipedia.jpg")
                 st.write(" ")
                 st.write(" ")
-                st.video('images/np where wrong origins 2.mp4')
+                st.video('streamlit/images/np where wrong origins 2.mp4')
                 st.write("I had some techniques to quickly find the wrong locations.")
                 st.code("""# print abnormally short origins and visually check if they are correct
 for index, row in df_new_artists.iterrows():
@@ -232,7 +232,7 @@ long_strings # display the df so I can copy the parts I am interested in""")
                 st.write(" ")
                 st.write(" ")
                 st.write("There were many artists that had squared brackets in their origins from Wikipedia.")
-                st.image("images/wikipedia_origins_claudators.png")
+                st.image("streamlit/images/wikipedia_origins_claudators.png")
                 st.code("""origin = "Kirkland, Washington"
 
 origin_clean = re.sub(r'\[\d+\]', '', origin).replace('.', '')
@@ -276,7 +276,7 @@ print(location.latitude, location.longitude)""")
 
     return None  # No match found""")
                 
-                st.image("images/uk_repeated_cities.png")
+                st.image("streamlit/images/uk_repeated_cities.png")
 
             with col2:
                 st.write(" ")
@@ -289,7 +289,7 @@ print(location.latitude, location.longitude)""")
                 st.write("For the UK, I chose Scotland, Wales, Northern Ireland and the 11 regions of England.")
 
             with col3:
-                st.image("images/city_population_missing.png")
+                st.image("streamlit/images/city_population_missing.png")
 
 
 with tab2:
@@ -307,13 +307,13 @@ with tab2:
                 "I gotta admit it was way longer and difficult than what I expected.")
             
             with col3:
-                st.image("images/album_length_0_percentage.jpg")
+                st.image("streamlit/images/album_length_0_percentage.jpg")
                 st.write(" ")
                 st.write(" ")
                 st.write(" ")
-                st.image("logos/Spotify.png", width=200)
+                st.image("streamlit/logos/Spotify.png", width=200)
                 st.write(" ")   
-                st.image("images/spotipy_special_editions.jpg")
+                st.image("streamlit/images/spotipy_special_editions.jpg")
                 st.write(" ")
 
             with col2:
@@ -322,8 +322,8 @@ with tab2:
                 st.write("First I started with **Spotipy**, the Spotify API, which apparently got me quite good results, but when I looked closer, there were 2 issues:  \n"
                 "- It couldn't find the length from all the albums  \n"
                 "- Even when it found the length, sometimes it was another version (expanded, extended, anniversary, etc) longer than the original, so I ended up with a bunch of albums with a lot of songs and long runtimes.")
-                st.image("images/spotipy_boxplot_album_length.png")
-                st.image("images/spotipy_boxplot_tracks.png")
+                st.image("streamlit/images/spotipy_boxplot_album_length.png")
+                st.image("streamlit/images/spotipy_boxplot_tracks.png")
 
                 st.divider()
                 st.subheader("Wikipedia")
@@ -401,16 +401,16 @@ with tab2:
                 st.divider()
                 st.subheader("Manual cleaning")
                 st.write("Still, there were many that were super long, like 2h. In some cases this was the actual length, but in others not, in some cases it was compilations, live albums, just wrong length, etc.")
-                st.image("images/long_album_length.jpg")
+                st.image("streamlit/images/long_album_length.jpg")
                 st.write("I only checked some of them, like the longest 50, because it's a process I could do for days and I wanted to have enough time to analyze the data.")
                 st.write("Finally, I decided to check the most prolific artists and see if I detected live albums and compilations, which I did.")
 
                 st.write("I also detected that some data was missing, and I found out it's because the titles were slightly different in the dataframes (from Discogs and from SputnikMusic), like *Honky Château* vs *Honky Chateau*, so I decided to add these albums manually.")
-                st.image("images/grateful_dead_2.jpg")
+                st.image("streamlit/images/grateful_dead_2.jpg")
                 st.write("One particular case was ***Grateful Dead***, which appearead as *The Grateful Dead* in Discogs, so I had no data at all from them.")
 
             with col3:
-                st.image("images/live_albums.jpg", width=600)
+                st.image("streamlit/images/live_albums.jpg", width=600)
 
         if topic == 'Styles':
             with col2:
@@ -422,9 +422,9 @@ with tab2:
                 st.subheader("Discogs API")
                 st.write("However, I thought that even though the main release has no styles, maybe I would find some style in the other releases.")
 
-                st.image("images/styles_empty_discogs_master.png")
+                st.image("streamlit/images/styles_empty_discogs_master.png")
                 st.write(" ")
-                st.image("images/styles_empty_discogs_release.png")
+                st.image("streamlit/images/styles_empty_discogs_release.png")
 
                 st.write("I could find most of the missing styles with this code, and the rest, less than 20, I searched them manually.")
 
