@@ -11,3 +11,4 @@ dotenv
 spotipy
 geopy
 regex
+webbrowser
