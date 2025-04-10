@@ -81,7 +81,7 @@ with col1:
         if feature == 'Decades':
             uk_map_decades = Map(location=[uk_lat, uk_lon], zoom_start=6)
             for decade in decades:
-                create_folium_map_decades(df_country, "United Kingdom", decade, uk_map_decades)
+                create_folium_map_decades(df, "United Kingdom", decade, uk_map_decades)
             folium.LayerControl(collapsed=False, position="topleft").add_to(uk_map_decades)
                 
             # Save map to HTML
@@ -90,7 +90,7 @@ with col1:
         elif feature == 'Subgenres':
             uk_map_subgenres = Map(location=[uk_lat, uk_lon], zoom_start=6)
             for subgenre in subgenres:
-                create_folium_map_subgenres(df_country, "United Kingdom", subgenre, uk_map_subgenres)
+                create_folium_map_subgenres(df, "United Kingdom", subgenre, uk_map_subgenres)
             folium.LayerControl(collapsed=False, position="topleft").add_to(uk_map_subgenres)
             
             # Save map to HTML
@@ -102,7 +102,7 @@ with col1:
         if feature == 'Decades':
             us_map_decades = Map(location=[us_lat, us_lon], zoom_start=4)
             for decade in decades:
-                create_folium_map_decades(df_country, "United States", decade, us_map_decades)
+                create_folium_map_decades(df, "United States", decade, us_map_decades)
             folium.LayerControl(collapsed=False, position="topleft").add_to(us_map_decades)
                 
             # Save map to HTML
@@ -111,7 +111,7 @@ with col1:
         elif feature == 'Subgenres':
             us_map_subgenres = Map(location=[us_lat, us_lon], zoom_start=4)
             for subgenre in subgenres:
-                create_folium_map_subgenres(df_country, "United States", subgenre, us_map_subgenres)
+                create_folium_map_subgenres(df, "United States", subgenre, us_map_subgenres)
             folium.LayerControl(collapsed=False, position="topleft").add_to(us_map_subgenres)
             
             # Save map to HTML
