@@ -7,8 +7,6 @@ scikit-learn
 beautifulsoup4
 requests
 folium
-dotenv
 spotipy
 geopy
 regex
-webbrowser
