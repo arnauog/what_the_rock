@@ -19,7 +19,7 @@ with tab1:
 
         if topic == 'Discogs API':
             with col2:
-                st.image("logos/Discogs1.jpg")
+                st.image("streamlit/logos/Discogs1.jpg")
                 st.write("For me, it was really important that I could get information from internet, not only analyze it.")
                 st.write("I didn't even check on the internet if there were some public available datasets, I wanted to create my own to have more control of the data and prove I could get information on my own.")
                 st.write("After doing some research, I decided to get the data from the **Discogs API**, which provides **all the releases**, not just one from every album.")
