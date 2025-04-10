@@ -25,8 +25,8 @@ with tab1:
                 st.write("After doing some research, I decided to get the data from the **Discogs API**, which provides **all the releases**, not just one from every album.")
                 st.write("https://www.discogs.com")
             with col3:
-                st.image('streamlit/images/Discogs_releases.png')
-                st.image("streamlit/images/Discogs_get_masters_function.png")
+                st.image('streamlit/images/Discogs_releases.PNG')
+                st.image("streamlit/images/Discogs_get_masters_function.PNG")
             with col2:
                 st.write("The topic, rock music, was too broad, so first I decided to focus on **artists from the United Kingdom**, birth of many influential and key bands on rock history.")
                 st.write("I finished getting data from all the rock releases in the UK from 1960 in about a week,\n"
@@ -46,7 +46,7 @@ with tab1:
                     "and to check if I had gotten that album already or not (checking the ``master_id`` and the combination of ``artist`` and ``title``).")
                 st.write("This was extremely important in the end, when I was getting only about 25% of the releases I was checking on the API.")
             with col3:
-                st.image("streamlit/images/Discogs_get_masters_print.png")
+                st.image("streamlit/images/Discogs_get_masters_print.PNG")
                 st.image("streamlit/images/Top_styles_2002_USA.png")
             with col2:
                 st.divider()
@@ -118,8 +118,8 @@ with tab1:
                 st.code("df_ratings_top = df_ratings[df_ratings['votes']>=20]")
                 
             with col3:
-                st.image("streamlit/images/SputnikMusic_main.png")
-                st.image("streamlit/images/sputnik_album_ratings.png")
+                st.image("streamlit/images/SputnikMusic_main.PNG")
+                st.image("streamlit/images/sputnik_album_ratings.PNG")
         
         if topic == 'Origin':
             with col2:
@@ -214,7 +214,7 @@ for artist in unique_artists:
                 st.write("First I tested it just printing them, where I found more wrong locations and found that GeoPy doesn't recognize places like *Cumbria* or *Middlesex*.")
 
             with col3:                 
-                st.image("streamlit/images/RYM_origin.png")
+                st.image("streamlit/images/RYM_origin.PNG")
                 st.image("streamlit/images/np where real origins wikipedia.jpg")
                 st.write(" ")
                 st.write(" ")
@@ -232,7 +232,7 @@ long_strings # display the df so I can copy the parts I am interested in""")
                 st.write(" ")
                 st.write(" ")
                 st.write("There were many artists that had squared brackets in their origins from Wikipedia.")
-                st.image("streamlit/images/wikipedia_origins_claudators.png")
+                st.image("streamlit/images/wikipedia_origins_claudators.PNG")
                 st.code("""origin = "Kirkland, Washington"
 
 origin_clean = re.sub(r'\[\d+\]', '', origin).replace('.', '')
@@ -276,7 +276,7 @@ print(location.latitude, location.longitude)""")
 
     return None  # No match found""")
                 
-                st.image("streamlit/images/uk_repeated_cities.png")
+                st.image("streamlit/images/uk_repeated_cities.PNG")
 
             with col2:
                 st.write(" ")
@@ -289,7 +289,7 @@ print(location.latitude, location.longitude)""")
                 st.write("For the UK, I chose Scotland, Wales, Northern Ireland and the 11 regions of England.")
 
             with col3:
-                st.image("streamlit/images/city_population_missing.png")
+                st.image("streamlit/images/city_population_missing.PNG")
 
 
 with tab2:
@@ -422,9 +422,9 @@ with tab2:
                 st.subheader("Discogs API")
                 st.write("However, I thought that even though the main release has no styles, maybe I would find some style in the other releases.")
 
-                st.image("streamlit/images/styles_empty_discogs_master.png")
+                st.image("streamlit/images/styles_empty_discogs_master.PNG")
                 st.write(" ")
-                st.image("streamlit/images/styles_empty_discogs_release.png")
+                st.image("streamlit/images/styles_empty_discogs_release.PNG")
 
                 st.write("I could find most of the missing styles with this code, and the rest, less than 20, I searched them manually.")
 
