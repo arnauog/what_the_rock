@@ -35,7 +35,7 @@ with col1:
                             .sort_values('rating', ascending=False)\
                             .head()\
                             .reset_index(drop=True)
-            df_subset['rating'] = df_subset['rating'].astype(float).map('{:.2f}'.format)
+            df_subset['rating'] = df_subset['rating'].map('{:.2f}'.format)
             df_subset.index = range(1, len(df_subset) + 1)
 
             st.divider()
@@ -63,6 +63,7 @@ with col1:
                             .sort_values('rating')\
                             .head()\
                             .reset_index(drop=True)
+            df_subset['rating'] = df_subset['rating'].map('{:.2f}'.format)
             df_subset.index = range(1, len(df_subset) + 1)
 
             st.divider()
@@ -136,6 +137,7 @@ with col1:
                             .sort_values('album_length', ascending=False)\
                             .head()\
                             .reset_index(drop=True)
+            df_subset['album_length'] = df_subset['album_length'].map('{:.2f}'.format)
             df_subset.index = range(1, len(df_subset) + 1)
 
             st.divider()
@@ -162,6 +164,7 @@ with col1:
                             .sort_values('avg_song_length')\
                             .head()\
                             .reset_index(drop=True)
+            df_subset['avg_song_length'] = df_subset['avg_song_length'].map('{:.2f}'.format)
             df_subset.index = range(1, len(df_subset) + 1)
 
             st.divider()
