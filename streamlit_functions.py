@@ -152,6 +152,7 @@ def bandcamp_albums(artist):
                         .replace('feat.', 'feat')
                         .replace('Pt.', 'pt')
                         .replace(',', '')
+                        .replace('?', '')
                         .replace(' - ', '-')    
                         .replace(' ', '-')
                         .lower()

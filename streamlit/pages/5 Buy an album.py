@@ -7,7 +7,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import time
 import webbrowser
 
-url = "https://drive.google.com/uc?export=download&id=1x4Owf2IgtkwDfopMyYOWuDfzPxXrBf_g"
+url = "https://drive.google.com/uc?export=download&id=1yO5YJBOd54kfJjB0iTT_jZIJGUKDN1IC"
 df = pd.read_csv(url) 
 st.title("Buy an album in Bandcamp")
 st.write("But we are not rich, are we? So we want to make the most of our money...")
@@ -49,6 +49,7 @@ with col1:
                     .replace("'", '')
                     .replace('"', '')
                     .replace('& ', '')
+                    .replace('?', '')
                     .replace('feat.', 'feat')
                     .replace(',', '')
                     .replace(' - ', '-') 
