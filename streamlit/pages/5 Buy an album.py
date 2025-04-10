@@ -7,11 +7,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import time
 import webbrowser
 
-
-# df_ratings = pd.read_csv('Datasets/df_ratings.csv')
-# df_ratings["year"] = df_ratings["year"].astype(str)
-
-df = pd.read_csv('Datasets/df_bandcamp.csv') 
+url = "https://drive.google.com/uc?export=download&id=1x4Owf2IgtkwDfopMyYOWuDfzPxXrBf_g"
+df = pd.read_csv(url) 
 st.title("Buy an album in Bandcamp")
 st.write("But we are not rich, are we? So we want to make the most of our money...")
 st.write("Let's search for the cheapest albums in terms of price per minute.")

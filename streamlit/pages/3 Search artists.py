@@ -7,13 +7,11 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import time
 import webbrowser
 
-
-df_ratings = pd.read_csv('Datasets/df_ratings.csv')
+url = "https://drive.google.com/uc?export=download&id=1Zs5Q9vnaRMyKz-eqnTjyIP4_jWJ2QtO4"
+df_ratings = pd.read_csv(url)
 df_ratings["year"] = df_ratings["year"].astype(str)
 df = df_ratings.groupby('artist').filter(lambda x: len(x)>8).sort_values('artist')
 st.title('Search for albums of your favourite artist')
-
-# sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=user, client_secret=password))
 
 col1, col2 = st.columns([0.6, 0.4])
 

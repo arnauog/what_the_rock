@@ -13,9 +13,14 @@ from folium.plugins import HeatMap
 
 st.set_page_config(page_title='What the Rock?', page_icon=':guitar:', layout='wide')
 
-df_ratings = pd.read_csv('Datasets/df_ratings.csv')
-df = pd.read_csv('Datasets/df_final.csv')
-data = pd.read_csv('Datasets/df_country.csv')
+url = "https://drive.google.com/uc?export=download&id=1Zs5Q9vnaRMyKz-eqnTjyIP4_jWJ2QtO4"
+df_ratings = pd.read_csv(url)
+
+url_final = 'https://drive.google.com/uc?export=download&id=1E-lnbjMb6eQJ3do4WbNJG6XXyrynyyb0'
+df = pd.read_csv(url_final)
+
+url_country = "https://drive.google.com/uc?export=download&id=1zqEnQuFrJKFO0JEQU9jmPAJOY7wBPzLG"
+data = pd.read_csv(url_country)
 
 st.header('Geographical distribution of rock music')
 
