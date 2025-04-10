@@ -12,6 +12,7 @@ df_ratings = pd.read_csv(url)
 df_ratings["year"] = df_ratings["year"].astype(str)
 df = df_ratings.groupby('artist').filter(lambda x: len(x)>8).sort_values('artist')
 st.title('Search for albums of your favourite artist')
+st.write('If they released at least 8 rock albums before 2010!')
 
 col1, col2 = st.columns([0.6, 0.4])
 
