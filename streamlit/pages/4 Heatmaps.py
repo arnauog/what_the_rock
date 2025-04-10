@@ -38,11 +38,11 @@ decades = [1960, 1970, 1980, 1990, 2000]
 def create_folium_map_subgenres(df, country, subgenre, folium_map):
     df = df[df['country']==country]  # Select the correct subset
     
-    print("subgenre" in df.columns)  # will return True or False
-    print(df.columns)
-
-    # create the subset of the subsubgenre
-    subset_df = df[df['subgenre'] == subgenre]
+    if "subgenre" in df.columns:
+        subset_df = df[df["subgenre"] == subgenre]
+    else:
+        st.error("Column 'subgenre' not found in DataFrame.")
+        st.write("Available columns:", df.columns)
 
     # create the FeatureGroup
     subset_subgenres_group = folium.FeatureGroup(name = f'{subgenre}: {subset_df.shape[0]}') 
