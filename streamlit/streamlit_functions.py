@@ -77,8 +77,8 @@ def spoti_open(query):
     import webbrowser
 
     load_dotenv()
-    user = os.getenv('client_id')
-    password = os.getenv('client_secret')
+    user = st.secrets('client_id')
+    password = st.secrets('client_secret')
 
     #Initialize SpotiPy with user credentials
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = user,
