@@ -36,27 +36,23 @@ def main():
     <script type='text/javascript'>
         var divElement = document.getElementById('viz1744217560400');
         var vizElement = divElement.getElementsByTagName('object')[0];
-
-        vizElement.style.width = '100%';  // 100% of the container width
-        vizElement.style.height = '860px';
+        
+        if ( divElement.offsetWidth > 800 ) {
+            vizElement.style.width = '1520px';
+            vizElement.style.height = '810px';
+        } else if ( divElement.offsetWidth > 500 ) {
+            vizElement.style.width = '1520px';
+            vizElement.style.height = '810px';
+        } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '1450px';
+        }
 
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
     """
-
-    # "<script type='text/javascript'>                    " \
-    #     "var divElement = document.getElementById('viz1744217560400');                    " \
-    #     "var vizElement = divElement.getElementsByTagName('object')[0];                    " \
-    #     "if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1520px';vizElement.style.height='810px';}" \
-    #     "else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1520px';vizElement.style.height='810px';}" \
-    #     "else { vizElement.style.width='100%';vizElement.style.height='1450px';}                     " \
-    #     "" \
-    #     "var scriptElement = document.createElement('script');                    " \
-    #     "scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    " \
-    #     "vizElement.parentNode.insertBefore(scriptElement, vizElement);                " \
-    # "</script>"
     
     components.html(html_temp, width=1620, height=860, scrolling=True)
 
