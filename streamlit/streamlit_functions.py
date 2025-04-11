@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
+import streamlit.components.v1 as components
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -22,6 +23,22 @@ def spoti_open(query):
     opensong = sp.search(q=query, limit=1)
     browser = opensong['tracks']['items'][0]['external_urls']['spotify']
     st.markdown(f"[Listen on Spotify]({browser})")
+
+    spotify_url = 'https://open.spotify.com/track/47dPsSo7cEDNkvIOSB4O2k'
+    # Embed the iframe using HTML
+    components.html(
+        f"""
+        <iframe style="border-radius:12px" 
+                src="{spotify_url}" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"></iframe>
+        """,
+        height=180
+    )
 
     webbrowser.open(browser)
 
