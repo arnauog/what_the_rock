@@ -23,7 +23,7 @@ st.markdown("""<style>
     """,
     unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([0.5, 0.4, 0.1])
+col1, col2 = st.columns([0.5, 0.5])
 with col1:
     artist = st.selectbox(':musical_note: **Artist**', ['Select an artist']+list(df["artist"].unique()))
 
@@ -50,11 +50,10 @@ with col1:
 
             album_cover = show_album_cover(query)
             with col2:
-                time.sleep(1)
-                # st.image(album_cover, width=400)
-
                 spoti_open(query)
 
+                time.sleep(1)
+                # st.image(album_cover, width=400)
                 st.write(f'**{album}**, from **{year}**, is the best rated album of **{artist}** with a rating of **{rating}**')
 
 
@@ -77,12 +76,12 @@ with col1:
 
             album_cover = show_album_cover(query)
             with col2: 
+                spoti_open(query)
+                
                 time.sleep(1)
-                st.image(album_cover, width=400)
+                # st.image(album_cover, width=400)
                 st.write(f'**{album}**, from **{year}**, is the worst rated album of **{artist}** with a rating of **{rating}**')
 
-                time.sleep(1)
-                spoti_open(query)
 
         elif album_kind == 'Most popular':
             df_subset = df[df['artist']==artist][['year', 'title', 'votes']]\
@@ -102,12 +101,12 @@ with col1:
 
             album_cover = show_album_cover(query)
             with col2: 
+                spoti_open(query)
+                
                 time.sleep(1)
-                st.image(album_cover, width=400)
+                # st.image(album_cover, width=400)
                 st.write(f'**{album}**, from **{year}**, is the most popular album of **{artist}** with **{votes} votes**')
 
-                time.sleep(1)
-                spoti_open(query)
 
         elif album_kind == 'First':
             df_subset = df[df['artist']==artist][['artist', 'title', 'year']]\
@@ -122,12 +121,12 @@ with col1:
 
             album_cover = show_album_cover(query)
             with col2: 
+                spoti_open(query)
+                
                 time.sleep(1)
-                st.image(album_cover, width=400)
+                # st.image(album_cover, width=400)
                 st.write(f'**{album}**, released in **{year}**, is the debut album of **{artist}**')
 
-                time.sleep(1)
-                spoti_open(query)
 
         elif album_kind == 'Longest':
             df_subset = df[df['artist']==artist][['year', 'title', 'album_length']]\
@@ -148,12 +147,12 @@ with col1:
 
             album_cover = show_album_cover(query)
             with col2: 
+                spoti_open(query)
+                
                 time.sleep(1)
-                st.image(album_cover, width=400)
+                # st.image(album_cover, width=400)
                 st.write(f'**{album}**, from **{year}**, is the longest album of **{artist}** with a duration of **{album_length}** minutes')
 
-                time.sleep(1)
-                spoti_open(query)
 
         elif album_kind == 'With the shortest songs':
             df_subset = df[df['artist']==artist][['year', 'title', 'avg_song_length']]\
@@ -174,9 +173,8 @@ with col1:
 
             album_cover = show_album_cover(query)
             with col2: 
-                time.sleep(1)
-                st.image(album_cover, width=400)
-                st.write(f'**{album}**, from **{year}** is the **{artist}** album with the shortest songs with an average song length of **{avg_song_length}** minutes')
-
-                time.sleep(1)
                 spoti_open(query)
+                
+                time.sleep(1)
+                # st.image(album_cover, width=400)
+                st.write(f'**{album}**, from **{year}** is the **{artist}** album with the shortest songs with an average song length of **{avg_song_length}** minutes')

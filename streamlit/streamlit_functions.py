@@ -56,11 +56,11 @@ def get_style(df, subgenre, col2):
                 album_cover = show_album_cover(query)
 
                 with col2: 
-                    st.image(album_cover, width=400)
-                    st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
-
-                    time.sleep(1)
                     spoti_open(query)
+                    
+                    time.sleep(1)
+                    # st.image(album_cover, width=400)
+                    st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
 
 
 def display_top_albums(df, subgenre, style):

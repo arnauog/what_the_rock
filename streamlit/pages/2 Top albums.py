@@ -21,7 +21,7 @@ div[data-testid="stNumberInput"] {
 """,
 unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([0.5, 0.4, 0.1])
+col1, col2 = st.columns([0.5, 0.5])
 with col1:
     subgenre = st.selectbox(':mag: **Subgenre**', ['Select a subgenre']+list(df["subgenre"].unique()))
 
