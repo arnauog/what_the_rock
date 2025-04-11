@@ -21,19 +21,16 @@ def spoti_open(query):
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id = client_id,
                                                             client_secret = client_secret))
     opensong = sp.search(q=query, limit=1)
-    st.write(query)
-    browser = opensong['tracks']['items'][0]['external_urls']['spotify']
-    st.write(browser)
+    browser = opensong['tracks']['items'][0]['album']['external_urls']['spotify']
     st.markdown(f"[Listen on Spotify]({browser})")
     
-
-    # spotify_url = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6344rkGqCBDenGoS7eJlBN?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+    spotify_url = opensong['tracks']['items'][0]['album']['external_urls']['spotify']
 
     # Embed the iframe using HTML
     components.html(
         f"""
         <iframe style="border-radius:12px" 
-                src="{browser}" 
+                src="{spotify_url}" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
