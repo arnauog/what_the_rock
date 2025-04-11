@@ -22,9 +22,11 @@ def spoti_open(query):
                                                             client_secret = client_secret))
     opensong = sp.search(q=query, limit=1)
     browser = opensong['tracks']['items'][0]['album']['external_urls']['spotify']
+    st.write(browser)
     st.markdown(f"[Listen on Spotify]({browser})")
     
     spotify_url = opensong['tracks']['items'][0]['album']['external_urls']['spotify'] + '?utm_source=generator'
+    st.write(spotify_url)
 
     # Embed the iframe using HTML
     components.html(
