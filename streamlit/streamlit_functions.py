@@ -32,13 +32,13 @@ def spoti_open(query):
         <iframe style="border-radius:12px" 
                 src="{spotify_url}" 
                 width="100%" 
-                height="152" 
+                height="500" 
                 frameBorder="0" 
                 allowfullscreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"></iframe>
         """,
-        height=580
+        height=500
     )
 
     webbrowser.open(browser)
