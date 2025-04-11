@@ -56,7 +56,6 @@ with col1:
                     st.image(album_cover, width=400)
 
 
-
         elif album_kind == 'Worst rated':
             df_subset = df[df['artist']==artist][['year', 'title', 'rating']]\
                             .sort_values('rating')\
@@ -84,7 +83,6 @@ with col1:
                     st.image(album_cover, width=400)
                 
 
-
         elif album_kind == 'Most popular':
             df_subset = df[df['artist']==artist][['year', 'title', 'votes']]\
                             .sort_values('votes', ascending=False)\
@@ -111,7 +109,6 @@ with col1:
                     st.image(album_cover, width=400)
                 
 
-
         elif album_kind == 'First':
             df_subset = df[df['artist']==artist][['artist', 'title', 'year']]\
                             .sort_values('year')\
@@ -123,6 +120,7 @@ with col1:
             year = df_subset.head(1)['year'].values[0]
             query = artist + ' ' + album
 
+            st.divider()
             st.write(f'**{album}**, released in **{year}**, is the debut album of **{artist}**')
 
             album_cover = show_album_cover(query)
@@ -131,8 +129,7 @@ with col1:
                     spoti_open(query)
                 except:
                     st.image(album_cover, width=400)
-                
-
+            
 
         elif album_kind == 'Longest':
             df_subset = df[df['artist']==artist][['year', 'title', 'album_length']]\
@@ -161,7 +158,6 @@ with col1:
                     st.image(album_cover, width=400)
                 
 
-
         elif album_kind == 'With the shortest songs':
             df_subset = df[df['artist']==artist][['year', 'title', 'avg_song_length']]\
                             .sort_values('avg_song_length')\
@@ -186,5 +182,4 @@ with col1:
                 try:
                     spoti_open(query)
                 except:
-                    st.image(album_cover, width=400)
-                
+                    st.image(album_cover, width=400)                
