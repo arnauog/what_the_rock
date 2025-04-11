@@ -27,7 +27,7 @@ def spoti_open(query):
     st.write(album_id)
     st.markdown(f"[Listen on Spotify]({browser})")
     
-    spotify_url = 'https://open.spotify.com/embed/album/' + id + '?utm_source=generator'
+    spotify_url = 'https://open.spotify.com/embed/album/' + album_id + '?utm_source=generator'
     st.write(spotify_url)
 
     # Embed the iframe using HTML
