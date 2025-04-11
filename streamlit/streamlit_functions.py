@@ -136,13 +136,13 @@ def create_folium_map(df, country, subgenre):
 
 
 def bandcamp_albums(artist):
-        # create empty lists
+    # create empty lists
     titles_list = []
-    minutes_list = []
-    seconds_list = []
     album_length_list = []
+    album_length_clean = []
     tracks_list = []
     prices_list = []
+    prices_currency = []
     years_list = []
     artist_clean = artist.lower().replace(' ', '')
 
@@ -154,11 +154,11 @@ def bandcamp_albums(artist):
         print(f"{artist_clean} - {location}")
 
         releases = soup.select('#music-grid li a p')
-        print(f"Found {len(releases)} albums")
 
         if len(releases) > 0:
             for i in releases:
                 title = i.text.replace('\n', '').strip()
+                print(title)
                 title_changed = (
                     title.replace('(', '')
                         .replace(')', '')
@@ -169,14 +169,13 @@ def bandcamp_albums(artist):
                         .replace('"', '')
                         .replace('& ', '')
                         .replace('feat.', 'feat')
-                        .replace(',', '')
                         .replace('Pt.', 'pt')
+                        .replace(',', '')
                         .replace(' - ', '-')    
                         .replace(' ', '-')
                         .lower()
                 )
                 titles_list.append(title)
-                print(f"Searching the album: {title_changed}")
 
                 try:
                     url = f'https://{artist_clean}.bandcamp.com/album/{title_changed}'
@@ -185,47 +184,65 @@ def bandcamp_albums(artist):
                     if "Sorry, that something isn’t here" not in soup.text:
                         try:
                             price = soup.select('span > span.base-text-color')[0].text
+                            prices_currency.append(price)
                             prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
-                        except:
+                        except: 
                             free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
                             # if len(free) > 0:
+                            price = '0'
+                            prices_currency.append(0)
                             prices_list.append(0)
-                        print(prices_list)
                         release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                         year = release_date[0].text.strip().split(', ')[1][:4]
                         years_list.append(year)
+                        songs_table = soup.select('table', class_='track_list track_table')[1]('span')
+                        tracks = len(songs_table)//2
+                        tracks_list.append(tracks)
+                        song_durations = []
+                        minutes_list = []
+                        seconds_list = []
 
-                        try:
-                            songs_table = soup.select('table', class_='track_list track_table')[1]('span')
-                            tracks = len(songs_table)/2
-                            tracks_list.append(tracks)
-                            song_durations = []
+                        soup2 = BeautifulSoup(str(songs_table), "html.parser")
+                        durations = [span.get_text(strip=True) for span in soup2.find_all("span", class_="time secondaryText")]
 
-                            for i in range(1, len(songs_table), 2):
-                                song_duration = songs_table[i].text.strip()
-                                try:
-                                    minutes, seconds = map(int, song_duration.split(':'))
-                                    song_duration_minutes = minutes + seconds/60
-                                    song_durations.append(song_duration_minutes)
-                                except:
-                                    pass
-                                album_length = round(sum(song_durations), 2)
-                            album_length_list.append(album_length)
-                        except:
-                            album_length_list.append(np.nan)
+                        for i in durations:
+                            try:
+                                minutes, seconds = map(int, i.split(':'))
+                                minutes_list.append(minutes)
+                                seconds_list.append(seconds)
+                                song_duration_minutes = minutes + seconds/60
+                                song_durations.append(song_duration_minutes)
+                            except:
+                                pass
+
+                        minutes_total = sum(minutes_list) + (sum(seconds_list)//60)
+                        seconds_rest = sum(seconds_list)%60
+
+                        if minutes_total < 60:
+                            album_length = str(f'{minutes_total}:{seconds_rest:02}')
+                        else:
+                            hours = minutes_total // 60
+                            minutes_rest = minutes_total % 60
+                            album_length = str(f'{hours}:{minutes_rest:02}:{seconds_rest:02}')
+                            
+                        album_length_list.append(round(sum(song_durations), 2))
+                        album_length_clean.append(album_length)
                     else:
                         print('This is not an album')
                         album_length_list.append(np.nan)
+                        album_length_clean.append(np.nan)
+                        prices_currency.append(np.nan)
                         prices_list.append(np.nan)
                         years_list.append(np.nan)
                         tracks_list.append(np.nan)
                 except: 
                     print("Couldn't find the album")
                     album_length_list.append(np.nan)
+                    album_length_clean.append(np.nan)
+                    prices_currency.append(np.nan)
                     prices_list.append(np.nan)
                     years_list.append(np.nan)
                     tracks_list.append(np.nan)
-                # print("   ", year, title_changed, album_length, tracks, price)
         else:
             title = soup.select('#name-section > h2')[0].text.replace('\n', '').strip()
             titles_list.append(title)
@@ -234,28 +251,31 @@ def bandcamp_albums(artist):
                 soup = BeautifulSoup(response.content, "html.parser")
                 try:
                     price = soup.select('span > span.base-text-color')[0].text
+                    prices_currency.append(price)
                     prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
                 except:
-                    free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')                                        
-                    if len(free) > 0:
-                        prices_list.append(0)
+                    free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
+                    # if len(free) > 0:
+                    price = '0'
+                    prices_currency.append(0)
+                    prices_list.append(0)
                 release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                 year = release_date[0].text.strip().split(', ')[1][:4]
                 years_list.append(year)
-
                 try:
                     songs_table = soup.select('table', class_='track_list track_table')[1]('span')
-                    tracks = len(songs_table)/2
+                    tracks = len(songs_table)//2
                     tracks_list.append(tracks)
                     song_durations = []
+                    minutes_list = []
+                    seconds_list = []
 
                     soup2 = BeautifulSoup(str(songs_table), "html.parser")
                     durations = [span.get_text(strip=True) for span in soup2.find_all("span", class_="time secondaryText")]
+
                     for i in durations:
-                        # song_duration = songs_table[i].text.strip()
                         try:
                             minutes, seconds = map(int, i.split(':'))
-                            print(minutes, seconds)
                             minutes_list.append(minutes)
                             seconds_list.append(seconds)
                             song_duration_minutes = minutes + seconds/60
@@ -265,26 +285,28 @@ def bandcamp_albums(artist):
 
                     minutes_total = sum(minutes_list) + (sum(seconds_list)//60)
                     seconds_rest = sum(seconds_list)%60
+
                     if minutes_total < 60:
-                        album_length = str(f'{minutes_total}:{seconds_rest}')
-                        print(album_length)
+                        album_length = str(f'{minutes_total}:{seconds_rest:02}')
                     else:
                         hours = minutes_total // 60
                         minutes_rest = minutes_total % 60
-                        album_length = str(f'{hours}:{minutes_rest:02}:{seconds_rest}')
-                        print(album_length)
-                    album_length_list.append(album_length)
+                        album_length = str(f'{hours}:{minutes_rest:02}:{seconds_rest:02}')
+                        
+                    album_length_list.append(round(sum(song_durations), 2))
+                    album_length_clean.append(album_length)
                 except:
                     album_length_list.append(np.nan)
-
+                    album_length_clean.append(np.nan)
             except: 
                 print("Couldn't find the album")
                 album_length_list.append(np.nan)
+                album_length_clean.append(np.nan)
+                prices_currency.append(np.nan)
                 prices_list.append(np.nan)
                 years_list.append(np.nan)
                 tracks_list.append(np.nan)
 
-            # print("   ", year, title_changed, album_length, tracks, price)
     except:
         titles_list.append(np.nan)
         tracks_list.append(np.nan)
@@ -296,23 +318,20 @@ def bandcamp_albums(artist):
         # check if there are any valid values in price_list, sometimes there are albums but they can't be bought
     if pd.Series(prices_list).notna().any():
         # Create a DataFrame with the results
-        if re.match(r'^\$', price):
-            currency = '$'
-        elif re.match(r'^\€', price):
-            currency = '€'
-        elif re.match(r'^\£', price):
-            currency = '£'
 
         df_bandcamp = pd.DataFrame({'year': years_list
                                     , 'title': titles_list
-                                    , 'length': album_length_list
+                                    , 'length': album_length_clean
+                                    , 'duration': album_length_list
                                     , 'tracks': tracks_list
-                                    , f'price_{currency}': prices_list})
-        
-        df_bandcamp['price/min'] = np.where(df_bandcamp['length'].notna(), 
-        round(df_bandcamp[f'price_{currency}'] / df_bandcamp['length'], 3), 0)
+                                    , 'price': prices_currency
+                                    , 'price_float': prices_list})
 
-        df_bandcamp.dropna(subset=f'price_{currency}', inplace=True)
+        df_bandcamp['price/min'] = np.where(df_bandcamp['duration'].notna(), 
+        round(df_bandcamp[f'price_float'] / df_bandcamp['duration'], 3), 0)
+
+        df_bandcamp.dropna(subset=f'price_float', inplace=True)
+        df_bandcamp.drop(columns=['duration', 'price_float'], inplace=True)
         df_bandcamp['tracks'] = df_bandcamp['tracks'].astype(int)
         df_bandcamp.sort_values('price/min', inplace=True)
         df_bandcamp.reset_index(drop=True, inplace=True)
