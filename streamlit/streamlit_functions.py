@@ -188,10 +188,14 @@ def bandcamp_albums(artist):
                             prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
                         except: 
                             free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
-                            # if len(free) > 0:
-                            price = '0'
-                            prices_currency.append(0)
-                            prices_list.append(0)
+                            if len(free) > 0:
+                                price = '0'
+                                prices_currency.append(0)
+                                prices_list.append(0)
+                            else:
+                                price = '0'
+                                prices_currency.append(np.nan)
+                                prices_list.append(np.nan)
                         release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                         year = release_date[0].text.strip().split(', ')[1][:4]
                         years_list.append(year)
@@ -255,10 +259,14 @@ def bandcamp_albums(artist):
                     prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
                 except:
                     free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
-                    # if len(free) > 0:
-                    price = '0'
-                    prices_currency.append(0)
-                    prices_list.append(0)
+                    if len(free) > 0:
+                        price = '0'
+                        prices_currency.append(0)
+                        prices_list.append(0)
+                    else:
+                        price = '0'
+                        prices_currency.append(np.nan)
+                        prices_list.append(np.nan)
                 release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                 year = release_date[0].text.strip().split(', ')[1][:4]
                 years_list.append(year)
