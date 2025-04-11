@@ -63,7 +63,6 @@ def get_style(df, subgenre, col2):
                         st.image(album_cover, width=400)
 
 
-
 def display_top_albums(df, subgenre, style):
         year = st.number_input(':watch: **Year**', min_value=df[df['style']==style]['year'].min(), max_value=2010, step=1)
         df_style = df[df['year']==year].query(f"style == '{style}'")[['artist', 'title', 'rating', 'votes']]\
@@ -189,8 +188,8 @@ def bandcamp_albums(artist):
                     except: 
                         free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
                         if len(free) > 0:
-                            price = '$ 0'
-                            prices_currency.append(price)
+                            price = '0'
+                            prices_currency.append(0)
                             prices_list.append(0)
                     release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                     year = release_date[0].text.strip().split(', ')[1][:4]
@@ -248,8 +247,8 @@ def bandcamp_albums(artist):
                 except:
                     free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
                     if len(free) > 0:
-                        price = '$ 0'
-                        prices_currency.append(price)
+                        price = '0'
+                        prices_currency.append(0)
                         prices_list.append(0)
                 release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
                 year = release_date[0].text.strip().split(', ')[1][:4]
@@ -307,12 +306,12 @@ def bandcamp_albums(artist):
         # check if there are any valid values in price_list, sometimes there are albums but they can't be bought
     if pd.Series(prices_list).notna().any():
         # Create a DataFrame with the results
-        if re.match(r'^\$', price):
-            currency = '$'
-        elif re.match(r'^\€', price):
-            currency = '€'
-        elif re.match(r'^\£', price):
-            currency = '£'
+        # if re.match(r'^\$', price):
+        #     currency = '$'
+        # elif re.match(r'^\€', price):
+        #     currency = '€'
+        # elif re.match(r'^\£', price):
+        #     currency = '£'
 
         # album_length_clean = [album_length_list]
         df_bandcamp = pd.DataFrame({'year': years_list
