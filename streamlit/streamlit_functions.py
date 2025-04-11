@@ -181,51 +181,60 @@ def bandcamp_albums(artist):
                     url = f'https://{artist_clean}.bandcamp.com/album/{title_changed}'
                     response = requests.get(url)
                     soup = BeautifulSoup(response.content, "html.parser")
-                    try:
-                        price = soup.select('span > span.base-text-color')[0].text
-                        prices_currency.append(price)
-                        prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
-                    except: 
-                        free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
-                        # if len(free) > 0:
-                        price = '0'
-                        prices_currency.append(0)
-                        prices_list.append(0)
-                    release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
-                    year = release_date[0].text.strip().split(', ')[1][:4]
-                    years_list.append(year)
-                    songs_table = soup.select('table', class_='track_list track_table')[1]('span')
-                    tracks = len(songs_table)//2
-                    tracks_list.append(tracks)
-                    song_durations = []
-                    minutes_list = []
-                    seconds_list = []
-
-                    soup2 = BeautifulSoup(str(songs_table), "html.parser")
-                    durations = [span.get_text(strip=True) for span in soup2.find_all("span", class_="time secondaryText")]
-
-                    for i in durations:
+                    if "Sorry, that something isn’t here" not in soup.text:
                         try:
-                            minutes, seconds = map(int, i.split(':'))
-                            minutes_list.append(minutes)
-                            seconds_list.append(seconds)
-                            song_duration_minutes = minutes + seconds/60
-                            song_durations.append(song_duration_minutes)
-                        except:
-                            pass
+                            price = soup.select('span > span.base-text-color')[0].text
+                            prices_currency.append(price)
+                            prices_list.append(float(price.replace('$', '').replace('€', '').replace('£', '')))
+                        except: 
+                            free = soup.select('#trackInfoInner > ul > li.buyItem.digital > div.ft > h4 > button')
+                            # if len(free) > 0:
+                            price = '0'
+                            prices_currency.append(0)
+                            prices_list.append(0)
+                        release_date = soup.select('#trackInfoInner > div.tralbumData.tralbum-credits')
+                        year = release_date[0].text.strip().split(', ')[1][:4]
+                        years_list.append(year)
+                        songs_table = soup.select('table', class_='track_list track_table')[1]('span')
+                        tracks = len(songs_table)//2
+                        tracks_list.append(tracks)
+                        song_durations = []
+                        minutes_list = []
+                        seconds_list = []
 
-                    minutes_total = sum(minutes_list) + (sum(seconds_list)//60)
-                    seconds_rest = sum(seconds_list)%60
+                        soup2 = BeautifulSoup(str(songs_table), "html.parser")
+                        durations = [span.get_text(strip=True) for span in soup2.find_all("span", class_="time secondaryText")]
 
-                    if minutes_total < 60:
-                        album_length = str(f'{minutes_total}:{seconds_rest:02}')
+                        for i in durations:
+                            try:
+                                minutes, seconds = map(int, i.split(':'))
+                                minutes_list.append(minutes)
+                                seconds_list.append(seconds)
+                                song_duration_minutes = minutes + seconds/60
+                                song_durations.append(song_duration_minutes)
+                            except:
+                                pass
+
+                        minutes_total = sum(minutes_list) + (sum(seconds_list)//60)
+                        seconds_rest = sum(seconds_list)%60
+
+                        if minutes_total < 60:
+                            album_length = str(f'{minutes_total}:{seconds_rest:02}')
+                        else:
+                            hours = minutes_total // 60
+                            minutes_rest = minutes_total % 60
+                            album_length = str(f'{hours}:{minutes_rest:02}:{seconds_rest:02}')
+                            
+                        album_length_list.append(round(sum(song_durations), 2))
+                        album_length_clean.append(album_length)
                     else:
-                        hours = minutes_total // 60
-                        minutes_rest = minutes_total % 60
-                        album_length = str(f'{hours}:{minutes_rest:02}:{seconds_rest:02}')
-                        
-                    album_length_list.append(round(sum(song_durations), 2))
-                    album_length_clean.append(album_length)
+                        print('This is not an album')
+                        album_length_list.append(np.nan)
+                        album_length_clean.append(np.nan)
+                        prices_currency.append(np.nan)
+                        prices_list.append(np.nan)
+                        years_list.append(np.nan)
+                        tracks_list.append(np.nan)
                 except: 
                     print("Couldn't find the album")
                     album_length_list.append(np.nan)
