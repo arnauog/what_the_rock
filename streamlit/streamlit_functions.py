@@ -32,13 +32,13 @@ def spoti_open(query):
         <iframe style="border-radius:12px" 
                 src="{spotify_url}" 
                 width="100%" 
-                height="500" 
+                height="700" 
                 frameBorder="0" 
                 allowfullscreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"></iframe>
         """,
-        height=500
+        height=700
     )
 
     webbrowser.open(browser)
@@ -53,14 +53,15 @@ def get_style(df, subgenre, col2):
         if query != 'No albums':
             if st.button('Search'):
                 st.dataframe(df_style)
+                st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
                 album_cover = show_album_cover(query)
 
                 with col2: 
-                    spoti_open(query)
-                    
-                    time.sleep(1)
-                    # st.image(album_cover, width=400)
-                    st.write(f'**{album}** by **{artist}** was the top {style} album of {year}')
+                    try:
+                        spoti_open(query)
+                    except:
+                        st.image(album_cover, width=400)
+
 
 
 def display_top_albums(df, subgenre, style):
