@@ -51,11 +51,11 @@ with col1:
             album_cover = show_album_cover(query)
             with col2:
                 time.sleep(1)
-                st.image(album_cover, width=400)
-                st.write(f'**{album}**, from **{year}**, is the best rated album of **{artist}** with a rating of **{rating}**')
+                # st.image(album_cover, width=400)
 
-                time.sleep(1)
                 spoti_open(query)
+
+                st.write(f'**{album}**, from **{year}**, is the best rated album of **{artist}** with a rating of **{rating}**')
 
 
         elif album_kind == 'Worst rated':
