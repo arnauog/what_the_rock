@@ -47,7 +47,7 @@ def get_style(df, subgenre, col2):
 
 def display_top_albums(df, subgenre, style):
         year = st.number_input(':watch: **Year**', min_value=df[df['style']==style]['year'].min(), max_value=2010, step=1)
-        df_style = df[df['year']==year].query(f"style == '{style}'")[['artist', 'title', 'rating']]\
+        df_style = df[df['year']==year].query(f"style == '{style}'")[['artist', 'title', 'rating', 'votes']]\
                         .sort_values('rating', ascending=False)\
                         .head()\
                         .reset_index(drop=True)
