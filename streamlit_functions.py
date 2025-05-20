@@ -287,13 +287,6 @@ def bandcamp_albums(artist):
 
         # check if there are any valid values in price_list, sometimes there are albums but they can't be bought
     if pd.Series(prices_list).notna().any():
-        # Create a DataFrame with the results
-        # if re.match(r'^\$', price):
-        #     currency = '$'
-        # elif re.match(r'^\€', price):
-        #     currency = '€'
-        # elif re.match(r'^\£', price):
-        #     currency = '£'
 
         # album_length_clean = [album_length_list]
         df_bandcamp = pd.DataFrame({'year': years_list
