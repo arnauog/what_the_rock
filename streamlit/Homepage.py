@@ -15,7 +15,7 @@ from folium.plugins import HeatMap
 
 st.set_page_config(page_title='What the Rock?', page_icon=':guitar:', layout='wide')
 
-st.title(':drum_with_drumsticks: What the Rock? :guitar:')
+st.title('🥁 What the Rock? :guitar:')
 st.subheader("An analysis of rock music from the US and UK (1960-2010)")
 st.divider()
 
